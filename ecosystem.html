@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89148892-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-89148892-1');
+
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title>rchain platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="google-site-verification" content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg" />
+    <link rel='stylesheet' href='css/layout.css' />
+    <link rel='stylesheet' href='css/fonts.css' />
+    <link rel='stylesheet' href='css/ecosystem.css' />
+    <link rel="shortcut icon" href="assets/favicon-red.png" />
+    <meta property="og:title" content="rchain platform" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="https://rchain.coop/platform" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="rchain platform" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="https://rchain.coop/platform" />
+    <meta name="twitter:description" content="" />
+
+</head>
+
+<body>
+    <!--  Navbar Start -->
+    <header>
+        <div class="nav" id="nav">
+            <div id="navClose" onclick="navClose()">X</div>
+            <div class="wrapper">
+                <div class="item">
+                    <img src="assets/logo_white.png" class="white" id="white">
+                    <img src="assets/logo_red.png" class="red" id="red">
+                </div>
+                <div class="item links" onclick="">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="item links" onclick="">
+                    <a href="platform.html">Platform</a>
+                </div>
+                <div class="item links" onclick="" style="display:default">
+                    <a href="ecosystem.html">Ecosystem</a>
+                </div>
+                <div class="item links" id="dropdown">
+                    <a href="javascript:void(0)">Community<span class="arrow">&rsaquo;</span></a>
+                    <div class="dropdown">
+                        <a href="community.html">Community Overview</a>
+                        <a href="team.html">Team</a>
+                        <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
+                        <a href="https://developer.rchain.coop/" target="_blank">Developers</a>
+                        <a href="newsletter.html" target="_blank">Newsletter</a>
+                    </div>
+                </div>
+                <div class="item links">
+                    <a href="community.html" class="btn-blue">Join Cooperative</a>
+                </div>
+                <div class="item" id="hamburger">
+                    <a href="javascript:void(0)"><span><p id="bar1"></p><p id="bar2"></p><p id="bar3"></p></span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <div class="bodyWrapper">
+        <div class="section" id="rchainSection">
+
+
+    <h1>RChain<sup>&reg;</sup> Ecosystem</h1>
+    <h3>Growing communities of dapps and validators.</h3>
+    <div class="divider"></div>
+
+
+        <div class="textWrapper">
+            <p>RChain platform is built to support decentralized applications created by you!<br />
+            Here is a partial list of applications developed and supported by community members.</p>
+        </div>
+
+        <div class="textWrapper">
+            <h2>Rholang</h2>
+            <p><a href="https://rholang.github.io/">rholang.github.io</a> is a community supported website dedicated to RChain's scalable blockchain language. Hat's off to Co-op member, Tobi, for putting it together, with help from Dan Connolly.<p>
+        </div>
+        <div class="textWrapper">
+            <h2>Community Github</h2>
+            <p><a href="https://github.com/rchain-community">rchain-community</a> community supported tools for working with the RChain platform and Rholang.<p>
+        </div>
+        <div class="textWrapper">
+            <h2>Blockchain Explorer</h2>
+            <p><a href="https://revdefine.io">Revdefine</a> is an <a href="https://github.com/RevDefine/revdefine">open-source</a>, community supported explorer. It displays status of validators, deployments, wallet balances, and more.<p>
+        </div>
+
+        <div class="textWrapper">
+            <h2>Dappy</h2>
+            <p><a href="https://dappy.tech">Dappy</a> is a decentralized distribution network for files and web applications.</p>
+            <p>The Dappy network is a public and decentralized alternative to the legacy web and DNS system. The system is backed by blockchain technology and offers superior levels of trust, integrity and security than those of legacy web.</p>
+        </div>
+
+            <h2>Wallets</h2>
+            <ul>
+                <li><a href="https://tgrospic.github.io/rnode-client-js/">Tomislav's wallet example</a> (Open-source)</li>
+                <li><a href="https://myrchainwallet.com/">Myrchain Wallet</a> (Open-source)</li>
+                <li> <a href="https://wenode.io/rui">Rui 安全 Wallet extension for Chrome</a> (Open-source)</li>
+                <li><a href="https://icapo.app/">icapo 移动端钱包 Wallet for mobile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="wrapper">
+            <div class="center"><img src="assets/logo_red.png"></div>
+            <p>copyright &copy; 2020 RChain Cooperative All rights reserved</p>
+            <p>RChain is a registered trademark of RChain Cooperative</p>
+            <div>
+                <p><a href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf">Privacy terms and conditions</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/rchain.coop_Browser.js"></script>
+    <script src="js/homepage_Browser.js"></script>
+
+</body>
+
+</html>

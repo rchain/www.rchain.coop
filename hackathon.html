@@ -128,10 +128,25 @@
                 <h2 id="dev-apis">dApp Developer APIs and Tools</h2>
                 <p>There&rsquo;re APIs available for the platform that allow a person skilled in any language to develop apps.</p>
                 <ul>
-                    <li><a href="https://github.com/rchain/rchain/tree/dev/docs/rnode-api">RNode API: Swagger / OpenAPI, gRPC / protobuf</a></li>
-                    <li><a href="https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang">vs-code extension for Rholang</a>
-                    </li>
-                    <li><a href="https://github.com/rchain/rchain/blob/dev/rholang/reference_doc/rho_cheatsheet.pdf" >Rholang cheat-sheet</a></li>
+                    <li><a href="https://github.com/rchain/rchain/tree/dev/docs/rnode-api">RNode API</a>: rnode communicates primarily using gRPC but it also has a Web API that supports use directly from browsers, curl, etc.</li>
+                    <li>Rholang
+                        <ul>
+                            <li><a href="https://github.com/rchain/rchain/blob/dev/rholang/reference_doc/rho_cheatsheet.pdf" >Rholang cheat-sheet</a></li>
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang">vs-code extension for Rholang</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/rchain/rchain/tree/dev/rholang/examples">rholang/examples</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources">genesis contracts</a>: Casper Proof of Stake, REV Vault, MakeMint, ListOps, Either
+                            </li>
+                            <li>
+                                <a href="https://github.com/JoshOrndorff/LearnRholangByExample">Learn Rholang By Example</a>, course by Joshy Orndorff, Nov 2018
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=gRxXQx3cn9c&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j&amp;index=31">Getting started with Rholang smart contracts</a> 1hr talk by Stay and Shikama, Jun 2018
+                            </li>
+                        </ul>
                     <li>... more on <a href="https://developer.rchain.coop">developer.rchain.coop</a></li>
                 </ul>
                 <h2 id="rchain-tech">RChain In Depth</h2>
@@ -169,6 +184,28 @@
                 <p>When considered in the context of RSpace, its execution mechanism and a unique key-value database supporting the storage of both data and active code, Rholang may also be seen as a next generation query language that
                     reconciles relational query mechanisms with nosql. This means that as a smart contracting language Rholang is ideal for making blockchain a platform for data intensive applications where data is stored on chain, as well as a
                     process modeling language, such as XLang, BEPL, or BPML.</p>
+
+                <ul>
+                <ul>
+                    <li>
+                        <p><a href="https://www.youtube.com/watch?v=gRxXQx3cn9c&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j&amp;index=31">getting started with rholang</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.youtube.com/watch?v=XhwrZuXMyfE">LADL from the Ground Up</a> by Mike Stay and Greg Meredith, Jun 2018</p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md">core dev rholang tutorial</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md">A Tutorial for Matching in Rholang</a> </p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md">More in-depth tutorial on pattern matching</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources">Casper contracts, including ListOps, Either</a></p>
+                    </li>
+                </ul>
 
                 <h2 id="rchain-tech">RNode core scala dev</h2>
 
@@ -213,38 +250,13 @@
                         <p><a href="https://docs.github.com/en/github/getting-started-with-github">https://docs.github.com/en/github/getting-started-with-github</a></p>
                     </li>
                     <li>
+                        <a href="https://github.com/rchain-community">rchain-community</a> github organisation
+                    </li>
+                    <li>
                         <p>..many other resources </p>
                     </li>
                 </ul>
                 <h5>Rholang</h5>
-                <ul>
-                    <li>
-                        <p><a href="https://www.youtube.com/watch?v=gRxXQx3cn9c&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j&amp;index=31">getting started with rholang</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://www.youtube.com/watch?v=XhwrZuXMyfE">Mike Stay on LADL</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md">Main tutorial</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md">A Tutorial for Matching in Rholang</a> </p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md">More in-depth tutorial on pattern matching</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/JoshOrndorff/LearnRholangByExample">A course by Joshy Orndorff</a> </p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/rchain/rchain/tree/dev/rholang/examples">Code examples in core repo</a> <a href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources"></a> </p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources">Casper contracts, including ListOps, Either</p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/rchain-community">Here are the sources of community initiatives</a> </p>
-                    </li>
                     <li>
                         <p><a href="https://rchain-community.readme.io/">https://rchain-community.readme.io/</a></p>
                     </li>

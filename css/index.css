@@ -24,7 +24,8 @@ body {
 
 .nav .item.links:hover:nth-child(2) a,
 .nav .item.links:hover:nth-child(3) a,
-.nav .item.links:hover:nth-child(4) a {
+.nav .item.links:hover:nth-child(4) a,
+.nav .item.links:hover:nth-child(5) a {
     color: black;
 }
 

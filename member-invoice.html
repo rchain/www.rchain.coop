@@ -90,8 +90,8 @@
         
         <div class="section" id="posSection">
             <div class="textWrapper">
-                <p>Becoming a member requires a non-refundable one-time fee of $20 (Click <strong>Stripe Invoice</strong> below).</p>
-                <p>To maintain your membership, you must spend at least $10/yr in fees once the platform launches. You are then eligible for a rebate each year based on your usage of the platform (think <a href="https://www.rei.com/member-thanks" target="_blank">REI</a>).</p>
+                <p>Becoming a member requires a non-refundable one-time fee of $20 (Click the Stripe Invoice <strong>Checkout</strong> button below).</p>
+                <p>To maintain your membership, you must spend at least $10 worth of REV each year on contract deployment fees. You are then eligible for a yearly rebate that will offset these transaction fees. (The Co-op has not yet enforced this policy and has waived this requirement in past years.)</p>
                 <p>After payment, you will receive instructions on completing the following <strong>required</strong> steps:</p>
                 <p></p>
                 <ul>
@@ -132,8 +132,8 @@
                     // a successful payment.
                     // Instead use one of the strategies described in
                     // https://stripe.com/docs/payments/checkout/fulfill-orders
-                    successUrl: 'https://www.rchain.coop/success',
-                    cancelUrl: 'https://www.rchain.coop/canceled',
+                    successUrl: 'https://www.rchain.coop/invoice-success',
+                    cancelUrl: 'https://www.rchain.coop/member-invoice.html',
                     })
                     .then(function (result) {
                     if (result.error) {

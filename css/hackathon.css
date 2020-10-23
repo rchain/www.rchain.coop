@@ -1,7 +1,12 @@
 p, li {
-    font-size: 1.25rem;    
+    font-size: 1.25rem;
+    font-family: none;
 }
 
+a {
+    color: #077194;
+    font-size: large;
+}
 .nav .item img.red {
     display: inline;
     visibility: visible;

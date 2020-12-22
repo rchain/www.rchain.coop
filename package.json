@@ -1,0 +1,24 @@
+{
+  "name": "www.rchain.coop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "style": "sass ./scss/index.scss > ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchain/www.rchain.coop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchain/www.rchain.coop/issues"
+  },
+  "homepage": "https://github.com/rchain/www.rchain.coop#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

@@ -26,10 +26,11 @@
       name="google-site-verification"
       content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
     />
+
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="shortcut icon" href="assets/favicon-red.png" />
 
     <meta property="og:title" content="RChain" />
@@ -57,14 +58,14 @@
     />
   </head>
 
-  <body>
+  <body class="pageIndex">
     <!--  Navbar Start -->
     <header>
       <div class="nav" id="nav">
         <div class="wrapper">
           <div class="item img">
-            <img src="assets/logo_white.png" id="white" />
-            <img src="assets/logo_red.png" id="red" />
+            <img src="assets/logo_white_small.png" id="white" />
+            <img src="assets/logo_red_small.png" id="red" />
           </div>
           <div class="item links" onclick="">
             <a href="index.html">Home</a>
@@ -97,22 +98,55 @@
           <div class="item links long">
             <a href="community.html" class="btn-blue">Join Cooperative</a>
           </div>
-          <div class="item" id="hamburger">
-            <a href="javascript:void(0)"
-              ><span>
-                <p id="bar1"></p>
-                <p id="bar2"></p>
-                <p id="bar3"></p> </span
-            ></a>
-          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <div class="menu-icon"><a>Menu</a></div>
+        <div class="dropdown hidden">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="ecosystem.html">Ecosystem</a>
+          <a href="hackathon.html">Hackathon</a>
+          <a href="community.html">Community / Join</a>
+          <a href="team.html">Team</a>
+          <a href="https://developer.rchain.coop/" target="_blank"
+            >Developers</a
+          >
+          <a href="newsletter.html" target="_blank">Newsletter</a>
+          <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
         </div>
       </div>
     </header>
     <!-- Navbar End -->
 
     <div class="bodyWrapper">
-      <div class="section" id="headerSection">
-        <div class="textWrapper">
+      <div class="topSection">
+        <div class="section">
+          <div class="top">
+            <div class="left">
+              <h1>Secure. Sustainable. Scalable.</h1>
+              <p>
+                RChain® is a cooperative building a blockchain platform and
+                social coordination technologies. It uses
+                <b>Casper proof of stake + rholang</b> and aims at becoming the
+                most powerfull and widely used smart contract platform.
+              </p>
+              <a
+                class="mainnet-live"
+                href="https://rchain.atlassian.net/wiki/spaces/CORE/pages/889192455/RNode-0.9.22+release+plan"
+                target="_blank"
+              >
+                <i></i>
+                Mainnet is live
+              </a>
+              <a href="get-started.html" class="btn-blue">Get Started</a>
+            </div>
+            <div class="right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section" class="headerSectionHome" id="headerSection">
+        <!--         <div class="textWrapper">
           <h1>Secure. Sustainable. Scalable.</h1>
           <br />
           <p>
@@ -131,7 +165,7 @@
           </p>
           <br />
           <a href="get-started.html" class="btn-blue">Get Started</a>
-        </div>
+        </div> -->
 
         <div class="vidyaWrapper">
           <video
@@ -181,12 +215,13 @@
         </ul>
       </div>
 
-      <div class="section" id="rhoSection">
-        <h1>The Rho Revolution</h1>
-        <h3>
+      <div class="section" id="rhoRevolutionSection">
+        <h1 class="rhoRevolution">The Rho Revolution</h1>
+        <h3 class="">
           A breakthrough concurrent computational system that unshackles the
           blockchain
         </h3>
+        <br />
         <div class="textWrapper">
           <h2>A Complete System</h2>
           <p>
@@ -220,56 +255,81 @@
             system, resulting in unlimited organic growth.
           </p>
         </div>
-        <div>
+        <div class="text-center">
           <br />
           <a href="platform.html" class="btn-blue2"
             >Learn more about RChain and Rholang</a
           >
         </div>
       </div>
-      <div class="section" id="communitySection">
-        <div>
-          <h2>Engage with the Community</h2>
-          <p>
-            Community is the heart of RChain. The cooperative model unites us in
-            building technology and social tools. Aimed at lifting our world up
-            and effecting real, positive change, we will help each other
-            flourish.
-          </p>
-        </div>
 
-        <div class="flexWrapper">
+      <div id="communitySection">
+        <div class="section">
           <div>
-            <a href="https://github.com/rchain/" target="_blank"
-              ><img src="assets/github@3x.png"
-            /></a>
+            <h2>Engage with the Community</h2>
+            <p>
+              Community is the heart of RChain. The cooperative model unites us
+              in building technology and social tools. Aimed at lifting our
+              world up and effecting real, positive change, we will help each
+              other flourish.
+            </p>
           </div>
-          <div>
-            <a href="https://twitter.com/rchain_coop" target="_blank"
-              ><img src="assets/twitter@3x.png"
-            /></a>
-          </div>
-          <div>
-            <a
-              href="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w"
-              target="_blank"
-              ><img src="assets/youtube@3x.png"
-            /></a>
-          </div>
-          <div>
-            <a href="https://discord.gg/NWkQnfH" target="_blank"
-              ><img src="assets/discord@3x.png"
-            /></a>
+
+          <div class="flexWrapper social">
+            <div>
+              <a href="https://github.com/rchain" target="_blank">
+                <img src="assets/github@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/rchain_coop" target="_blank">
+                <img src="assets/twitter@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w"
+                target="_blank"
+              >
+                <img src="assets/youtube@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/company/rchain-cooperative/"
+                target="_blank"
+              >
+                <img src="assets/linkedin@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://t.me/rchaincoop" target="_blank">
+                <img src="assets/telegram@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://discord.gg/NWkQnfH" target="_blank">
+                <img src="assets/discord@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.reddit.com/r/RChain/" target="_blank">
+                <img src="assets/reddit@3x.png" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="section" id="getStartedSection">
-        <div>
-          <h2>Ready to Effect Change?</h2>
-        </div>
-        <div>
-          <a href="get-started.html" class="btn-blue">Get Started</a>
+      <div id="rhoSection">
+        <div class="section">
+          <div>
+            <h2>Ready to Effect Change?</h2>
+            <br />
+          </div>
+          <div class="fc">
+            <a href="get-started.html" class="btn-blue">Get Started</a>
+          </div>
         </div>
       </div>
     </div>
@@ -279,18 +339,13 @@
         <div class="center"><img src="assets/logo_red.png" /></div>
         <p>copyright &copy; 2020 RChain Cooperative All rights reserved</p>
         <p>RChain is a registered trademark of RChain Cooperative</p>
-        <div>
-          <p>
-            <a
-              href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf"
-              >Privacy terms and conditions</a
-            >
-          </p>
-        </div>
+        <a
+          href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf"
+          >Privacy terms and conditions</a
+        >
       </div>
     </div>
 
     <script src="js/rchain.coop_Browser.js"></script>
-    <script src="js/homepage_Browser.js"></script>
   </body>
 </html>

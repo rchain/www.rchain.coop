@@ -1,0 +1,58 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  & > div {
+    margin-right: 5px;
+    width: 400px;
+  }
+  .bg {
+    width: 95%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    transition: background-size ease-in-out 0.2s;
+    &:hover {
+      background-size: 340px auto;
+    }
+    border: 1px solid #ddd;
+    &.dappy {
+      background-image: url('../assets/ecosystem/dappy.jpg');
+    }
+    &.revdefine {
+      background-image: url('../assets/ecosystem/revdefine.jpg');
+    }
+    &.rchaintoken {
+      background-image: url('../assets/ecosystem/rchaintoken.jpg');
+    }
+    &.makemint {
+      background-image: url('../assets/ecosystem/makemint.jpg');
+    }
+    &.ruiwallet {
+      background-image: url('../assets/ecosystem/ruiwallet.jpg');
+    }
+    &.capowallet {
+      background-image: url('../assets/ecosystem/capowallet.jpg');
+    }
+    &.rchaincommunity {
+      background-image: url('../assets/ecosystem/rchaincommunity.jpg');
+    }
+    &.tomislavwallet {
+      background-image: url('../assets/ecosystem/tomislavwallet.jpg');
+    }
+    &.myrchainwallet {
+      background-image: url('../assets/ecosystem/myrchainwallet.jpg');
+    }
+    &.rholang {
+      background-image: url('../assets/ecosystem/rholang.jpg');
+    }
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+  p {
+    margin-top: 0px;
+    font-size: 1.1rem;
+  }
+}

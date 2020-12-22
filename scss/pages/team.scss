@@ -1,0 +1,305 @@
+.pageTeam {
+  .section#rchainSection {
+    padding: 7rem 2rem;
+    background-image: url('../assets/hero-background-leadership.png');
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+
+  .section#rchainSection p {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+  }
+
+  .section#rchainSection > .btn-blue2 {
+    display: block;
+    margin: auto;
+    max-width: 460px;
+    width: 100%;
+  }
+
+  .section#rchainSection > h1 {
+    font-size: 2.4rem;
+    margin: 0 auto 0.7rem;
+    text-align: center;
+  }
+
+  .section#quoteSection {
+    background: #42022e;
+    padding: 4rem;
+  }
+
+  .section#quoteSection p {
+    color: white;
+    font-family: Montserrat-LightItalic;
+    font-size: 2rem;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 80rem;
+  }
+
+  .section#quoteSection p span {
+    color: #fcb415;
+    font-family: Montserrat-SemiBold;
+    font-size: 5rem;
+    position: absolute;
+  }
+
+  .section#quoteSection p > span:nth-child(1) {
+    left: -2rem;
+    top: -1rem;
+  }
+
+  .section#quoteSection p > span:nth-child(2) {
+    bottom: -4rem;
+    right: 0;
+  }
+
+  .section#quoteSection h6 {
+    color: white;
+    font-size: 1rem;
+    margin: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .section#leadershipSection {
+    padding: 4rem 2rem;
+    font-family: Dosis-Light;
+  }
+
+  .section#leadershipSection .directorsTitle {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .section#leadershipSection .flexWrapper {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5rem;
+  }
+
+  .section#leadershipSection .flexWrapper .card {
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin: 1.25rem 0;
+  }
+
+  .section#leadershipSection .flexWrapper .imgWrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .section#leadershipSection .flexWrapper .card img {
+    display: block;
+    width: 100%;
+  }
+
+  .section#leadershipSection .flexWrapper .card .bio {
+    position: absolute;
+    padding: 2rem;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+
+  .section#leadershipSection .flexWrapper .card div.bio p {
+    height: 100%;
+    font-size: 18px;
+    overflow-y: auto;
+    margin: 0;
+  }
+  .section#leadershipSection
+    .flexWrapper
+    .card:nth-child(n):hover
+    .bio:nth-child(n) {
+    opacity: 1;
+  }
+
+  .section#leadershipSection .flexWrapper .card .textWrapper {
+    padding: 1rem 0;
+    color: black;
+  }
+
+  .section#leadershipSection .flexWrapper .card .textWrapper span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section#leadershipSection .flexWrapper .card .textWrapper span a {
+    width: 7%;
+    margin: 0.75rem;
+  }
+
+  .section#leadershipSection .flexWrapper .card .textWrapper h4 {
+    font-size: 24px;
+    width: 70%;
+    margin: 0;
+  }
+
+  /* SCROLLBAR */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  @media (max-width: 1500px) {
+    .section#quoteSection p {
+      width: 80vw;
+    }
+    .section#quoteSection p > span:nth-child(2) {
+      right: -2rem;
+      bottom: -3rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .section#rchainSection > p {
+      width: 90%;
+    }
+
+    .section#leadershipSection .flexWrapper .card {
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .section#rchainSection {
+      padding: 4rem;
+    }
+    .section#rchainSection > p {
+      font-size: 1.25rem;
+    }
+    .section#rchainSection > h1 {
+      font-size: 1.6rem;
+    }
+    .section#rchainSection > h1 {
+      margin: 0 auto 0.2rem;
+    }
+    .section#leadershipSection .flexWrapper .card .textWrapper h4 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    p,
+    li {
+      font-size: 1.25rem;
+    }
+    .section#rchainSection {
+      padding: 2rem 0.7rem;
+    }
+
+    .section#leadershipSection .directorsTitle {
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+
+    .section#leadershipSection .flexWrapper {
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2rem;
+    }
+
+    .section#leadershipSection .flexWrapper .card .bio {
+      padding: 1.5rem;
+    }
+
+    .section#leadershipSection .flexWrapper .card div.bio p {
+      font-size: 0.9rem;
+    }
+    .section#quoteSection p {
+      font-size: 3.3vw;
+      width: 80vw;
+    }
+    .section#quoteSection p span {
+      font-size: 10vw;
+    }
+    .section#quoteSection p > span:nth-child(2) {
+      right: 0;
+    }
+
+    .section#rchainSection > a {
+      font-size: 4vw;
+      padding: 3vw 0;
+      width: 90%;
+    }
+    .section#leadershipSection {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .section#rchainSection > h1 {
+      font-size: 7.5vw;
+    }
+    .section#rchainSection > p {
+      font-size: 1rem;
+    }
+
+    .section#leadershipSection .directorsTitle {
+      font-size: 2rem;
+    }
+
+    .section#leadershipSection .flexWrapper .card {
+      width: 98%;
+    }
+
+    .section#leadershipSection .flexWrapper .card div.bio p {
+      font-size: 1rem;
+    }
+    .section#quoteSection {
+      padding: 2rem;
+    }
+    .section#quoteSection p > span:nth-child(1) {
+      left: -1.5rem;
+    }
+    .section#quoteSection h6 {
+      margin: 1rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .section#leadershipSection .directorsTitle {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .section#quoteSection p > span:nth-child(2) {
+      bottom: -2rem;
+      right: 0;
+    }
+  }
+}

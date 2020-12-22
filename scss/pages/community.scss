@@ -1,0 +1,196 @@
+.pageCommunity {
+  p a {
+    font-family: 'Dosis-Medium';
+    text-decoration: none;
+  }
+
+  .btn-blue2 {
+    padding: 1.2rem 3rem;
+  }
+
+  .ica-logo {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section#rchainSection {
+    background-image: linear-gradient(to top, #42022e, #ab0433);
+    padding: 4rem;
+  }
+
+  .section#rchainSection > h1 {
+    color: white;
+    font-size: 2.4rem;
+    margin: 0 auto 0.7rem;
+    text-align: center;
+  }
+
+  .section#rchainSection > p {
+    color: white;
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+
+  .section#posSection {
+    padding: 0rem 8rem;
+  }
+  .section#posSection > .textWrapper div:nth-child(3) {
+    text-align: center;
+  }
+
+  .section#posSection .flexWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .section#posSection .flexWrapper .imgWrapper {
+    margin-bottom: 1.5rem;
+    order: 2;
+    width: 45%;
+  }
+
+  .section#posSection .flexWrapper .imgWrapper img {
+    display: block;
+    left: 6rem;
+    position: relative;
+    top: 6rem;
+    width: 13rem;
+  }
+
+  .section#posSection .flexWrapper .textWrapper {
+    width: 45%;
+  }
+
+  /* .section#posSection .flexWrapper .textWrapper h2 {
+        color: black;
+        font-size: 2rem;
+        margin-bottom: .7rem;
+    } */
+
+  .section#posSection .flexWrapper .textWrapper ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .section#posSection .flexWrapper .textWrapper ul li {
+    margin-bottom: 1rem;
+  }
+
+  .section#posSection .flexWrapper .textWrapper ul li span:nth-child(1) {
+    background: #fcb415;
+    border-radius: 50px;
+    display: inline-block;
+    height: 15px;
+    margin-right: 20px;
+    width: 15px;
+  }
+
+  .section#posSection .flexWrapper .textWrapper .btn-blue2 {
+    max-width: 460px;
+    width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    .section#rchainSection > p {
+      width: 90%;
+    }
+
+    .section#posSection .flexWrapper .imgWrapper {
+      width: 47%;
+    }
+    .section#posSection .flexWrapper .textWrapper {
+      width: 47%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .section#rchainSection > h1 {
+      font-size: 1.6rem;
+      margin: 0 auto 0.2rem;
+    }
+
+    .section#rchainSection > p {
+      font-size: 1rem;
+    }
+
+    .section#posSection {
+      padding: 4rem;
+    }
+
+    .section#posSection .flexWrapper .textWrapper ul li {
+      margin-bottom: 1.2rem;
+    }
+    .section#posSection .flexWrapper .imgWrapper img {
+      left: auto;
+      margin: auto;
+      top: 3rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section#rchainSection {
+      padding: 2rem 0.7rem;
+    }
+    .section#posSection {
+      padding: 2rem 0.7rem;
+    }
+    .section#posSection .flexWrapper {
+      display: block;
+    }
+    .section#posSection .flexWrapper .imgWrapper {
+      order: 1;
+      width: auto;
+    }
+    .section#posSection .flexWrapper .imgWrapper img {
+      top: auto;
+      width: 8rem;
+    }
+    .section#posSection .flexWrapper .textWrapper {
+      width: auto;
+      text-align: center;
+    }
+    .section#posSection .flexWrapper .textWrapper p {
+      margin: auto;
+      width: 90%;
+    }
+    .section#posSection .flexWrapper .textWrapper ul {
+      padding: 0 4rem;
+    }
+    .section#posSection .flexWrapper .textWrapper ul li span:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .section .textWrapper,
+    .section .imgWrapper {
+      display: block;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .btn-blue2 {
+      display: block;
+      margin: auto;
+      width: 95%;
+    }
+    .section#rchainSection > h1 {
+      font-size: 7.5vw;
+    }
+    .section#posSection .flexWrapper .textWrapper ul {
+      padding: 0 0 0 1.5rem;
+    }
+  }
+}

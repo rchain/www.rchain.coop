@@ -1,0 +1,73 @@
+.rchainSectionTop {
+  background: linear-gradient(20deg, #111, #111116);
+  color: #fff;
+  margin: 0px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  .inner {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    .left {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 20px;
+    }
+    .right {
+      grid-row: 1;
+      grid-column: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+      }
+    }
+  }
+  .img.ecosystem {
+    background-image: url('../assets/ecosystem.jpg');
+  }
+  &.red {
+    background-image: linear-gradient(to top, #42022e, #ab0433);
+  }
+  .section {
+    background: transparent;
+  }
+  h1 {
+    font-size: 2.8rem;
+    margin-top: 0px;
+  }
+  h3 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  h3:last-of-type {
+    margin-bottom: 0px;
+  }
+  p {
+    font-size: 1.6rem;
+    margin: 0px;
+    padding-bottom: 40px;
+  }
+}
+.rchainSectionTopCurve {
+  margin: 0px;
+  background: url(../assets/curve.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+  height: 120px;
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .rchainSectionTopCurve {
+    background-position: -200px 0px;
+  }
+}

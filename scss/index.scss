@@ -1,0 +1,28 @@
+@import './pages/community.scss';
+@import './pages/hackaton.scss';
+@import './pages/index.scss';
+@import './pages/platform.scss';
+@import './pages/team.scss';
+
+@import './rchainSectionTop.scss';
+@import './projects.scss';
+@import './nav.scss';
+@import './communitySection.scss';
+@import './rhoSection.scss';
+
+@media (max-width: 960px) {
+  p,
+  li {
+    font-size: 1.2rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

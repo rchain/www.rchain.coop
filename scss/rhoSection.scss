@@ -1,0 +1,116 @@
+#rhoSection {
+  background: linear-gradient(15deg, #42022e, #7a0a35);
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: transparent;
+    & > div:nth-child(1) {
+      text-align: center;
+    }
+
+    & > div:nth-child(1) h3 {
+      color: #ff4143;
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem;
+    }
+    & > div:nth-child(1) h2 {
+      color: white;
+      font-size: 2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    & > div:nth-child(1) p {
+      color: white;
+      margin: 0 0 6rem;
+    }
+
+    & > .flexWrapper h1 {
+      color: #daacd5;
+      font-family: Montserrat-Regular;
+      font-size: 2.3rem;
+      margin-right: 2rem;
+      text-transform: uppercase;
+      width: 30%;
+    }
+
+    & > .flexWrapper > .flexWrapper {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 70%;
+    }
+
+    & > .flexWrapper > .flexWrapper p {
+      background: white;
+      border-radius: 0.3rem;
+      margin: 0 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
+      width: 47%;
+    }
+
+    & > .flexWrapper:nth-child(2) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #rhoSection {
+    & > .flexWrapper h1 {
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #rhoSection {
+    .section {
+      & > .flexWrapper h1 {
+        font-size: 1.7rem;
+      }
+      & > .flexWrapper > .flexWrapper p {
+        width: 46%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #rhoSection {
+    .section {
+      padding: 2rem 0.7rem;
+      & > div:nth-child(1) p {
+        margin: 0 0 2rem;
+      }
+      & > div:nth-child(1) h2 {
+        font-size: 1.6rem;
+      }
+      & > .flexWrapper:nth-child(2) {
+        display: block;
+      }
+      & > .flexWrapper:nth-child(3) {
+        display: block;
+      }
+      & > .flexWrapper h1 {
+        text-align: center;
+        width: auto;
+      }
+      & > .flexWrapper > .flexWrapper {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #rhoSection {
+    & > .flexWrapper h1 {
+      font-size: 5vw;
+    }
+    & > .flexWrapper > .flexWrapper {
+      display: block;
+    }
+    & > .flexWrapper > .flexWrapper p {
+      width: auto;
+    }
+  }
+}

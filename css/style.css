@@ -186,7 +186,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 0% 100% 0%;
   grid-template-rows: 100%;
   padding-left: 50px;
   padding-right: 50px;
@@ -224,6 +224,63 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  position: relative;
+  padding-left: 262px;
+}
+.pageIndex .top .left .timeline-cont {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.pageIndex .top .left .timeline-cont .timeline {
+  position: relative;
+  height: 262px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.pageIndex .top .left .timeline-cont .timeline > div {
+  position: relative;
+  padding-left: 10px;
+}
+.pageIndex .top .left .timeline-cont .timeline > div .event {
+  font-weight: 800;
+  font-size: 1.2rem;
+  transform: translateY(-8px);
+  display: block;
+}
+.pageIndex .top .left .timeline-cont .timeline > div .date {
+  transform: translateY(-4px);
+  display: block;
+  font-size: 1rem;
+}
+.pageIndex .top .left .timeline-cont .timeline > div:before {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  content: "";
+}
+.pageIndex .top .left .timeline-cont .timeline:before {
+  width: 2px;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
 }
 .pageIndex .top .left h1,
 .pageIndex .top .left p {
@@ -307,8 +364,10 @@
   width: 70%;
 }
 .pageIndex #rhoRevolutionSection {
-  background: linear-gradient(15deg, #42022e, #7a0a35);
-  color: #FFF;
+  background-image: url("../assets/rho.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -338,7 +397,7 @@
 @media (max-width: 1200px) {
   .pageIndex .top {
     height: 600px;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 0% 100% 0%;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -374,11 +433,37 @@
     height: inherit;
     grid-template-columns: 0% 100% 0%;
   }
+  .pageIndex .top .left {
+    padding-left: 0px;
+  }
   .pageIndex .top .left h1 {
     font-size: 2.4rem;
   }
   .pageIndex .top .left p {
     font-size: 1.5rem;
+  }
+  .pageIndex .top .left .timeline-cont {
+    position: relative;
+    height: auto;
+  }
+  .pageIndex .top .left .timeline-cont .timeline {
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 60px;
+  }
+  .pageIndex .top .left .timeline-cont .timeline:before {
+    height: 2px;
+    width: 100%;
+  }
+  .pageIndex .top .left .timeline-cont .timeline > div {
+    padding: 0px;
+    text-align: center;
+  }
+  .pageIndex .top .left .timeline-cont .timeline > div:before {
+    top: -23px;
+    left: 50%;
   }
   .pageIndex #headerSection {
     padding: 8rem 4rem 0;
@@ -1787,7 +1872,9 @@ p, ul, li {
   }
 }
 #rhoSection {
-  background: linear-gradient(15deg, #42022e, #7a0a35);
+  background-image: url("../assets/rho.jpg");
+  background-position: center;
+  background-size: cover;
 }
 #rhoSection .section {
   padding-top: 100px;

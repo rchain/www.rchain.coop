@@ -15,7 +15,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 0% 100% 0%;
     grid-template-rows: 100%;
     padding-left: 50px;
     padding-right: 50px;
@@ -53,6 +53,67 @@
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
+      position: relative;
+      padding-left: 262px;
+      .timeline-cont {
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        .timeline {
+          position: relative;
+          height: 262px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-direction: column;
+          & > div {
+            position: relative;
+            padding-left: 10px;
+            .event {
+              font-weight: 800;
+              font-size: 1.2rem;
+              transform: translateY(-8px);
+              display: block;
+            }
+            .date {
+              transform: translateY(-4px);
+              display: block;
+              font-size: 1rem;
+            }
+            &:last-of-type {
+              &:before {
+              }
+            }
+            &:before {
+              width: 8px;
+              height: 8px;
+              border-radius: 8px;
+              display: block;
+              background-color: #fff;
+              position: absolute;
+              top: -2px;
+              left: -3px;
+              content: "";
+            }
+          }
+          &:before {
+            width: 2px;
+            height: 100%;
+            display: block;
+            background-color: #fff;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: "";
+          }
+        }
+      }
       h1,
       p {
         margin: 0px;
@@ -148,8 +209,10 @@
   }
 
   #rhoRevolutionSection {
-    background: linear-gradient(15deg, #42022e, #7a0a35);
-    color: #FFF;
+    background-image: url("../assets/rho.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
     padding-top: 20px;
     padding-bottom: 40px;
     .section {
@@ -183,7 +246,7 @@
   @media (max-width: 1200px) {
     .top {
       height: 600px;
-      grid-template-columns: 5% 90% 5%;
+      grid-template-columns: 0% 100% 0%;
       padding-left: 0px;
       padding-right: 0px;
       .left {
@@ -224,11 +287,35 @@
       height: inherit;
       grid-template-columns: 0% 100% 0%;
       .left {
+        padding-left: 0px;
         h1 {
           font-size: 2.4rem;
         }
         p {
           font-size: 1.5rem;
+        }
+        .timeline-cont {
+          position: relative;
+          height: auto;
+          .timeline {
+            height: auto;
+            flex-direction: row;
+            width: 100%;
+            padding-top: 20px;
+            margin-top: 60px;
+            &:before {
+              height: 2px;
+              width: 100%;
+            }
+            & > div {
+              padding: 0px;
+              text-align: center;
+              &:before {
+                top: -23px;
+                left: 50%;
+              }
+            }
+          }
         }
       }
     }
@@ -291,14 +378,15 @@
       padding-top: 85px;
       .left h1 {
         font-size: 2rem;
-        text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
       }
       .left p {
         font-size: 1.2rem;
         background: linear-gradient(
           15deg,
           rgba(99, 12, 44, 0.8),
-          rgba(173, 12, 55, 0.4));
+          rgba(173, 12, 55, 0.4)
+        );
       }
     }
     #headerSection {

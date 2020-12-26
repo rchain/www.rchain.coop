@@ -1,5 +1,7 @@
 #rhoSection {
-  background: linear-gradient(15deg, #42022e, #7a0a35);
+  background-image: url("../assets/rho.jpg");
+  background-position: center;
+  background-size: cover;
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -38,7 +40,7 @@
     }
     & > .flexWrapper > .flexWrapper p {
       border: 1px solid #80113a;
-      background: rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.4);
       border-radius: 0.3rem;
       margin: 0 0.5rem 1rem;
       width: 47%;
@@ -75,7 +77,7 @@
         display: block;
         width: 100%;
       }
-      & > .flexWrapper  {
+      & > .flexWrapper {
         width: 100%;
         display: block;
         & > .flexWrapper {

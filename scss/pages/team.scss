@@ -1,4 +1,17 @@
 .pageTeam {
+  .rchainSectionTop {
+    background: linear-gradient(15deg, #42022e, #7a0a35);
+    .inner {
+      .left {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        p {
+          font-size: 1.3rem;
+          padding: 30px 0px;
+        }
+      }
+    }
+  }
   .section#rchainSection {
     padding: 7rem 2rem;
     background-image: url('../assets/hero-background-leadership.png');
@@ -34,7 +47,6 @@
 
   .section#quoteSection p {
     color: white;
-    font-family: Montserrat-LightItalic;
     font-size: 2rem;
     margin: auto;
     position: relative;
@@ -44,7 +56,6 @@
 
   .section#quoteSection p span {
     color: #fcb415;
-    font-family: Montserrat-SemiBold;
     font-size: 5rem;
     position: absolute;
   }
@@ -69,7 +80,6 @@
 
   .section#leadershipSection {
     padding: 4rem 2rem;
-    font-family: Dosis-Light;
   }
 
   .section#leadershipSection .directorsTitle {

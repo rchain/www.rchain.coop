@@ -1,6 +1,5 @@
 .pageCommunity {
   p a {
-    font-family: 'Dosis-Medium';
     text-decoration: none;
   }
 
@@ -11,8 +10,6 @@
   .ica-logo {
     width: 200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .section#rchainSection {
@@ -36,9 +33,6 @@
     margin-bottom: 2rem;
   }
 
-  .section#posSection {
-    padding: 0rem 8rem;
-  }
   .section#posSection > .textWrapper div:nth-child(3) {
     text-align: center;
   }

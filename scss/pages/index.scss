@@ -3,7 +3,7 @@
     background: linear-gradient(20deg, #111, #111116);
     margin: 0px;
     padding-bottom: 40px;
-    background: url(../assets/mountaindark.jpg);
+    background: url(../assets/mountaindark1920.jpg);
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
@@ -141,7 +141,6 @@
 
     & > ul li p {
       display: inline-block;
-      font-family: Montserrat-ExtraLight;
       font-size: 0.95rem;
       margin-top: 0;
       width: 70%;
@@ -149,16 +148,21 @@
   }
 
   #rhoRevolutionSection {
-    h1.rhoRevolution {
-      margin: 0 auto 0;
-      margin-bottom: 0;
-      font-size: 3rem;
+    background: linear-gradient(15deg, #42022e, #7a0a35);
+    color: #FFF;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    .section {
+      background: transparent;
+      h1.rhoRevolution {
+        margin: 0 auto 0;
+        margin-bottom: 0;
+        font-size: 3rem;
+      }
     }
   }
 
   #getStartedSection {
-    background: #42022e;
-    border-bottom: 1px solid white;
     padding: 2rem 0 3rem;
     & > div:nth-child(1) {
       margin: 0 auto 2rem;
@@ -167,7 +171,6 @@
     }
 
     & > div:nth-child(1) h2 {
-      color: white;
       font-size: 2rem;
       margin: 0.5rem 0 0.5rem;
     }
@@ -284,6 +287,20 @@
   }
 
   @media (max-width: 767px) {
+    .top {
+      padding-top: 85px;
+      .left h1 {
+        font-size: 2rem;
+        text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+      }
+      .left p {
+        font-size: 1.2rem;
+        background: linear-gradient(
+          15deg,
+          rgba(99, 12, 44, 0.8),
+          rgba(173, 12, 55, 0.4));
+      }
+    }
     #headerSection {
       padding: 2rem 0.7rem 0;
       .textWrapper {

@@ -33,6 +33,9 @@
   .img.ecosystem {
     background-image: url('../assets/ecosystem.jpg');
   }
+  .img.platform {
+    background-image: url('../assets/platform.jpg');
+  }
   &.red {
     background-image: linear-gradient(to top, #42022e, #ab0433);
   }
@@ -44,6 +47,7 @@
     margin-top: 0px;
   }
   h3 {
+    font-size: 1.4rem;
     margin-top: 3px;
     margin-bottom: 0px;
     padding-bottom: 10px;
@@ -52,9 +56,10 @@
     margin-bottom: 0px;
   }
   p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: 0px;
     padding-bottom: 40px;
+    font-weight: 400;
   }
 }
 .rchainSectionTopCurve {
@@ -67,7 +72,22 @@
   width: 100%;
 }
 @media (max-width: 960px) {
-  .rchainSectionTopCurve {
-    background-position: -200px 0px;
+  .rchainSectionTop {
+    .inner {
+      display: block;
+      .left {
+        padding-left: 0px;
+        h1 {
+          margin-bottom: 5px;
+        }
+      }
+      .right {
+        justify-content: flex-start;
+        .img {
+          width: 240px;
+          height: 240px;
+        }
+      }
+    }
   }
 }

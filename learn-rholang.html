@@ -1,153 +1,211 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-6B7FD7W88H');
+      gtag("config", "G-6B7FD7W88H");
     </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <title>get-started</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <meta name="google-site-verification" content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg" />
-    <link rel='stylesheet' href='css/layout.css' />
-    <link rel='stylesheet' href='css/fonts.css' />
-    <link rel='stylesheet' href='css/get-started.css' />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <meta
+      name="google-site-verification"
+      content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+
     <link rel="shortcut icon" href="assets/favicon-red.png" />
+
+    <meta
+      name="description"
+      content="RChain is a cooperative building a blockchain platform and
+    social coordination technologies."
+    />
     <meta property="og:title" content="RChain" />
     <meta property="og:type" content="website" />
-    <meta name="description" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="https://rchain.coop/learn-rholang" />
-    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="RChain is a cooperative building a blockchain platform and
+    social coordination technologies."
+    />
+    <meta property="og:url" content="https://rchain.coop" />
+    <meta property="og:image" content="https://rchain.coop/og_index.jpg" />
+    <meta property="og:image:height" content="565" />
+    <meta property="og:image:width" content="1080" />
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="RChain" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="https://rchain.coop/learn-rholang" />
-    <meta name="twitter:description" content="" />
+    <meta name="twitter:creator" content="@rchain_coop" />
+    <meta name="twitter:url" content="https://rchain.coop" />
+    <meta name="twitter:site" content="https://rchain.coop" />
+    <meta
+      name="twitter:description"
+      content="RChain is a cooperative building a blockchain platform and
+    social coordination technologies."
+    />
+  </head>
 
-</head>
-
-<body>
+  <body class="pageGetStarted">
     <!--  Navbar Start -->
     <header>
-        <div class="nav" id="nav">
-            <div id="navClose" onclick="navClose()">X</div>
-            <div class="wrapper">
-                <div class="item">
-                    <img src="assets/logo_white.png" class="white" id="white">
-                    <img src="assets/logo_red.png" class="red" id="red">
-                </div>
-                <div class="item links" onclick="">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="item links" onclick="">
-                    <a href="platform.html">Platform</a>
-                </div>
-                <div class="item links" onclick="">
-                    <a href="ecosystem.html">Ecosystem</a>
-                </div>
-                <div class="item links" onclick="">
-                    <a href="hackathon.html">Hackathon</a>
-                </div>
-                <div class="item links" id="dropdown">
-                    <a href="javascript:void(0)">Community<span class="arrow">&rsaquo;</span></a>
-                    <div class="dropdown">
-                        <a href="community.html">Community Overview</a>
-                        <a href="team.html">Team</a>
-                        <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
-                        <a href="https://developer.rchain.coop/" target="_blank">Developers</a>
-                        <a href="newsletter.html" target="_blank">Newsletter</a>
-                    </div>
-                </div>
-                <div class="item links">
-                    <a href="community.html" class="btn-blue">Join Cooperative</a>
-                </div>
-                <div class="item" id="hamburger">
-                    <a href="javascript:void(0)"><span>
-                            <p id="bar1"></p>
-                            <p id="bar2"></p>
-                            <p id="bar3"></p>
-                        </span></a>
-                </div>
+      <div class="nav" id="nav">
+        <div class="wrapper">
+          <div class="item img">
+            <img src="assets/logo_white_small.png" id="white" />
+            <img src="assets/logo_red_small.png" id="red" />
+          </div>
+          <div class="item links" onclick="">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="item links" onclick="">
+            <a href="platform.html">Platform</a>
+          </div>
+          <div class="item links" onclick="">
+            <a href="ecosystem.html">Ecosystem</a>
+          </div>
+          <div class="item links" onclick="">
+            <a href="hackathon.html">Hackathon</a>
+          </div>
+          <div class="item links with-dropdown">
+            <a href="javascript:void(0)"
+              >Community<span class="arrow">&rsaquo;</span></a
+            >
+            <div class="dropdown-container">
+              <div class="dropdown">
+                <a href="community.html">Community Overview</a>
+                <a href="team.html">Team</a>
+                <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
+                <a href="https://developer.rchain.coop/" target="_blank"
+                  >Developers</a
+                >
+                <a href="newsletter.html" target="_blank">Newsletter</a>
+              </div>
             </div>
+          </div>
+          <div class="item links long">
+            <a href="community.html" class="btn-blue">Join Cooperative</a>
+          </div>
         </div>
-    </header> <!-- Navbar End -->
-    <!--
+      </div>
+      <div class="nav-mobile">
+        <div class="menu-icon"><a>Menu</a></div>
+        <div class="dropdown hidden">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="ecosystem.html">Ecosystem</a>
+          <a href="hackathon.html">Hackathon</a>
+          <a href="community.html">Community / Join</a>
+          <a href="team.html">Team</a>
+          <a href="https://developer.rchain.coop/" target="_blank"
+            >Developers</a
+          >
+          <a href="newsletter.html" target="_blank">Newsletter</a>
+          <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
     <div class="bodyWrapper">
-        <div class="section" id="headerSection">
-        <div class="textWrapper">
-            <h1>Learn Rholang</h1>
-    </div>
-</div>
--->
-
-<div class="section" id="developerSection">
-
-    <div class="tabContent active" id="developerContent">
-
-        <div class="flexWrapper">
+      <div class="rchainSectionTop red">
+        <div class="section">
+          <h1>Get started with RChain<sup>&reg;</sup></h1>
+        </div>
+      </div>
+      <div class="section" id="developerSection">
+        <div class="tabContent active" id="developerContent">
+          <div class="flexWrapper">
             <div class="textWrapper">
-                <h2>Build DApps with RChain<sup>&reg;</sup></h2>
-                <p>RChain is a platform for developers to build confidently and rapidly. With just a few lines of code, your first RChain DApp can be up and transacting on the blockchain.</p>
-                <h6>Helpful pages:</h6>
-                <div class="list">
-                  <div>
-                      <p>+</p>
-                      <p><a href="https://rholang.github.io/">Tobias's Rholang page</a></p>
-                  </div>
-                    <div>
-                        <p>+</p>
-                        <p><a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md">Tutorial by RChain Platform Devs</a></p>
-                    </div>
-                    <div>
-                        <p>+</p>
-                        <p><a href="https://github.com/JoshOrndorff/LearnRholangByExample">Joshy Orndorff's Rholang Tutorial</a></p>
-                    </div>
-                    <div>
-                        <p>+</p>
-                        <p><a href="https://youtu.be/7tW1fAWg6s8">Greg Meredith's Devcon3 Rholang talk</a></p>
-                    </div>
+              <h2>Build DApps with RChain<sup>&reg;</sup></h2>
+              <p>
+                RChain is a platform for developers to build confidently and
+                rapidly. With just a few lines of code, your first RChain DApp
+                can be up and transacting on the blockchain.
+              </p>
+              <h6>Helpful pages:</h6>
+              <div class="list">
+                <div>
+                  <p>+</p>
+                  <p>
+                    <a href="https://rholang.github.io/"
+                      >Tobias's Rholang page</a
+                    >
+                  </p>
                 </div>
+                <div>
+                  <p>+</p>
+                  <p>
+                    <a
+                      href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md"
+                      >Tutorial by RChain Platform Devs</a
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p>+</p>
+                  <p>
+                    <a
+                      href="https://github.com/JoshOrndorff/LearnRholangByExample"
+                      >Joshy Orndorff's Rholang Tutorial</a
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p>+</p>
+                  <p>
+                    <a href="https://youtu.be/7tW1fAWg6s8"
+                      >Greg Meredith's Devcon3 Rholang talk</a
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
-<!--            <div class="imgWrapper"><img src="assets/get-started/1_GIF3_960x800.gif"></div> -->
+            <!--            <div class="imgWrapper"><img src="assets/get-started/1_GIF3_960x800.gif"></div> -->
+          </div>
         </div>
+      </div>
     </div>
-
-    <div class="tabContent" id="validatorContent">
-        <div class="flexWrapper">
-            <div class="textWrapper">
-                <h2>More information for validators is coming soon!</h2>
-                <p>Mainnet is currently running with 9 Co-op run validator nodes plus one Co-op member run node.</p>
-            </div>
-            <div class="imgWrapper"><img src="assets/get-started/2_Image1_960x800.png"></div>
-        </div>
-    </div>
-
-</div>
-
-    </div>
-
 
     <div id="footer">
+      <div class="wrapper">
         <div class="wrapper">
-            <div class="center"><img src="assets/logo_red.png"></div>
-            <p>copyright &copy; 2020 RChain Cooperative All rights reserved</p>
-            <p>RChain is a registered trademark of RChain Cooperative</p>
-            <div>
-                <p><a href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf">Privacy terms and conditions</a>
-            </div>
+          <div>
+            <div id="submitSuccess"></div>
+            <div id="submitFail"></div>
+          </div>
         </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="center"><img src="assets/logo_red.png" /></div>
+        <p>copyright &copy; 2020 RChain Cooperative All rights reserved</p>
+        <p>RChain is a registered trademark of RChain Cooperative</p>
+        <div>
+          <p>
+            <a
+              href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf"
+              >Privacy terms and conditions</a
+            >
+          </p>
+        </div>
+      </div>
     </div>
-
     <script src="js/rchain.coop_Browser.js"></script>
-    <script src="js/homepage_Browser.js"></script>
-
-</body>
-
+  </body>
 </html>

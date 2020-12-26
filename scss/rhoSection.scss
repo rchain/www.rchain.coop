@@ -10,7 +10,7 @@
 
     & > div:nth-child(1) h3 {
       color: #ff4143;
-      font-size: 1.2rem;
+      font-size: 1.8rem;
       margin: 0 0 0.5rem;
     }
     & > div:nth-child(1) h2 {
@@ -26,10 +26,8 @@
 
     & > .flexWrapper h1 {
       color: #daacd5;
-      font-family: Montserrat-Regular;
       font-size: 2.3rem;
       margin-right: 2rem;
-      text-transform: uppercase;
       width: 30%;
     }
 
@@ -38,13 +36,17 @@
       flex-wrap: wrap;
       width: 70%;
     }
-
     & > .flexWrapper > .flexWrapper p {
-      background: white;
+      border: 1px solid #80113a;
+      background: rgba(0,0,0,0.4);
       border-radius: 0.3rem;
       margin: 0 0.5rem 1rem;
-      padding: 0.8rem 1.5rem;
       width: 47%;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     & > .flexWrapper:nth-child(2) {
@@ -64,11 +66,26 @@
 @media (max-width: 960px) {
   #rhoSection {
     .section {
+      & > div:nth-child(1) p {
+        margin: 0 0 2rem;
+        font-size: 1.2rem;
+      }
       & > .flexWrapper h1 {
         font-size: 1.7rem;
+        display: block;
+        width: 100%;
       }
-      & > .flexWrapper > .flexWrapper p {
-        width: 46%;
+      & > .flexWrapper  {
+        width: 100%;
+        display: block;
+        & > .flexWrapper {
+          width: 100%;
+          p {
+            width: 100%;
+            text-align: left;
+            font-size: 1.2rem;
+          }
+        }
       }
     }
   }

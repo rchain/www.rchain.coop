@@ -27,9 +27,8 @@
       content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
     />
 
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
 
     <link rel="shortcut icon" href="assets/favicon-red.png" />
     <meta property="og:title" content="RChain Team" />
@@ -51,8 +50,8 @@
       <div class="nav" id="nav">
         <div class="wrapper">
           <div class="item img">
-            <img src="assets/logo_white.png" id="white" />
-            <img src="assets/logo_red.png" id="red" />
+            <img src="assets/logo_white_small.png" id="white" />
+            <img src="assets/logo_red_small.png" id="red" />
           </div>
           <div class="item links" onclick="">
             <a href="index.html">Home</a>
@@ -85,30 +84,45 @@
           <div class="item links long">
             <a href="community.html" class="btn-blue">Join Cooperative</a>
           </div>
-          <div class="item" id="hamburger">
-            <a href="javascript:void(0)"
-              ><span>
-                <p id="bar1"></p>
-                <p id="bar2"></p>
-                <p id="bar3"></p> </span
-            ></a>
-          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <div class="menu-icon"><a>Menu</a></div>
+        <div class="dropdown hidden">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="ecosystem.html">Ecosystem</a>
+          <a href="hackathon.html">Hackathon</a>
+          <a href="community.html">Community / Join</a>
+          <a href="team.html">Team</a>
+          <a href="https://developer.rchain.coop/" target="_blank"
+            >Developers</a
+          >
+          <a href="newsletter.html" target="_blank">Newsletter</a>
+          <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
         </div>
       </div>
     </header>
     <!-- Navbar End -->
 
     <div class="bodyWrapper">
-      <div class="section" id="rchainSection">
-        <p>
-          The RChain<sup>&reg;</sup> Cooperative was formed in January 2017 to
-          steward the development and progression of the RChain platform. The
-          cooperative provides the foundational support necessary for RChain to
-          grow into, and remain, a publicly owned and operated information
-          utility. RChain Co-op members invigorate the ecosystem with constant
-          experimentation of governance models, empowering individual agency
-          within a collective.
-        </p>
+      <div class="rchainSectionTop">
+        <div class="section">
+          <div class="inner">
+            <div class="left">
+              <p>
+                The RChain<sup>&reg;</sup> Cooperative was formed in January 2017 to
+                steward the development and progression of the RChain platform. The
+                cooperative provides the foundational support necessary for RChain to
+                grow into, and remain, a publicly owned and operated information
+                utility.<br /><br />RChain Co-op members invigorate the ecosystem with constant
+                experimentation of governance models, empowering individual agency
+                within a collective.
+              </p>
+            </div>
+            <div class="right"></div>
+          </div>
+        </div>
       </div>
 
       <div class="section" id="leadershipSection">
@@ -324,41 +338,61 @@
           </div>
         </div>
       </div>
-      <div class="section" id="communitySection">
-        <div>
-          <h6>Friends & Enthusiasts</h6>
-          <h2>Engage with the Community</h2>
-          <p>
-            Community is the heart of RChain. Our inclusive cooperative,
-            balancing results and a purpose-driven outlook, is what brings us
-            together to build technology and social tools. Aimed at lifting our
-            world up and effecting real, positive change, we will help each
-            other flourish.
-          </p>
-        </div>
 
-        <div class="flexWrapper">
+      <div id="communitySection">
+        <div class="section">
           <div>
-            <a href="https://github.com/rchain/" target="_blank"
-              ><img src="assets/github@3x.png"
-            /></a>
+            <h2>Engage with the Community</h2>
+            <p>
+              Community is the heart of RChain. The cooperative model unites us
+              in building technology and social tools. Aimed at lifting our
+              world up and effecting real, positive change, we will help each
+              other flourish.
+            </p>
           </div>
-          <div>
-            <a href="https://twitter.com/rchain_coop" target="_blank"
-              ><img src="assets/twitter@3x.png"
-            /></a>
-          </div>
-          <div>
-            <a
-              href="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w"
-              target="_blank"
-              ><img src="assets/youtube@3x.png"
-            /></a>
-          </div>
-          <div>
-            <a href="https://discord.gg/NWkQnfH" target="_blank"
-              ><img src="assets/discord@3x.png"
-            /></a>
+
+          <div class="flexWrapper social">
+            <div>
+              <a href="https://github.com/rchain" target="_blank">
+                <img src="assets/github@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/rchain_coop" target="_blank">
+                <img src="assets/twitter@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w"
+                target="_blank"
+              >
+                <img src="assets/youtube@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/company/rchain-cooperative/"
+                target="_blank"
+              >
+                <img src="assets/linkedin@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://t.me/rchaincoop" target="_blank">
+                <img src="assets/telegram@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://discord.gg/NWkQnfH" target="_blank">
+                <img src="assets/discord@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.reddit.com/r/RChain/" target="_blank">
+                <img src="assets/reddit@3x.png" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -381,6 +415,5 @@
     </div>
 
     <script src="js/rchain.coop_Browser.js"></script>
-    <script src="js/homepage_Browser.js"></script>
   </body>
 </html>

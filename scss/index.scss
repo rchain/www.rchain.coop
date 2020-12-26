@@ -3,7 +3,9 @@
 @import './pages/index.scss';
 @import './pages/platform.scss';
 @import './pages/team.scss';
+@import './pages/getStarted.scss';
 
+@import './fonts.scss';
 @import './rchainSectionTop.scss';
 @import './projects.scss';
 @import './nav.scss';
@@ -25,4 +27,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h2 {
+  margin-bottom: 0px;
+  font-size: 1.8rem;
 }

@@ -1,5 +1,6 @@
 .rchainSectionTop {
-  background: linear-gradient(20deg, #111, #111116);
+  background-image: url("/assets/rocks.jpg");
+  background-size: cover;
   color: #fff;
   margin: 0px;
   padding-bottom: 50px;
@@ -31,10 +32,10 @@
     }
   }
   .img.ecosystem {
-    background-image: url('../assets/ecosystem.jpg');
+    background-image: url("/assets/ecosystem.jpg");
   }
   .img.platform {
-    background-image: url('../assets/platform.jpg');
+    background-image: url("/assets/platform.jpg");
   }
   &.red {
     background-image: linear-gradient(to top, #42022e, #ab0433);
@@ -64,7 +65,7 @@
 }
 .rchainSectionTopCurve {
   margin: 0px;
-  background: url(../assets/curve.png);
+  background: url(/assets/curve.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px 0px;

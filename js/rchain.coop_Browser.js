@@ -5,40 +5,44 @@ navScroll();
 
 function navScroll() {
   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    document.getElementById('nav').classList.add('scroll');
-    document.getElementById('red').classList.remove('hidden');
-    document.getElementById('white').classList.add('hidden');
+    document.getElementById("nav").classList.add("scroll");
+    document.getElementById("red").classList.remove("hidden");
+    document.getElementById("white").classList.add("hidden");
   } else {
-    document.getElementById('nav').classList.remove('scroll');
-    document.getElementById('red').classList.add('hidden');
-    document.getElementById('white').classList.remove('hidden');
+    document.getElementById("nav").classList.remove("scroll");
+    document.getElementById("red").classList.add("hidden");
+    document.getElementById("white").classList.remove("hidden");
   }
 }
 
-document
-  .getElementsByClassName('with-dropdown')[0]
-  .addEventListener('click', (e) => {
-    const classes = e.currentTarget.getAttribute('class');
-    if (classes.includes('openned')) {
-      e.currentTarget.classList.remove('openned');
-    } else {
-      e.currentTarget.classList.add('openned');
-    }
-  });
+if (document.getElementsByClassName("with-dropdown")[0]) {
+  document
+    .getElementsByClassName("with-dropdown")[0]
+    .addEventListener("click", (e) => {
+      const classes = e.currentTarget.getAttribute("class");
+      if (classes.includes("openned")) {
+        e.currentTarget.classList.remove("openned");
+      } else {
+        e.currentTarget.classList.add("openned");
+      }
+    });
+}
 
-document
-  .getElementsByClassName('menu-icon')[0]
-  .addEventListener('click', (e) => {
-    const dd = document
-      .getElementsByClassName('nav-mobile')[0]
-      .querySelectorAll('.dropdown')[0];
-    const classes = dd.getAttribute('class');
-    if (classes.includes('hidden')) {
-      dd.classList.remove('hidden');
-    } else {
-      dd.classList.add('hidden');
-    }
-  });
+if (document.getElementsByClassName("menu-icon")[0]) {
+  document
+    .getElementsByClassName("menu-icon")[0]
+    .addEventListener("click", (e) => {
+      const dd = document
+        .getElementsByClassName("nav-mobile")[0]
+        .querySelectorAll(".dropdown")[0];
+      const classes = dd.getAttribute("class");
+      if (classes.includes("hidden")) {
+        dd.classList.remove("hidden");
+      } else {
+        dd.classList.add("hidden");
+      }
+    });
+}
 
 /* Nav Bar */
 /* document.getElementById('hamburger').onclick = menuExpand;
@@ -67,28 +71,28 @@ function dropdown() {
 } */
 
 /* Footer Form */
-$('#newsletterSubmit').click(function (event) {
+$("#newsletterSubmit").click(function (event) {
   event.preventDefault();
-  var data = $('#newsletterForm').serialize();
+  var data = $("#newsletterForm").serialize();
   $.ajax({
-    type: 'POST',
-    url: 'newsletter-submission',
+    type: "POST",
+    url: "newsletter-submission",
     data: data,
-    dataType: 'json',
+    dataType: "json",
   }).done(function (data) {
-    if (!(data[0] == 'success')) {
-      $('#submitFail').html('');
+    if (!(data[0] == "success")) {
+      $("#submitFail").html("");
       for (var item in data) {
-        $('#submitFail').css('display', 'inline-block');
-        $('#submitFail').append('<div class="errors">' + data[item] + '</div>');
+        $("#submitFail").css("display", "inline-block");
+        $("#submitFail").append('<div class="errors">' + data[item] + "</div>");
       }
     } else {
-      $('#submitFail').css('display', 'none');
-      $('#submitSuccess').css('display', 'inline-block');
-      $('#submitSuccess').append(
+      $("#submitFail").css("display", "none");
+      $("#submitSuccess").css("display", "inline-block");
+      $("#submitSuccess").append(
         "<div class='success'>Thank you for your submission</div>"
       );
-      $('#newsletterForm').css('display', 'none');
+      $("#newsletterForm").css("display", "none");
     }
   });
 });

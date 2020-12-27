@@ -3,7 +3,7 @@
     background: linear-gradient(20deg, #111, #111116);
     margin: 0px;
     padding-bottom: 40px;
-    background: url(../assets/mountaindark1920.jpg);
+    background: url("/assets/mountaindark1920.jpg");
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
@@ -56,6 +56,7 @@
       position: relative;
       padding-left: 262px;
       .timeline-cont {
+        pointer-events: none;
         top: 0px;
         left: 0px;
         position: absolute;
@@ -148,7 +149,6 @@
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
-      //background: url(../assets/network.jpg);
       background-size: cover;
     }
   }
@@ -209,7 +209,7 @@
   }
 
   #rhoRevolutionSection {
-    background-image: url("../assets/rho.jpg");
+    background-image: url("/assets/rho.jpg");
     background-position: center;
     background-size: cover;
     color: #fff;

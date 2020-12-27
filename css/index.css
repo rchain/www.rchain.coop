@@ -3,7 +3,7 @@ body {
 }
 
 .section#headerSection {
-  background: url(../assets/hero-background@3x.png);
+  background: url("/assets/hero-background@3x.png");
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 11rem 4rem 0;
@@ -280,7 +280,7 @@ body {
 
 @media (max-width: 1200px) {
   .section#headerSection {
-    background: url(../assets/hero-background@2x.png);
+    background: url("/assets/hero-background@2x.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -387,7 +387,7 @@ body {
     padding: 70px 0 318.5px;
   }
   .section#headerSection {
-    background: url(../assets/mobile-background1.png);
+    background: url("/assets/mobile-background1.png");
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 2rem 0.7rem 0;

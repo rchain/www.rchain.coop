@@ -56,12 +56,11 @@
       position: relative;
       padding-left: 262px;
       .timeline-cont {
-        pointer-events: none;
         top: 0px;
         left: 0px;
         position: absolute;
         height: 100%;
-        width: 100%;
+        width: 262px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -297,6 +296,7 @@
         .timeline-cont {
           position: relative;
           height: auto;
+          width: 100%;
           .timeline {
             height: auto;
             flex-direction: row;

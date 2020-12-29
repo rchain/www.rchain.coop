@@ -1,0 +1,94 @@
+.rchainSectionTop {
+  background-image: url("/assets/rocks.jpg");
+  background-size: cover;
+  color: #fff;
+  margin: 0px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  .inner {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    .left {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 20px;
+    }
+    .right {
+      grid-row: 1;
+      grid-column: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+      }
+    }
+  }
+  .img.ecosystem {
+    background-image: url("/assets/ecosystem.jpg");
+  }
+  .img.platform {
+    background-image: url("/assets/platform.jpg");
+  }
+  &.red {
+    background-image: linear-gradient(to top, #42022e, #ab0433);
+  }
+  .section {
+    background: transparent;
+  }
+  h1 {
+    font-size: 2.8rem;
+    margin-top: 0px;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  h3:last-of-type {
+    margin-bottom: 0px;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding-bottom: 40px;
+    font-weight: 400;
+  }
+}
+.rchainSectionTopCurve {
+  margin: 0px;
+  background: url(/assets/curve.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+  height: 120px;
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .rchainSectionTop {
+    .inner {
+      display: block;
+      .left {
+        padding-left: 0px;
+        h1 {
+          margin-bottom: 5px;
+        }
+      }
+      .right {
+        justify-content: flex-start;
+        .img {
+          width: 240px;
+          height: 240px;
+        }
+      }
+    }
+  }
+}

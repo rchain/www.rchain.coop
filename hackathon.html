@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-6B7FD7W88H');
+      gtag("config", "G-6B7FD7W88H");
     </script>
-    <title>Hackathon 2020 - RChain</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <meta name="google-site-verification" content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg" />
-    <link rel='stylesheet' href='css/layout.css' />
-    <link rel='stylesheet' href='css/fonts.css' />
-    <link rel='stylesheet' href='css/hackathon.css' />
+    <title>RChain | hackathon 2020</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <meta
+      name="google-site-verification"
+      content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
+    />
+
+    <link rel="stylesheet" href="css/layout.css?version=1" />
+    <link rel="stylesheet" href="css/style.css?version=1" />
+
     <link rel="shortcut icon" href="assets/favicon-red.png" />
     <meta property="og:title" content="Hackathon 2020 - RChain" />
     <meta property="og:type" content="website" />
@@ -29,347 +41,650 @@
     <meta name="twitter:image" content="" />
     <meta name="twitter:url" content="https://rchain.coop/platform" />
     <meta name="twitter:description" content="" />
-</head>
+  </head>
 
-<body>
+  <body class="pageHackaton">
     <!--  Navbar Start -->
     <header>
-        <div class="nav" id="nav">
-            <div id="navClose" onclick="navClose()">X</div>
-            <div class="wrapper">
-                <div class="item">
-                    <img src="assets/logo_white.png" class="white" id="white">
-                    <img src="assets/logo_red.png" class="red" id="red">
-                </div>
-                <div class="item links" onclick="">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="item links" onclick="">
-                    <a href="platform.html">Platform</a>
-                </div>
-                <div class="item links" onclick="">
-                    <a href="ecosystem.html">Ecosystem</a>
-                </div>
-                <div class="item links" onclick="">
-                    <a href="hackathon.html">Hackathon</a>
-                </div>
-                <div class="item links" id="dropdown">
-                    <a href="javascript:void(0)">Community<span class="arrow">&rsaquo;</span></a>
-                    <div class="dropdown">
-                        <a href="community.html">Community Overview</a>
-                        <a href="team.html">Team</a>
-                        <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
-                        <a href="https://developer.rchain.coop/" target="_blank">Developers</a>
-                        <a href="newsletter.html" target="_blank">Newsletter</a>
-                    </div>
-                </div>
-                <div class="item links">
-                    <a href="community.html" class="btn-blue">Join Cooperative</a>
-                </div>
-                <div class="item" id="hamburger">
-                    <a href="javascript:void(0)"><span>
-                            <p id="bar1"></p>
-                            <p id="bar2"></p>
-                            <p id="bar3"></p>
-                        </span></a>
-                </div>
+      <div class="nav" id="nav">
+        <div class="wrapper">
+          <div class="item img">
+            <img src="/assets/logo_white_small.png" id="white" />
+            <img src="/assets/logo_red_small.png" id="red" />
+          </div>
+          <div class="item links" onclick="">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="item links" onclick="">
+            <a href="platform.html">Platform</a>
+          </div>
+          <div class="item links" onclick="">
+            <a href="ecosystem.html">Ecosystem</a>
+          </div>
+          <div class="item links" onclick="">
+            <a href="hackathon.html">Hackathon</a>
+          </div>
+          <div class="item links with-dropdown">
+            <a href="javascript:void(0)"
+              >Community<span class="arrow">&rsaquo;</span></a
+            >
+            <div class="dropdown-container">
+              <div class="dropdown">
+                <a href="/community.html">Community Overview</a>
+                <a href="/team.html">Team</a>
+                <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
+                <a href="https://developer.rchain.coop/" target="_blank"
+                  >Developers</a
+                >
+                <a href="newsletter.html" target="_blank">Newsletter</a>
+              </div>
             </div>
+          </div>
+          <div class="item links long">
+            <a href="/community.html" class="btn-blue">Join Cooperative</a>
+          </div>
         </div>
-    </header> <!-- Navbar End -->
+      </div>
+      <div class="nav-mobile">
+        <div class="menu-icon"><a>Menu</a></div>
+        <div class="dropdown hidden">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="ecosystem.html">Ecosystem</a>
+          <a href="hackathon.html">Hackathon</a>
+          <a href="/community.html">Community / Join</a>
+          <a href="/team.html">Team</a>
+          <a href="https://developer.rchain.coop/" target="_blank"
+            >Developers</a
+          >
+          <a href="newsletter.html" target="_blank">Newsletter</a>
+          <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
     <div class="bodyWrapper">
-        <div class="section" id="rchainSection">
-            <h1>RChain<sup>&reg;</sup> Hackathon Nov 7-8, 2020</h1>
-            <h3>Decentralized Coordination and Governance at Scale</h3></br>
-            <h3>Online Qualifying Test FRIDAY, NOVEMBER 6, 2020.</h3>
-            <h3>Register at <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV-gNIA6-8pLiIFqe4hQmekw0JAE0llDz-AVCmw7J9DzYq1g/viewform">registration form</a></h3>
-            <div class="divider"></div>
-
-            <div class="TOC">
-                <a href="#rchain-apart">RChain Advantage</a>
-                &middot;
-                <a href="#dev-apis">dApp Developer APIs, Tools</a>
-                &middot;
-                <a href="#rchain-tech">RChain In Depth</a>
-                &middot;
-                <a href="#rchain-tech">RNode core scala dev</a>
-                &middot;
-                <a href="#reg-sel">Registration and Selection</a>
-                &middot;
-                <a href="#misc">Misc</a>
+      <div class="rchainSectionTop">
+        <div class="section">
+          <div class="inner">
+            <div class="left">
+              <h1>RChain<sup>&reg;</sup> Hackathon Nov 7-8, 2020</h1>
+              <h3>Growing communities of dapps, libraries and resources.</h3>
+              <h3>Decentralized Coordination and Governance at Scale</h3>
+              <h3>Online Qualifying Test FRIDAY, NOVEMBER 6, 2020.</h3>
+              <h3>
+                Register at
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfV-gNIA6-8pLiIFqe4hQmekw0JAE0llDz-AVCmw7J9DzYq1g/viewform"
+                  >registration form</a
+                >
+              </h3>
             </div>
-
-            <div class="textWrapper">
-                <h2 id="rchain-apart">RChain Advantage</h2>
-
-                <p><a href="https://developer.rchain.coop">RChain</a>
-                an emerging, open source, decentralized, economically
-                sustainable public compute infrastructure.  While the
-                RChain design is inspired by that of earlier
-                blockchains, it also realizes decades of research
-                across the fields of concurrent and distributed
-                computation, mathematics, and programming language
-                design.</p>
-
-                <div class="talk video">
-                    <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/Iraa7jP534g"
-                frameborder="0" allow="accelerometer; autoplay;
-                clipboard-write; encrypted-media; gyroscope;
-                picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <h2 id="dev-apis">dApp Developer APIs and Tools</h2>
-                <p>There&rsquo;re APIs available for the platform that allow a person skilled in any language to develop apps.</p>
-                <ul>
-                    <li><a href="https://github.com/rchain/rchain/tree/dev/docs/rnode-api">RNode API</a>: rnode communicates primarily using gRPC but it also has the <a href="https://developer.rchain.coop/rnode-api">RNode Web API</a>, which supports use directly from browsers, curl, etc.</li>
-                    <li>Rholang
-                        <ul> 
-                            <li><a href="https://developer.rchain.coop/rho-blockly">Rho Blockly</a>
-                            <li><a href="https://developer.rchain.coop/rholang-playground">Rholang Playground</a>
-                            <li><a href="https://github.com/rchain/rchain/blob/dev/rholang/reference_doc/rho_cheatsheet.pdf" >Rholang cheat-sheet</a></li>
-                            <li><a href="https://visualstudio.microsoft.com/services/live-share/">vs-code Live Share</a>
-                            <li><a href="https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang">vs-code extension for Rholang</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/rchain/rchain/tree/dev/rholang/examples">rholang/examples</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources">genesis contracts</a>: Casper Proof of Stake, REV Vault, MakeMint, ListOps, Either
-                            </li>
-                            <li>
-                                <a href="https://rhobot.net/LearnRholangByExample/">Learn Rholang By Example</a>, Rhobot.net
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=gRxXQx3cn9c&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j&amp;index=31">Getting started with Rholang smart contracts</a> 1hr talk by Stay and Shikama, Jun 2018
-                            </li>
-                        </ul>
-                    <li>... more on <a href="https://developer.rchain.coop">developer.rchain.coop</a></li>
-                    <li><a href="https://github.com/rchain/hackathon-2020/issues?q=is%3Aissue+is%3Aopen+label%3A%22Problem+Statement%22">Sample problem statements you can work on or create your own</a>
-                            </li>
-                </ul>
-                <img src="https://raw.githubusercontent.com/tgrospic/rholang-vscode/v0.3.0/assets/rholang-sample.gif" alt="vs-code animation" /> 
-                <h2 id="rchain-tech">RChain In Depth</h2>
-
-                <p>The RChain decentralized applications platform is
-                    powered by the <dfn>Rho Virtual Machine<dfn>,
-                    including:</p>
-                <ul>
-                    <li><dfn>Rholang</dfn>: an asynchronous message
-                        based concurrent language with reflection, thus
-                        supporting higher-order mobility and capability
-                        security</li>
-                    <li><dfn>RSpace</dfn>: a key-value database
-                    supporting the storage and query of both data and
-                    code</li>
-                </ul>
-
-                <div class="talk video">
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/3R3IL1bGm0s?start=13"
-                frameborder="0" allow="accelerometer; autoplay;
-                clipboard-write; encrypted-media; gyroscope;
-                picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <h2>Rholang Foundations: Rho Calculus</h2>
-                <p><a href="https://developer.rchain.coop">RChain</a> is an open source, emerging blockchain platform with a smart contract language called <a href="https://rholang.github.io/">Rholang</a>. The syntax and execution mechanism
-                    are derived directly from the <a href="https://www.sciencedirect.com/science/article/pii/S1571066105051893">rho-calculus</a>, a variant of <a href="https://www.lfcs.inf.ed.ac.uk/reports/91/ECS-LFCS-91-180/">Milner&rsquo;s
-                        &pi;-calculus</a>. The platform is intended to support correct-by-construction smart contracts with behavioral types. It is not possible to have bytecode injection attacks.&nbsp; RChain is the first implementation of the Correct By
-                    Construction (CBC) Casper consensus algorithm.</p>
-                <p>Being derived from the rho-calculus, Rholang is a language in the process calculi family of languages.&nbsp; Rholang is an asynchronous message based concurrent language with reflection, thus supporting higher-order mobility, like
-                    the <a href="https://link.springer.com/chapter/10.1007/3-540-56610-4_62">higher-order &pi;-calculus</a>, but with far simpler syntax and semantics. Rholang has deep mathematical
-                    foundations making it suitable for automatic formal verification of code. In particular, Rholang is compatible with a <a href="https://link.springer.com/chapter/10.1007/11580850_19">behavioral type system</a> that has already been <a
-                      href="https://docs.google.com/document/d/1sGlObhGhoEizBXC30Ww4h1KHKGkmcy4NiCKitIBqiUg/edit?usp=sharing">shown to detect crucial bugs in the blockchain application space</a>.</p>
-                <p>When considered in the context of RSpace, its execution mechanism and a unique key-value database supporting the storage of both data and active code, Rholang may also be seen as a next generation query language that
-                    reconciles relational query mechanisms with nosql. This means that as a smart contracting language Rholang is ideal for making blockchain a platform for data intensive applications where data is stored on chain, as well as a
-                    process modeling language, such as XLang, BEPL, or BPML.</p>
-
-                <ul>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=gRxXQx3cn9c&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j&amp;index=31">getting started with rholang</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=XhwrZuXMyfE">LADL from the Ground Up</a> by Mike Stay and Greg Meredith, Jun 2018
-                    </li>
-                    <li>
-                        <a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md">core dev rholang tutorial</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md">A Tutorial for Matching in Rholang</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md">More in-depth tutorial on pattern matching</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources">Casper contracts, including ListOps, Either</a>
-                    </li>
-                </ul>
-
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/gRxXQx3cn9c"
-                frameborder="0" allow="accelerometer; autoplay;
-                clipboard-write; encrypted-media; gyroscope;
-                picture-in-picture" allowfullscreen></iframe>
-
-                <h2 id="rchain-tech">RNode core scala dev</h2>
-
-                <p>The core RChain platform is developed in Scala with extensive use of the cats library for pure, typeful functional abstractions.</p>
-
-                <ul>
-                    <li><a href="https://github.com/rchain/rchain/">rchain/rchain</a> on github</li>
-                </ul>
-
-                <p>Those desiring <strong>core platform development internships</strong>, should preferably understand the structure and
-                    logic of the <a
-                      href="https://typelevel.org/cats/">cats library</a> (<a href="https://github.com/typelevel/cats">typelevel/cats</a>) and the best practices in using it.&nbsp;  Also required for core platform internships: familiarity with and/or interest in Test frameworks, generative and law based testing using e.g.
-                    ScalaTest, Discipline and Test Driven Development.&nbsp; However, Scala expertise is not a requirement for participation in the hackathon.</p>
-                <h2 id="reg-sel">Registration and Selection Process:</h2>
-                <ol>
-                    <li>Register your team and component individuals (all individuals in the team use the same team name) at <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV-gNIA6-8pLiIFqe4hQmekw0JAE0llDz-AVCmw7J9DzYq1g/viewform">registration form</a>, providing the github user account and github registered email account for each team member, 
-                    including: generating and submitting a SEPARATE REV address for EACH TEAM MEMBER using one of the interfaces to the RChain network. The REV address will be used
-                    for rewards, prizes etc. &nbsp; </li>
-                    <li>Teams may describe a problem statement they want to work on. Rchain will make available several problem statements for teams that do not have a self-created problem statement.</li>
-                    <li>Each team member can also provide a cell phone number and the corresponding SMS email address, to receive SMS notifications and reminders.</li>
-                    <li>All individuals participate in the <strong> online qualification test on FRIDAY, NOVEMBER 6, 2020 </strong> that includes questions in Logic, Scala, JavaScript, Python, Rholang and Cryptography + Blockchain concepts.</li>
-                    <li>Qualifying candidates will participate in a preliminary contest to create pull requests on github for smallish specified technical issues. Github familiarity (how Github works, making repositories, forks and feature branches, creating pull requests etc.) is required of ALLCANDIDATES.</li>
-                    <li>Hackathon participants will be selected based on their weighted performance in the test and the github exercises</li>
-                    <li>Teams will be formed around the problem statements, while balancing requisite team skills</li>
-                    <li>Teams will select and finalize scope of the problem statements they will work on.</li>
-                    <li><strong> Actual Hackathon on November 7-8, 2020</strong></li>
-                    <li>Judgement of teams by judges</li>
-                    <li>Prizes</li>
-                    <li><strong>Opportunity for select teams and/or individuals to participate with RChain community in project based internships lasting three months to a year+</strong></li>
-                </ol>
-                <p>Chat with us in our <a href="https://discord.com/channels/375365542359465989/748967102840569886">#hackathon-2020</a> channel on Discord <a href="https://discord.gg/NWkQnfH">(Invitation Link)</a>.</p>
-            </div>
-            <div class="textWrapper">
-                <div class="divider"></div>
-                <h2>Learning Resources</h2>
-                <h5>Github</h5>
-                <ul>
-                    <li>
-                        <a href="https://docs.github.com/en/github/getting-started-with-github">Getting started with GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/rchain-community">rchain-community</a> github organisation
-                    </li>
-                    <li>
-                        ..many other resources
-                    </li>
-                </ul>
-                <h5>Rholang</h5>
-                <ul>
-                    <li>
-                        <a href="https://rchain-community.readme.io/">RChain Community Developer Hub</a>
-                    </li>
-                    <li>
-                        <a href="https://blog.rchain.coop/2020/08/11/rchain-powerbox-summary/">Powerbox functions</a>
-                    </li>
-                    <li>
-                        Object Capability patterns
-                    </li>
-                    <li>
-                        <a href="https://github.com/dckc/awesome-ocap#presentations-talks-slides-and-videos">Slides &amp; Videos</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/dckc/awesome-ocap/wiki">Github: Awesome OCAPS</a><br>
-                            a Pattern Language for object capability (ocap) patterns, especially their use in secure JavaScript and Rholang.</p>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=fW4KXUqiKO4&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j">RChain Boulder devcon</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=Fs38s7nI3Uk&amp;list=PLf2bbiic5ZjCPzin3gCSMGiBtbT8UO5o2">2017 dev retreat</a>
-                    </li>
-                </ul>
-                <h5>Blockchain in General</h5>
-                <ul>
-                    <li><a href="https://rchain.atlassian.net/wiki/spaces/DOC/pages/3014657/Reading+List#ReadingList-Blockchain101">Reading List - BlockChain-101</a></li>
-                    <li>Coursera course on blockchains by SUNY Buffalo</li>
-                    <li>Coursera - AICPA Course on applications of Blockchain</li>
-                </ul>
-                <h5>RChain Platform</h5>
-                <ul>
-                    <li>On youtube, subscribe to the RChain channel and search on rcast for discussions of RChain applications, Governance, philosophy and future plans</li>
-
-                    <li>
-                        <a href="https://rchain.atlassian.net/wiki/spaces/DOC/pages/47808694/Onboarding+the+first+week">Onboarding: the first week</a>
-                    </li>
-                    <li>
-                        <a href="https://rchain.atlassian.net/wiki/spaces/DOC/pages/3014657/Reading+List">Reading List</a>
-                    </li>
-                    <li>
-                        <a href="https://status.rchain.coop/testnet/faucet/">TestNet REV Faucet </a>
-                    </li>
-                </ul>
-                <h5>Books on Scala</h5>
-                <ul>
-                    <li>
-                        Functional Programming Simplified by Alvin Alexander (focus on the performant immutable data structures)
-                    </li>
-                    <li>
-                        Functional Programming in Scala,
-                    </li>
-                    <li>
-                        Scala for the impatient (you can skip the chapters related to objects),
-                    </li>
-                </ul>
-                <h5>Examples (there are several others on the net):</h5>
-                <ul>
-                    <li>
-                        <a href="https://github.com/leithaus/spigot">Github: A translation of the code examples from "Unbounded Spigot Algorithms for the Digits of Pi" (Gibbons, 2006) from Haskell to Scala.</a>
-                    </li>
-                    <li>
-                        <a href="https://www.cs.ox.ac.uk/jeremy.gibbons/publications/spigot.pdf">PDF: Unbounded Spigot Algorithms for the Digits of Pi by Jeremy Gibbons</a>
-                    </li>
-                    <li>
-                        <a href="https://gist.github.com/tgrospic/0c58a91f07aa08a4518b754dce61445a">Github: RChain Education: Functional Effects for Scala</a>
-                    </li>
-                    <li>
-                        <a href="https://youtu.be/xBDN3sczl2c">Video: RChain Education Session: auction bidding & Scala development</a>
-                    </li>
-                    <li>
-                        <a href="https://gist.github.com/tgrospic/661f6504c4940ac6b15e13c06abbdffe">Github: RChain Education: Introduction to tagless-final style in Scala: higher-kinded types</a>
-                    </li>
-                    <li>
-                        <a href="https://youtu.be/-p1QqAilZoI">Video: RChain education: Introduction to tagless-final style in Scala: higher-kinded types</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=nQ39A960EiM&amp;list=PLniEJXpXl6-qSgCMKT2ocQIYt_BQZe04u">Video: RChain Education: compiling RNode</a>
-                    </li>
-                    <li>
-                        <a href="https://blog.rchain.coop/2020/10/07/rchain-voting-in-rholang/">Voting in Rholang (RVote)</a>
-                    </li>                    
-                </ul>
-                <h5>RChain Education: Implementation of Simple Rholang language</h5>
-                <ul>
-                    <li>
-                        <a href="https://gist.github.com/tgrospic/c56316dd769fdb797337dbeb5047e794">Github: SimpleRholang.scala</a>
-                    </li>
-                    <li>
-                        <a href="https://youtu.be/syXuWv1PZRg">Video: RChain Education - Implementation of Simple Rholang language</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <h2>Previous Hackathons:</h2>
-            <ul>
-                <li> <a class="external ext" href="https://github.com/mitmedialab/OpenMediaLegalHack/wiki/How-To-Use-RChain">RSong at MIT Media Lab</a> OpenMediaLegalHack - #hack4music on October 25, 2018</li>
-            </ul>
+            <div class="right"><div class="img ecosystem"></div></div>
+          </div>
         </div>
-        <div id="footer">
-            <div class="wrapper">
-                <div class="center"><img src="assets/logo_red.png"></div>
-                <p>copyright &copy; 2020 RChain Cooperative All rights reserved</p>
-                <p>RChain is a registered trademark of RChain Cooperative</p>
-                <div>
-                    <p><a href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf">Privacy terms and conditions</a>
-                </div>
-            </div>
+      </div>
+
+      <div class="section" id="rchainSection">
+        <div class="TOC">
+          <a href="#rchain-apart">RChain Advantage</a>
+          &middot;
+          <a href="#dev-apis">dApp Developer APIs, Tools</a>
+          &middot;
+          <a href="#rchain-tech">RChain In Depth</a>
+          &middot;
+          <a href="#rchain-tech">RNode core scala dev</a>
+          &middot;
+          <a href="#reg-sel">Registration and Selection</a>
+          &middot;
+          <a href="#misc">Misc</a>
         </div>
+
+        <div class="textWrapper">
+          <h2 id="rchain-apart">RChain Advantage</h2>
+
+          <p>
+            <a href="https://developer.rchain.coop">RChain</a> an emerging, open
+            source, decentralized, economically sustainable public compute
+            infrastructure. While the RChain design is inspired by that of
+            earlier blockchains, it also realizes decades of research across the
+            fields of concurrent and distributed computation, mathematics, and
+            programming language design.
+          </p>
+
+          <div class="talk video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Iraa7jP534g"
+              frameborder="0"
+              allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h2 id="dev-apis">dApp Developer APIs and Tools</h2>
+          <p>
+            There&rsquo;re APIs available for the platform that allow a person
+            skilled in any language to develop apps.
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/rchain/rchain/tree/dev/docs/rnode-api"
+                >RNode API</a
+              >: rnode communicates primarily using gRPC but it also has the
+              <a href="https://developer.rchain.coop/rnode-api">RNode Web API</a
+              >, which supports use directly from browsers, curl, etc.
+            </li>
+            <li>
+              Rholang
+              <ul>
+                <li>
+                  <a href="https://developer.rchain.coop/rho-blockly"
+                    >Rho Blockly</a
+                  >
+                </li>
+                <li>
+                  <a href="https://developer.rchain.coop/rholang-playground"
+                    >Rholang Playground</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rchain/rchain/blob/dev/rholang/reference_doc/rho_cheatsheet.pdf"
+                    >Rholang cheat-sheet</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://visualstudio.microsoft.com/services/live-share/"
+                    >vs-code Live Share</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang"
+                    >vs-code extension for Rholang</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rchain/rchain/tree/dev/rholang/examples"
+                    >rholang/examples</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources"
+                    >genesis contracts</a
+                  >: Casper Proof of Stake, REV Vault, MakeMint, ListOps, Either
+                </li>
+                <li>
+                  <a href="https://rhobot.net/LearnRholangByExample/"
+                    >Learn Rholang By Example</a
+                  >, Rhobot.net
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=gRxXQx3cn9c&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j&amp;index=31"
+                    >Getting started with Rholang smart contracts</a
+                  >
+                  1hr talk by Stay and Shikama, Jun 2018
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              ... more on
+              <a href="https://developer.rchain.coop">developer.rchain.coop</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/rchain/hackathon-2020/issues?q=is%3Aissue+is%3Aopen+label%3A%22Problem+Statement%22"
+                >Sample problem statements you can work on or create your own</a
+              >
+            </li>
+          </ul>
+          <img
+            src="https://raw.githubusercontent.com/tgrospic/rholang-vscode/v0.3.0/assets/rholang-sample.gif"
+            alt="vs-code animation"
+          />
+          <h2 id="rchain-tech">RChain In Depth</h2>
+
+          <p>
+            The RChain decentralized applications platform is powered by the
+            <dfn>Rho Virtual Machine</dfn>, including:
+          </p>
+          <ul>
+            <li>
+              <dfn>Rholang</dfn>: an asynchronous message based concurrent
+              language with reflection, thus supporting higher-order mobility
+              and capability security
+            </li>
+            <li>
+              <dfn>RSpace</dfn>: a key-value database supporting the storage and
+              query of both data and code
+            </li>
+          </ul>
+
+          <div class="talk video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3R3IL1bGm0s?start=13"
+              frameborder="0"
+              allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h2>Rholang Foundations: Rho Calculus</h2>
+          <p>
+            <a href="https://developer.rchain.coop">RChain</a> is an open
+            source, emerging blockchain platform with a smart contract language
+            called <a href="https://rholang.github.io/">Rholang</a>. The syntax
+            and execution mechanism are derived directly from the
+            <a
+              href="https://www.sciencedirect.com/science/article/pii/S1571066105051893"
+              >rho-calculus</a
+            >, a variant of
+            <a href="https://www.lfcs.inf.ed.ac.uk/reports/91/ECS-LFCS-91-180/"
+              >Milner&rsquo;s &pi;-calculus</a
+            >. The platform is intended to support correct-by-construction smart
+            contracts with behavioral types. It is not possible to have bytecode
+            injection attacks.&nbsp; RChain is the first implementation of the
+            Correct By Construction (CBC) Casper consensus algorithm.
+          </p>
+          <p>
+            Being derived from the rho-calculus, Rholang is a language in the
+            process calculi family of languages.&nbsp; Rholang is an
+            asynchronous message based concurrent language with reflection, thus
+            supporting higher-order mobility, like the
+            <a href="https://link.springer.com/chapter/10.1007/3-540-56610-4_62"
+              >higher-order &pi;-calculus</a
+            >, but with far simpler syntax and semantics. Rholang has deep
+            mathematical foundations making it suitable for automatic formal
+            verification of code. In particular, Rholang is compatible with a
+            <a href="https://link.springer.com/chapter/10.1007/11580850_19"
+              >behavioral type system</a
+            >
+            that has already been
+            <a
+              href="https://docs.google.com/document/d/1sGlObhGhoEizBXC30Ww4h1KHKGkmcy4NiCKitIBqiUg/edit?usp=sharing"
+              >shown to detect crucial bugs in the blockchain application
+              space</a
+            >.
+          </p>
+          <p>
+            When considered in the context of RSpace, its execution mechanism
+            and a unique key-value database supporting the storage of both data
+            and active code, Rholang may also be seen as a next generation query
+            language that reconciles relational query mechanisms with nosql.
+            This means that as a smart contracting language Rholang is ideal for
+            making blockchain a platform for data intensive applications where
+            data is stored on chain, as well as a process modeling language,
+            such as XLang, BEPL, or BPML.
+          </p>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=gRxXQx3cn9c&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j&amp;index=31"
+                >getting started with rholang</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=XhwrZuXMyfE"
+                >LADL from the Ground Up</a
+              >
+              by Mike Stay and Greg Meredith, Jun 2018
+            </li>
+            <li>
+              <a
+                href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md"
+                >core dev rholang tutorial</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md"
+                >A Tutorial for Matching in Rholang</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangmatchingtut.md"
+                >More in-depth tutorial on pattern matching</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rchain/rchain/tree/dev/casper/src/main/resources"
+                >Casper contracts, including ListOps, Either</a
+              >
+            </li>
+          </ul>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gRxXQx3cn9c"
+            frameborder="0"
+            allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <h2 id="rchain-tech">RNode core scala dev</h2>
+
+          <p>
+            The core RChain platform is developed in Scala with extensive use of
+            the cats library for pure, typeful functional abstractions.
+          </p>
+
+          <ul>
+            <li>
+              <a href="https://github.com/rchain/rchain/">rchain/rchain</a> on
+              github
+            </li>
+          </ul>
+
+          <p>
+            Those desiring
+            <strong>core platform development internships</strong>, should
+            preferably understand the structure and logic of the
+            <a href="https://typelevel.org/cats/">cats library</a> (<a
+              href="https://github.com/typelevel/cats"
+              >typelevel/cats</a
+            >) and the best practices in using it.&nbsp; Also required for core
+            platform internships: familiarity with and/or interest in Test
+            frameworks, generative and law based testing using e.g. ScalaTest,
+            Discipline and Test Driven Development.&nbsp; However, Scala
+            expertise is not a requirement for participation in the hackathon.
+          </p>
+          <h2 id="reg-sel">Registration and Selection Process:</h2>
+          <ol>
+            <li>
+              Register your team and component individuals (all individuals in
+              the team use the same team name) at
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfV-gNIA6-8pLiIFqe4hQmekw0JAE0llDz-AVCmw7J9DzYq1g/viewform"
+                >registration form</a
+              >, providing the github user account and github registered email
+              account for each team member, including: generating and submitting
+              a SEPARATE REV address for EACH TEAM MEMBER using one of the
+              interfaces to the RChain network. The REV address will be used for
+              rewards, prizes etc. &nbsp;
+            </li>
+            <li>
+              Teams may describe a problem statement they want to work on.
+              Rchain will make available several problem statements for teams
+              that do not have a self-created problem statement.
+            </li>
+            <li>
+              Each team member can also provide a cell phone number and the
+              corresponding SMS email address, to receive SMS notifications and
+              reminders.
+            </li>
+            <li>
+              All individuals participate in the
+              <strong>
+                online qualification test on FRIDAY, NOVEMBER 6, 2020
+              </strong>
+              that includes questions in Logic, Scala, JavaScript, Python,
+              Rholang and Cryptography + Blockchain concepts.
+            </li>
+            <li>
+              Qualifying candidates will participate in a preliminary contest to
+              create pull requests on github for smallish specified technical
+              issues. Github familiarity (how Github works, making repositories,
+              forks and feature branches, creating pull requests etc.) is
+              required of ALLCANDIDATES.
+            </li>
+            <li>
+              Hackathon participants will be selected based on their weighted
+              performance in the test and the github exercises
+            </li>
+            <li>
+              Teams will be formed around the problem statements, while
+              balancing requisite team skills
+            </li>
+            <li>
+              Teams will select and finalize scope of the problem statements
+              they will work on.
+            </li>
+            <li><strong> Actual Hackathon on November 7-8, 2020</strong></li>
+            <li>Judgement of teams by judges</li>
+            <li>Prizes</li>
+            <li>
+              <strong
+                >Opportunity for select teams and/or individuals to participate
+                with RChain community in project based internships lasting three
+                months to a year+</strong
+              >
+            </li>
+          </ol>
+          <p>
+            Chat with us in our
+            <a
+              href="https://discord.com/channels/375365542359465989/748967102840569886"
+              >#hackathon-2020</a
+            >
+            channel on Discord
+            <a href="https://discord.gg/NWkQnfH">(Invitation Link)</a>.
+          </p>
+        </div>
+        <div class="textWrapper">
+          <div class="divider"></div>
+          <h2>Learning Resources</h2>
+          <h5>Github</h5>
+          <ul>
+            <li>
+              <a
+                href="https://docs.github.com/en/github/getting-started-with-github"
+                >Getting started with GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/rchain-community">rchain-community</a>
+              github organisation
+            </li>
+            <li>..many other resources</li>
+          </ul>
+          <h5>Rholang</h5>
+          <ul>
+            <li>
+              <a href="https://rchain-community.readme.io/"
+                >RChain Community Developer Hub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://blog.rchain.coop/2020/08/11/rchain-powerbox-summary/"
+                >Powerbox functions</a
+              >
+            </li>
+            <li>Object Capability patterns</li>
+            <li>
+              <a
+                href="https://github.com/dckc/awesome-ocap#presentations-talks-slides-and-videos"
+                >Slides &amp; Videos</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/dckc/awesome-ocap/wiki"
+                >Github: Awesome OCAPS</a
+              ><br />
+              a Pattern Language for object capability (ocap) patterns,
+              especially their use in secure JavaScript and Rholang.
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=fW4KXUqiKO4&amp;list=PLf2bbiic5ZjD2QuelvOaoLF7gFiSj7u7j"
+                >RChain Boulder devcon</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=Fs38s7nI3Uk&amp;list=PLf2bbiic5ZjCPzin3gCSMGiBtbT8UO5o2"
+                >2017 dev retreat</a
+              >
+            </li>
+          </ul>
+          <h5>Blockchain in General</h5>
+          <ul>
+            <li>
+              <a
+                href="https://rchain.atlassian.net/wiki/spaces/DOC/pages/3014657/Reading+List#ReadingList-Blockchain101"
+                >Reading List - BlockChain-101</a
+              >
+            </li>
+            <li>Coursera course on blockchains by SUNY Buffalo</li>
+            <li>Coursera - AICPA Course on applications of Blockchain</li>
+          </ul>
+          <h5>RChain Platform</h5>
+          <ul>
+            <li>
+              On youtube, subscribe to the RChain channel and search on rcast
+              for discussions of RChain applications, Governance, philosophy and
+              future plans
+            </li>
+
+            <li>
+              <a
+                href="https://rchain.atlassian.net/wiki/spaces/DOC/pages/47808694/Onboarding+the+first+week"
+                >Onboarding: the first week</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://rchain.atlassian.net/wiki/spaces/DOC/pages/3014657/Reading+List"
+                >Reading List</a
+              >
+            </li>
+            <li>
+              <a href="https://status.rchain.coop/testnet/faucet/"
+                >TestNet REV Faucet
+              </a>
+            </li>
+          </ul>
+          <h5>Books on Scala</h5>
+          <ul>
+            <li>
+              Functional Programming Simplified by Alvin Alexander (focus on the
+              performant immutable data structures)
+            </li>
+            <li>Functional Programming in Scala,</li>
+            <li>
+              Scala for the impatient (you can skip the chapters related to
+              objects),
+            </li>
+          </ul>
+          <h5>Examples (there are several others on the net):</h5>
+          <ul>
+            <li>
+              <a href="https://github.com/leithaus/spigot"
+                >Github: A translation of the code examples from "Unbounded
+                Spigot Algorithms for the Digits of Pi" (Gibbons, 2006) from
+                Haskell to Scala.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cs.ox.ac.uk/jeremy.gibbons/publications/spigot.pdf"
+                >PDF: Unbounded Spigot Algorithms for the Digits of Pi by Jeremy
+                Gibbons</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://gist.github.com/tgrospic/0c58a91f07aa08a4518b754dce61445a"
+                >Github: RChain Education: Functional Effects for Scala</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/xBDN3sczl2c"
+                >Video: RChain Education Session: auction bidding & Scala
+                development</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://gist.github.com/tgrospic/661f6504c4940ac6b15e13c06abbdffe"
+                >Github: RChain Education: Introduction to tagless-final style
+                in Scala: higher-kinded types</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/-p1QqAilZoI"
+                >Video: RChain education: Introduction to tagless-final style in
+                Scala: higher-kinded types</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=nQ39A960EiM&amp;list=PLniEJXpXl6-qSgCMKT2ocQIYt_BQZe04u"
+                >Video: RChain Education: compiling RNode</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://blog.rchain.coop/2020/10/07/rchain-voting-in-rholang/"
+                >Voting in Rholang (RVote)</a
+              >
+            </li>
+          </ul>
+          <h5>RChain Education: Implementation of Simple Rholang language</h5>
+          <ul>
+            <li>
+              <a
+                href="https://gist.github.com/tgrospic/c56316dd769fdb797337dbeb5047e794"
+                >Github: SimpleRholang.scala</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/syXuWv1PZRg"
+                >Video: RChain Education - Implementation of Simple Rholang
+                language</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <h2>Previous Hackathons:</h2>
+        <ul>
+          <li>
+            <a
+              class="external ext"
+              href="https://github.com/mitmedialab/OpenMediaLegalHack/wiki/How-To-Use-RChain"
+              >RSong at MIT Media Lab</a
+            >
+            OpenMediaLegalHack - #hack4music on October 25, 2018
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <div class="wrapper">
+          <div class="center"><img src="/assets/logo_red.png" /></div>
+          <p>copyright &copy; 2020 RChain Cooperative All rights reserved</p>
+          <p>RChain is a registered trademark of RChain Cooperative</p>
+          <div>
+            <p>
+              <a
+                href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf"
+                >Privacy terms and conditions</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/rchain.coop_Browser.js"></script>
-    <script src="js/homepage_Browser.js"></script>
-</body>
 
+    <script src="/js/rchain.coop_Browser.js"></script>
+  </body>
 </html>

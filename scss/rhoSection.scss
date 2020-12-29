@@ -1,0 +1,135 @@
+#rhoSection {
+  background-image: url("/assets/rho.jpg");
+  background-position: center;
+  background-size: cover;
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: transparent;
+    & > div:nth-child(1) {
+      text-align: center;
+    }
+
+    & > div:nth-child(1) h3 {
+      color: #ff4143;
+      font-size: 1.8rem;
+      margin: 0 0 0.5rem;
+    }
+    & > div:nth-child(1) h2 {
+      color: white;
+      font-size: 2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    & > div:nth-child(1) p {
+      color: white;
+      margin: 0 0 6rem;
+    }
+
+    & > .flexWrapper h1 {
+      color: #daacd5;
+      font-size: 2.3rem;
+      margin-right: 2rem;
+      width: 30%;
+    }
+
+    & > .flexWrapper > .flexWrapper {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 70%;
+    }
+    & > .flexWrapper > .flexWrapper p {
+      border: 1px solid #80113a;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 0.3rem;
+      margin: 0 0.5rem 1rem;
+      width: 47%;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & > .flexWrapper:nth-child(2) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #rhoSection {
+    & > .flexWrapper h1 {
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #rhoSection {
+    .section {
+      & > div:nth-child(1) p {
+        margin: 0 0 2rem;
+        font-size: 1.2rem;
+      }
+      & > .flexWrapper h1 {
+        font-size: 1.7rem;
+        display: block;
+        width: 100%;
+      }
+      & > .flexWrapper {
+        width: 100%;
+        display: block;
+        & > .flexWrapper {
+          width: 100%;
+          p {
+            width: 100%;
+            text-align: left;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #rhoSection {
+    .section {
+      padding: 2rem 0.7rem;
+      & > div:nth-child(1) p {
+        margin: 0 0 2rem;
+      }
+      & > div:nth-child(1) h2 {
+        font-size: 1.6rem;
+      }
+      & > .flexWrapper:nth-child(2) {
+        display: block;
+      }
+      & > .flexWrapper:nth-child(3) {
+        display: block;
+      }
+      & > .flexWrapper h1 {
+        text-align: center;
+        width: auto;
+      }
+      & > .flexWrapper > .flexWrapper {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #rhoSection {
+    & > .flexWrapper h1 {
+      font-size: 5vw;
+    }
+    & > .flexWrapper > .flexWrapper {
+      display: block;
+    }
+    & > .flexWrapper > .flexWrapper p {
+      width: auto;
+    }
+  }
+}

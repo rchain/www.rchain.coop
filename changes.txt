@@ -1,9 +1,0 @@
-Text changes:
-
-(1) ecosystem page
-FROM Growing communities of dapps and validators.
-TO   Growing communities of dapps, libraries and resources.
-
-(2) index2
-FROM RChain® is a cooperative building a blockchain platform and.....
-TO   RChain® is a cooperative building a blockchain platform and.....

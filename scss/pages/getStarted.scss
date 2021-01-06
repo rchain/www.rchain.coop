@@ -38,7 +38,6 @@
 
   .section#developerSection .tabContent {
     display: none;
-    height: 500px;
     padding-top: 20px;
     width: 70%;
   }
@@ -61,6 +60,34 @@
     margin-bottom: 16px;
   }
 
+  .instructions {
+    & > p {
+      font-size: 1rem;
+    }
+    pre {
+      white-space: break-spaces;
+      word-break: break-all;
+      background-color: rgb(37, 37, 95);
+      color: #fff;
+      padding-top: 16px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 2px;
+      line-height: 1.6rem;
+    }
+    .pk {
+      white-space: unset;
+      word-break: break-all;
+    }
+    ul {
+      padding-left: 13px;
+      li {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
   @media (max-width: 1200px) {
     .section#developerSection #tab {
       width: 80%;
@@ -81,7 +108,6 @@
 
   @media (max-width: 767px) {
     .section#developerSection .tabContent {
-      height: 650px;
       width: 95%;
     }
     .section#developerSection .flexWrapper {
@@ -96,12 +122,6 @@
     .section#developerSection .tabContent > .flexWrapper .textWrapper {
       margin-bottom: 1.5rem;
       width: auto;
-    }
-  }
-
-  @media (max-width: 550px) {
-    .section#developerSection .tabContent {
-      height: 600px;
     }
   }
 }

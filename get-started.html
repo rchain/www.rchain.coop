@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <link rel="canonical" href="https://rchain.coop/get-started.html"></link>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -41,22 +42,20 @@
       content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
     />
 
-    <link rel="stylesheet" href="css/style.css?version=1" />
-    <link rel="stylesheet" href="css/layout.css?version=1" />
+    <link rel="stylesheet" href="css/style.css?version=2" />
+    <link rel="stylesheet" href="css/layout.css?version=2" />
 
     <link rel="shortcut icon" href="assets/favicon-red.png" />
 
     <meta
       name="description"
-      content="RChain is a cooperative building a blockchain platform and
-    social coordination technologies."
+      content="RChain is a platform for developers to build confidently and rapidly."
     />
     <meta property="og:title" content="RChain" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="RChain is a cooperative building a blockchain platform and
-    social coordination technologies."
+      content="RChain is a platform for developers to build confidently and rapidly."
     />
     <meta property="og:url" content="https://rchain.coop" />
     <meta
@@ -120,10 +119,14 @@
                     href="https://github.com/rchain/rchain/releases/tag/v0.10.0"
                     target="_blank"
                     >github/rchain</a
-                  >
+                  >, also check 
+                  <a
+                    href="https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+running+RNode"
+                    target="_blank"
+                  >full documentation</a> if something is missing.
                 </p>
                 <p>on ubuntu/debian</p>
-                <pre>apt install ./rnode_0.x.x_all.deb</pre>
+                <pre>$ apt install ./rnode_0.x.x_all.deb</pre>
                 <p>on macOS</p>
                 <ul>
                   <li>Prerequisites:</li>
@@ -137,9 +140,9 @@
                   </li>
                 </ul>
                 <pre>
-tar -xvf rnode-0.x.x.tgz
-cd rnode-0.x.x
-./macos_install.sh</pre
+$ tar -xvf rnode-0.x.x.tgz
+$ cd rnode-0.x.x
+$ ./macos_install.sh</pre
                 >
                 <p>
                   If you have another operating system or want to use docker
@@ -152,8 +155,8 @@ cd rnode-0.x.x
                 </p>
                 <p>
                   Two configuration files are necessary,
-                  <b>~/.rnode/genesis/bonds.txt</b> file and
-                  <b>~/.rnode/genesis/wallets.txt</b> file. We will use the
+                  <b class="path">~/.rnode/genesis/bonds.txt</b> file and
+                  <b class="path">~/.rnode/genesis/wallets.txt</b> file. We will use the
                   following key pair, do not use it in any real world blockchain
                   application.
                 </p>
@@ -165,9 +168,9 @@ cd rnode-0.x.x
                   04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58
                 </p>
                 <pre>
-mkdir ~/.rnode && mkdir ~/.rnode/genesis
-echo "04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58 100000000000" > ~/.rnode/genesis/bonds.txt
-echo "0x7f847d40c3ec604fe3d4263bfdd04111eb9b4e32,1000000000000000,0" > ~/.rnode/genesis/wallets.txt
+$ mkdir ~/.rnode && mkdir ~/.rnode/genesis
+$ echo "04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58 100000000000" > ~/.rnode/genesis/bonds.txt
+$ echo "0x7f847d40c3ec604fe3d4263bfdd04111eb9b4e32,1000000000000000,0" > ~/.rnode/genesis/wallets.txt
 </pre
                 >
                 <p>
@@ -176,24 +179,25 @@ echo "0x7f847d40c3ec604fe3d4263bfdd04111eb9b4e32,1000000000000000,0" > ~/.rnode/
                   run the node.
                 </p>
                 <pre>
-rnode run -s --validator-private-key  28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36  --dev-mode
+$ rnode run -s --validator-private-key  28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36  --dev-mode
 </pre
                 >
                 <p>
-                  Now let's deploy our first rholang file and propose the block.
+                  This node is
+                  standalone, it is a one node blockchain network. it is
+                  executed with the <b class="path">--dev-mode</b>
+                  option, so the API is an extended API with explore deploy
+                  available. Now in another shell let's deploy our first rholang file and
+                  propose the block.
                 </p>
                 <pre>
-echo "new stdout(\`rho:io:stdout\`) in { stdout!(\"hello world\") }" > hello.rho
-rnode deploy --valid-after-block-number 0 --phlo-price 1 --phlo-limit 10000000 --private-key 28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36 hello.rho
-rnode --grpc-port 40402 propose
+$ echo "new stdout(\`rho:io:stdout\`) in { stdout!(\"hello world\") }" > hello.rho
+$ rnode deploy --valid-after-block-number 0 --phlo-price 1 --phlo-limit 10000000 --private-key 28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36 hello.rho
+$ rnode --grpc-port 40402 propose
 </pre
                 >
                 <p>
-                  You should see "hello world" popup in the logs, this node is
-                  standalone, it is a one node blockchain network. it is
-                  executed with the <b>--dev-mode</b>
-                  option, so the API is an extended API with explore deploy
-                  available.
+                  You should see "hello world" pop up in the logs.
                 </p>
               </div>
               <p>
@@ -212,12 +216,20 @@ rnode --grpc-port 40402 propose
                 </a>
                 <br />
                 <br />
-                Engage with the
-                <a href="/community.html">RChain community</a>
+                Please reach out to us on
+                <a target="_blank" href="https://discord.gg/NWkQnfH">Discord</a>
+                if you encounter any issue.
+                <br />
               </p>
 
               <h2>Rholang</h2>
               <ul class="list">
+                <li>
+                  <a href="https://developer.rchain.coop/">developer.rchain.coop</a>
+                </li>
+                <li>
+                  <a href="https://developer.rchain.coop/rholang-playground">Rholang playground</a>
+                </li>
                 <li>
                   <a href="https://rholang.github.io/">rholang.github.io</a>
                 </li>
@@ -248,8 +260,8 @@ rnode --grpc-port 40402 propose
             <div class="textWrapper">
               <h2>More information for validators is coming soon!</h2>
               <p>
-                Mainnet is currently running with 9 Co-op run validator nodes
-                plus one Co-op member run node.
+                Mainnet is currently running with 30 coop run validator nodes
+                plus. This is expected to change around Q2 2021 with the POS developments.
               </p>
             </div>
           </div>

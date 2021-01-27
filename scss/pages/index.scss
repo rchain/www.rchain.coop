@@ -219,10 +219,13 @@
     padding-bottom: 40px;
     .section {
       background: transparent;
-      h1.rhoRevolution {
+      h2.rhoRevolution {
         margin: 0 auto 0;
         margin-bottom: 0;
         font-size: 3rem;
+      }
+      h3 {
+        font-size: 1.8rem;
       }
     }
   }

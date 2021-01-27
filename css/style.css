@@ -377,10 +377,13 @@
 .pageIndex #rhoRevolutionSection .section {
   background: transparent;
 }
-.pageIndex #rhoRevolutionSection .section h1.rhoRevolution {
+.pageIndex #rhoRevolutionSection .section h2.rhoRevolution {
   margin: 0 auto 0;
   margin-bottom: 0;
   font-size: 3rem;
+}
+.pageIndex #rhoRevolutionSection .section h3 {
+  font-size: 1.8rem;
 }
 .pageIndex #getStartedSection {
   padding: 2rem 0 3rem;
@@ -845,15 +848,6 @@
   .pagePlatform #rchainSection > .wrapper > .textWrapper {
     width: auto;
   }
-  .pagePlatform #rhoSection > .flexWrapper h1 {
-    font-size: 5vw;
-  }
-  .pagePlatform #rhoSection > .flexWrapper > .flexWrapper {
-    display: block;
-  }
-  .pagePlatform #rhoSection > .flexWrapper > .flexWrapper p {
-    width: auto;
-  }
   .pagePlatform .section#posSection > .flexWrapper .imgWrapper {
     padding: 0 4rem;
     width: auto;
@@ -1192,12 +1186,9 @@
 .pageGetStarted .list li {
   margin-bottom: 16px;
 }
-.pageGetStarted .instructions > p {
-  font-size: 1rem;
-}
 .pageGetStarted .instructions pre {
   white-space: break-spaces;
-  word-break: break-all;
+  word-break: normal;
   background-color: #25255f;
   color: #fff;
   padding-top: 16px;
@@ -1210,6 +1201,10 @@
 .pageGetStarted .instructions .pk {
   white-space: unset;
   word-break: break-all;
+  font-size: 1rem;
+}
+.pageGetStarted .instructions .path {
+  font-size: 1rem;
 }
 .pageGetStarted .instructions ul {
   padding-left: 13px;
@@ -1272,6 +1267,11 @@
   src: url("/fonts/FiraSans-Medium.ttf");
   font-weight: 700;
 }
+@font-face {
+  font-family: ubuntu-mono;
+  src: url("/fonts/UbuntuMono-R.ttf");
+  font-weight: 700;
+}
 body {
   font-family: fira;
   font-weight: 300;
@@ -1295,6 +1295,10 @@ p, ul, li {
 
 .subtitle {
   font-weight: 200;
+}
+
+pre {
+  font-family: ubuntu-mono;
 }
 
 .rchainSectionTop {
@@ -1760,7 +1764,7 @@ p, ul, li {
   color: white;
   margin: 0 0 6rem;
 }
-#rhoSection .section > .flexWrapper h1 {
+#rhoSection .section > .flexWrapper h3 {
   color: #daacd5;
   font-size: 2.3rem;
   margin-right: 2rem;
@@ -1788,7 +1792,7 @@ p, ul, li {
 }
 
 @media (max-width: 1200px) {
-  #rhoSection > .flexWrapper h1 {
+  #rhoSection > .flexWrapper h3 {
     font-size: 2.1rem;
   }
 }
@@ -1797,7 +1801,7 @@ p, ul, li {
     margin: 0 0 2rem;
     font-size: 1.2rem;
   }
-  #rhoSection .section > .flexWrapper h1 {
+  #rhoSection .section > .flexWrapper h3 {
     font-size: 1.7rem;
     display: block;
     width: 100%;
@@ -1831,7 +1835,7 @@ p, ul, li {
   #rhoSection .section > .flexWrapper:nth-child(3) {
     display: block;
   }
-  #rhoSection .section > .flexWrapper h1 {
+  #rhoSection .section > .flexWrapper h3 {
     text-align: center;
     width: auto;
   }
@@ -1840,7 +1844,7 @@ p, ul, li {
   }
 }
 @media (max-width: 550px) {
-  #rhoSection > .flexWrapper h1 {
+  #rhoSection > .flexWrapper h3 {
     font-size: 5vw;
   }
   #rhoSection > .flexWrapper > .flexWrapper {

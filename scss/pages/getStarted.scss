@@ -61,12 +61,9 @@
   }
 
   .instructions {
-    & > p {
-      font-size: 1rem;
-    }
     pre {
       white-space: break-spaces;
-      word-break: break-all;
+      word-break: normal;
       background-color: rgb(37, 37, 95);
       color: #fff;
       padding-top: 16px;
@@ -79,6 +76,10 @@
     .pk {
       white-space: unset;
       word-break: break-all;
+      font-size: 1rem;
+    }
+    .path {
+      font-size: 1rem;
     }
     ul {
       padding-left: 13px;

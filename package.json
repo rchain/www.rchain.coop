@@ -1,7 +1,7 @@
 {
   "name": "www.rchain.coop",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "rchain.coop website",
   "main": "app.js",
   "scripts": {
     "start": "node app",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/rchain/www.rchain.coop.git"
   },
-  "author": "",
+  "author": "RChain coop",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rchain/www.rchain.coop/issues"
@@ -30,7 +30,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "react": "16.8.5",
-    "react-dom": "16.8.5"
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }

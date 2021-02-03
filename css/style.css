@@ -377,10 +377,13 @@
 .pageIndex #rhoRevolutionSection .section {
   background: transparent;
 }
-.pageIndex #rhoRevolutionSection .section h1.rhoRevolution {
+.pageIndex #rhoRevolutionSection .section h2.rhoRevolution {
   margin: 0 auto 0;
   margin-bottom: 0;
   font-size: 3rem;
+}
+.pageIndex #rhoRevolutionSection .section h3 {
+  font-size: 1.8rem;
 }
 .pageIndex #getStartedSection {
   padding: 2rem 0 3rem;
@@ -845,15 +848,6 @@
   .pagePlatform #rchainSection > .wrapper > .textWrapper {
     width: auto;
   }
-  .pagePlatform #rhoSection > .flexWrapper h1 {
-    font-size: 5vw;
-  }
-  .pagePlatform #rhoSection > .flexWrapper > .flexWrapper {
-    display: block;
-  }
-  .pagePlatform #rhoSection > .flexWrapper > .flexWrapper p {
-    width: auto;
-  }
   .pagePlatform .section#posSection > .flexWrapper .imgWrapper {
     padding: 0 4rem;
     width: auto;
@@ -1143,87 +1137,42 @@
 }
 
 .pageGetStarted .section#developerSection #tab {
-  background: white;
-  border-bottom: 1px solid #999999;
-  text-align: center;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: flex;
-  -ms-flex-pack: flex;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 600px;
+  align-items: flex-start;
 }
 .pageGetStarted .section#developerSection #tab .item {
+  width: auto;
+  margin-right: 10px;
   font-size: 1.1rem;
   font-weight: 900;
-  text-align: left;
-  position: relative;
   border: 1px solid rgba(0, 0, 0, 0);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  text-transform: uppercase;
 }
 .pageGetStarted .section#developerSection #tab > .item img {
   display: block;
   width: 3rem;
 }
-.pageGetStarted .section#developerSection #tab .item:nth-child(1) {
-  margin: 1rem 0 0 0 !important;
-}
-.pageGetStarted .section#developerSection #tab .item:nth-child(1).active {
-  margin: 1rem 0 -1px 0 !important;
-}
-.pageGetStarted .section#developerSection #tab .item {
-  margin: 1rem 0 0;
-  width: 100%;
-}
 .pageGetStarted .section#developerSection #tab .item a {
   border-bottom: 2px solid white;
-  display: block;
   text-decoration: none;
+  padding: 10px;
   color: #484848;
-  padding: 0.7rem 0 1rem 0;
-  text-align: left;
-  width: 60%;
-}
-.pageGetStarted .section#developerSection #tab .item.active {
-  margin: 1rem 0 -1px;
 }
 .pageGetStarted .section#developerSection #tab .item.active > a {
   border-bottom: 3px solid #ff4143;
   color: #ff4143;
-  text-align: left;
-  width: 60%;
 }
 .pageGetStarted .section#developerSection .tabContent.active {
   display: block;
 }
 .pageGetStarted .section#developerSection .tabContent {
   display: none;
-  height: 500px;
   padding-top: 20px;
   width: 70%;
 }
-.pageGetStarted .section#developerSection .tabContent > .textWrapper {
-  margin-bottom: 4rem;
-  text-align: center;
-}
 .pageGetStarted .section#developerSection .tabContent > .textWrapper h2 {
-  color: #484848;
-  font-family: Montserrat-SemiBold;
-  font-size: 2.2rem;
   margin-bottom: 0.2rem;
 }
 .pageGetStarted .section#developerSection .tabContent > .textWrapper p {
@@ -1232,130 +1181,62 @@
 }
 .pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper {
   text-align: left;
-  width: 55%;
+  max-width: 900px;
 }
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .imgWrapper {
-  width: 40%;
+.pageGetStarted .list li {
+  margin-bottom: 16px;
 }
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper h6 {
-  color: black;
-  font-size: 1.3rem;
-  margin-bottom: 0.8rem;
+.pageGetStarted .instructions pre {
+  white-space: break-spaces;
+  word-break: normal;
+  background-color: #25255f;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 2px;
+  line-height: 1.6rem;
 }
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list > div {
-  margin-bottom: 1.5rem;
-}
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list div {
-  display: flex;
-}
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list div p {
-  display: inline-block;
-  margin: 0;
-  vertical-align: top;
-}
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list div p:nth-child(1) {
-  background: #42022e;
-  border-radius: 50%;
-  color: white;
+.pageGetStarted .instructions .pk {
+  white-space: unset;
+  word-break: break-all;
   font-size: 1rem;
-  margin-right: 0.5rem;
-  padding: 3px 0;
-  text-align: center;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list div p:nth-child(2) {
-  line-height: 1;
-  width: 80%;
+.pageGetStarted .instructions .path {
+  font-size: 1rem;
 }
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list div p:nth-child(2) a {
-  color: #a50034;
-  text-decoration: underline;
+.pageGetStarted .instructions ul {
+  padding-left: 13px;
+}
+.pageGetStarted .instructions ul li {
+  font-size: 0.9rem;
 }
 @media (max-width: 1200px) {
-  .pageGetStarted .section#developerSection {
-    padding: 10rem 0 2rem;
-  }
   .pageGetStarted .section#developerSection #tab {
     width: 80%;
   }
   .pageGetStarted .section#developerSection .tabContent {
     width: 80%;
-  }
-  .pageGetStarted .section#developerSection #tab .item:nth-child(1) {
-    margin: 1rem 0 0 0 !important;
-  }
-  .pageGetStarted .section#developerSection #tab .item:nth-child(1).active {
-    margin: 1rem 0 -1px 0 !important;
   }
 }
 @media (max-width: 960px) {
   .pageGetStarted .section#headerSection .textWrapper > h1 {
     margin: 0 0 2rem;
   }
-  .pageGetStarted .section#developerSection {
-    padding: 10rem 0 4rem;
-  }
   .pageGetStarted .section#developerSection .tabContent > .textWrapper p {
     width: auto;
   }
 }
 @media (max-width: 767px) {
-  .pageGetStarted .section#headerSection {
-    padding: 2rem 0 1rem;
-  }
-  .pageGetStarted .section#headerSection .textWrapper {
-    width: auto;
-  }
-  .pageGetStarted .section#headerSection .textWrapper > h1 {
-    margin: 0 0 0;
-  }
-  .pageGetStarted .section#headerSection .textWrapper > h1, .pageGetStarted .section#headerSection .textWrapper > p {
-    max-width: none;
-  }
-  .pageGetStarted .section#headerSection .imgWrapper {
-    display: none;
-  }
-  .pageGetStarted .section#developerSection {
-    padding: 8rem 0.7rem 4rem;
-  }
-  .pageGetStarted .section#developerSection #tab {
-    width: 95%;
-  }
-  .pageGetStarted .section#developerSection #tab .item.active > a {
-    width: auto;
-  }
   .pageGetStarted .section#developerSection .tabContent {
-    height: 650px;
     width: 95%;
   }
   .pageGetStarted .section#developerSection .flexWrapper {
     display: block;
   }
   .pageGetStarted .section#developerSection #tab .item {
-    flex: 1;
-  }
-  .pageGetStarted .section#developerSection #tab .item:nth-child(1).active {
-    margin: 1rem 0 -1px 0 !important;
-  }
-  .pageGetStarted .section#developerSection #tab .item:nth-child(1) {
-    margin: 1rem 10vw 0 0 !important;
-  }
-  .pageGetStarted .section#developerSection #tab .item.active {
-    margin: 1rem 0 -1px;
-  }
-  .pageGetStarted .section#developerSection #tab .item {
     margin: 1rem 0 0;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .textWrapper h2 {
-    font-size: 1.5rem;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .textWrapper p, .pageGetStarted .section#developerSection .tabContent .textWrapper .list p {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
   }
   .pageGetStarted .section#developerSection .tabContent > .textWrapper {
     margin-bottom: 2.5rem;
@@ -1363,38 +1244,6 @@
   .pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper {
     margin-bottom: 1.5rem;
     width: auto;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .flexWrapper .imgWrapper {
-    padding: 0 8rem;
-    width: auto;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list div p:nth-child(1) {
-    font-size: 0.8rem;
-    margin-right: 0.2rem;
-    width: 24px;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list div p:nth-child(2) {
-    vertical-align: middle;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper .list > div {
-    margin-bottom: 0.5rem;
-  }
-}
-@media (max-width: 550px) {
-  .pageGetStarted .section#headerSection .textWrapper > h1 {
-    font-size: 7.5vw;
-  }
-  .pageGetStarted .section#developerSection #tab .item {
-    font-size: 4vw;
-  }
-  .pageGetStarted .section#developerSection .tabContent {
-    height: 600px;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .textWrapper h2 {
-    font-size: 6vw;
-  }
-  .pageGetStarted .section#developerSection .tabContent > .flexWrapper .imgWrapper {
-    padding: 0 4rem;
   }
 }
 
@@ -1416,6 +1265,11 @@
 @font-face {
   font-family: fira;
   src: url("/fonts/FiraSans-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: ubuntu-mono;
+  src: url("/fonts/UbuntuMono-R.ttf");
   font-weight: 700;
 }
 body {
@@ -1441,6 +1295,10 @@ p, ul, li {
 
 .subtitle {
   font-weight: 200;
+}
+
+pre {
+  font-family: ubuntu-mono;
 }
 
 .rchainSectionTop {
@@ -1906,7 +1764,7 @@ p, ul, li {
   color: white;
   margin: 0 0 6rem;
 }
-#rhoSection .section > .flexWrapper h1 {
+#rhoSection .section > .flexWrapper h3 {
   color: #daacd5;
   font-size: 2.3rem;
   margin-right: 2rem;
@@ -1934,7 +1792,7 @@ p, ul, li {
 }
 
 @media (max-width: 1200px) {
-  #rhoSection > .flexWrapper h1 {
+  #rhoSection > .flexWrapper h3 {
     font-size: 2.1rem;
   }
 }
@@ -1943,7 +1801,7 @@ p, ul, li {
     margin: 0 0 2rem;
     font-size: 1.2rem;
   }
-  #rhoSection .section > .flexWrapper h1 {
+  #rhoSection .section > .flexWrapper h3 {
     font-size: 1.7rem;
     display: block;
     width: 100%;
@@ -1977,7 +1835,7 @@ p, ul, li {
   #rhoSection .section > .flexWrapper:nth-child(3) {
     display: block;
   }
-  #rhoSection .section > .flexWrapper h1 {
+  #rhoSection .section > .flexWrapper h3 {
     text-align: center;
     width: auto;
   }
@@ -1986,7 +1844,7 @@ p, ul, li {
   }
 }
 @media (max-width: 550px) {
-  #rhoSection > .flexWrapper h1 {
+  #rhoSection > .flexWrapper h3 {
     font-size: 5vw;
   }
   #rhoSection > .flexWrapper > .flexWrapper {

@@ -22,6 +22,12 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: ubuntu-mono;
+  src: url("/fonts/UbuntuMono-R.ttf");
+  font-weight: 700;
+}
+
 body {
   font-family: fira;
   font-weight: 300;
@@ -40,4 +46,7 @@ p, ul, li {
 }
 .subtitle {
   font-weight: 200;
+}
+pre {
+  font-family: ubuntu-mono;
 }

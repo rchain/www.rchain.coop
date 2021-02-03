@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <link rel="canonical" href="https://rchain.coop/get-started.html"></link>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -41,22 +42,20 @@
       content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
     />
 
-    <link rel="stylesheet" href="css/style.css?version=1" />
-    <link rel="stylesheet" href="css/layout.css?version=1" />
+    <link rel="stylesheet" href="css/style.css?version=2" />
+    <link rel="stylesheet" href="css/layout.css?version=2" />
 
     <link rel="shortcut icon" href="assets/favicon-red.png" />
 
     <meta
       name="description"
-      content="RChain is a cooperative building a blockchain platform and
-    social coordination technologies."
+      content="RChain is a platform for developers to build confidently and rapidly."
     />
     <meta property="og:title" content="RChain" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="RChain is a cooperative building a blockchain platform and
-    social coordination technologies."
+      content="RChain is a platform for developers to build confidently and rapidly."
     />
     <meta property="og:url" content="https://rchain.coop" />
     <meta
@@ -83,65 +82,7 @@
   </head>
 
   <body class="pageGetStarted">
-    <!--  Navbar Start -->
-    <header>
-      <div class="nav" id="nav">
-        <div class="wrapper">
-          <div class="item img">
-            <img src="/assets/logo_white_small.png" id="white" />
-            <img src="/assets/logo_red_small.png" id="red" />
-          </div>
-          <div class="item links" onclick="">
-            <a href="index.html">Home</a>
-          </div>
-          <div class="item links" onclick="">
-            <a href="platform.html">Platform</a>
-          </div>
-          <div class="item links" onclick="">
-            <a href="ecosystem.html">Ecosystem</a>
-          </div>
-          <div class="item links" onclick="">
-            <a href="hackathon.html">Hackathon</a>
-          </div>
-          <div class="item links with-dropdown">
-            <a href="javascript:void(0)"
-              >Community<span class="arrow">&rsaquo;</span></a
-            >
-            <div class="dropdown-container">
-              <div class="dropdown">
-                <a href="/community.html">Community Overview</a>
-                <a href="/team.html">Team</a>
-                <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
-                <a href="https://developer.rchain.coop/" target="_blank"
-                  >Developers</a
-                >
-                <a href="newsletter.html" target="_blank">Newsletter</a>
-              </div>
-            </div>
-          </div>
-          <div class="item links long">
-            <a href="/community.html" class="btn-blue">Join Cooperative</a>
-          </div>
-        </div>
-      </div>
-      <div class="nav-mobile">
-        <div class="menu-icon"><a>Menu</a></div>
-        <div class="dropdown hidden">
-          <a href="index.html">Home</a>
-          <a href="platform.html">Platform</a>
-          <a href="ecosystem.html">Ecosystem</a>
-          <a href="hackathon.html">Hackathon</a>
-          <a href="/community.html">Community / Join</a>
-          <a href="/team.html">Team</a>
-          <a href="https://developer.rchain.coop/" target="_blank"
-            >Developers</a
-          >
-          <a href="newsletter.html" target="_blank">Newsletter</a>
-          <a href="https://blog.rchain.coop/" target="_blank">Blog</a>
-        </div>
-      </div>
-    </header>
-    <!-- Navbar End -->
+    <header></header>
 
     <div class="bodyWrapper">
       <div class="rchainSectionTop red">
@@ -153,11 +94,9 @@
       <div class="section" id="developerSection">
         <div id="tab">
           <div class="item tab active" id="developer">
-            <img src="/assets/gear-icon@3x.png" />
             <a href="javascript:void(0)">Developers</a>
           </div>
           <div class="item tab" id="validator">
-            <img src="/assets/arrow-icon@3x.png" />
             <a href="javascript:void(0)">Validators</a>
           </div>
         </div>
@@ -171,32 +110,147 @@
                 rapidly. With just a few lines of code, your first RChain DApp
                 can be up and transacting on the blockchain.
               </p>
-              <h6>Get started in 4 steps:</h6>
-              <div class="list">
-                <div>
-                  <p>1</p>
-                  <p>
-                    <a
-                      href="https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+running+RNode"
-                      >Download RNode</a
-                    >
-                    and connect your Rnode to the network
-                  </p>
-                </div>
-                <div>
-                  <p>2</p>
-                  <p>
-                    Learn more about <a href="learn-rholang.html">Rholang</a>
-                  </p>
-                </div>
-                <div>
-                  <p>3</p>
-                  <p>
-                    Engage with the
-                    <a href="/community.html">RChain community</a>
-                  </p>
-                </div>
+              <h2>Quick development setup</h2>
+              <div class="instructions">
+                <p>
+                  Let's setup rnode for development, we will install rnode on
+                  the operating system, you can get the installer from
+                  <a
+                    href="https://github.com/rchain/rchain/releases/tag/v0.10.0"
+                    target="_blank"
+                    >github/rchain</a
+                  >, also check 
+                  <a
+                    href="https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+running+RNode"
+                    target="_blank"
+                  >full documentation</a> if something is missing.
+                </p>
+                <p>on ubuntu/debian</p>
+                <pre>$ apt install ./rnode_0.x.x_all.deb</pre>
+                <p>on macOS</p>
+                <ul>
+                  <li>Prerequisites:</li>
+                  <li>
+                    Java - We recommend Open JDK 11,
+                    https://openjdk.java.net/projects/jdk/11/
+                  </li>
+                  <li>
+                    Libsodium - https://download.libsodium.org/doc/ installed in
+                    a standard prefix (/user or /user/local)
+                  </li>
+                </ul>
+                <pre>
+$ tar -xvf rnode-0.x.x.tgz
+$ cd rnode-0.x.x
+$ ./macos_install.sh</pre
+                >
+                <p>
+                  If you have another operating system or want to use docker
+                  please consult
+                  <a
+                    href="https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+running+RNode"
+                    target="_blank"
+                    >full documentation</a
+                  >
+                </p>
+                <p>
+                  Two configuration files are necessary,
+                  <b class="path">~/.rnode/genesis/bonds.txt</b> file and
+                  <b class="path">~/.rnode/genesis/wallets.txt</b> file. We will use the
+                  following key pair, do not use it in any real world blockchain
+                  application.
+                </p>
+                <p class="pk">
+                  Private key:
+                  28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36
+                  <br />
+                  Public key:
+                  04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58
+                </p>
+                <pre>
+$ mkdir ~/.rnode && mkdir ~/.rnode/genesis
+$ echo "04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58 100000000000" > ~/.rnode/genesis/bonds.txt
+$ echo "0x7f847d40c3ec604fe3d4263bfdd04111eb9b4e32,1000000000000000,0" > ~/.rnode/genesis/wallets.txt
+</pre
+                >
+                <p>
+                  Now the configuration files are set up, there is one validator
+                  allowed to deploy, and only one address that has REV. We can
+                  run the node.
+                </p>
+                <pre>
+$ rnode run -s --validator-private-key  28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36  --dev-mode
+</pre
+                >
+                <p>
+                  This node is
+                  standalone, it is a one node blockchain network. it is
+                  executed with the <b class="path">--dev-mode</b>
+                  option, so the API is an extended API with explore deploy
+                  available. Now in another shell let's deploy our first rholang file and
+                  propose the block.
+                </p>
+                <pre>
+$ echo "new stdout(\`rho:io:stdout\`) in { stdout!(\"hello world\") }" > hello.rho
+$ rnode deploy --valid-after-block-number 0 --phlo-price 1 --phlo-limit 10000000 --private-key 28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36 hello.rho
+$ rnode --grpc-port 40402 propose
+</pre
+                >
+                <p>
+                  You should see "hello world" pop up in the logs.
+                </p>
               </div>
+              <p>
+                You can check the
+                <a
+                  href="https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+running+RNode"
+                  target="_blank"
+                  >full documentation</a
+                >
+                to go further, also check the
+                <a
+                  target="_blank"
+                  href="https://github.com/fabcotech/rchain-toolkit"
+                >
+                  rchain-toolkit javascript SDK
+                </a>
+                <br />
+                <br />
+                Please reach out to us on
+                <a target="_blank" href="https://discord.gg/NWkQnfH">Discord</a>
+                if you encounter any issue.
+                <br />
+              </p>
+
+              <h2>Rholang</h2>
+              <ul class="list">
+                <li>
+                  <a href="https://developer.rchain.coop/">developer.rchain.coop</a>
+                </li>
+                <li>
+                  <a href="https://developer.rchain.coop/rholang-playground">Rholang playground</a>
+                </li>
+                <li>
+                  <a href="https://rholang.github.io/">rholang.github.io</a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md"
+                    >Tutorial by RChain Platform Devs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/JoshOrndorff/LearnRholangByExample"
+                    >Joshy Orndorff's Rholang Tutorial</a
+                  >
+                </li>
+                <li>
+                  <a href="https://youtu.be/7tW1fAWg6s8"
+                    >Greg Meredith's Devcon3 Rholang talk</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -206,8 +260,8 @@
             <div class="textWrapper">
               <h2>More information for validators is coming soon!</h2>
               <p>
-                Mainnet is currently running with 9 Co-op run validator nodes
-                plus one Co-op member run node.
+                Mainnet is currently running with 30 coop run validator nodes
+                plus. This is expected to change around Q2 2021 with the POS developments.
               </p>
             </div>
           </div>
@@ -241,5 +295,6 @@
     </div>
     <script src="/js/rchain.coop_Browser.js"></script>
     <script src="/js/get-started_Browser.js"></script>
+    <script src="/js/nav.js?version=1"></script>
   </body>
 </html>

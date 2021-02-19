@@ -1,51 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="canonical" href="https://rchain.coop/member-invoice.html"></link>
+  <head>
+    <link rel="canonical" href="https://rchain.coop/community.html"></link>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-6B7FD7W88H');
+      gtag("config", "G-6B7FD7W88H");
+    </script>
+    <script>
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var captureOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = url;}
+      });
+    }
     </script>
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <title>RChain | invoice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <meta name="google-site-verification" content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg" />
-    <link rel='stylesheet' href='css/layout.css' />
-    <link rel='stylesheet' href='css/fonts.css' />
-    <link rel='stylesheet' href='css/community.css' />
+    <title>RChain | community</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <meta
+      name="google-site-verification"
+      content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
+    />
+
+    <link rel="stylesheet" href="css/layout.css?version=2" />
+    <link rel="stylesheet" href="css/style.css?version=2" />
+
     <link rel="shortcut icon" href="assets/favicon-red.png" />
-    <meta property="og:title" content="RChain Community" />
+
+    <meta
+      name="description"
+      content="RChain is a cooperative building a blockchain platform and
+    social coordination technologies."
+    />
+    <meta property="og:title" content="RChain" />
     <meta property="og:type" content="website" />
-    <meta name="description" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="https://rchain.coop/community" />
-    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="RChain is a cooperative building a blockchain platform and
+    social coordination technologies."
+    />
+    <meta property="og:url" content="https://rchain.coop/member-invoice.html" />
+    <meta
+      property="og:image"
+      content="https://rchain.coop/assets/og_index.jpg"
+    />
+    <meta property="og:image:height" content="565" />
+    <meta property="og:image:width" content="1080" />
+
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RChain Community" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="https://rchain.coop/community" />
-    <meta name="twitter:description" content="" />
+    <meta name="twitter:title" content="RChain | community" />
+    <meta
+      name="twitter:image"
+      content="https://rchain.coop/assets/og_index.jpg"
+    />
+    <meta name="twitter:creator" content="@rchain_coop" />
+    <meta name="twitter:url" content="https://rchain.coop/member-invoice.html" />
+    <meta name="twitter:site" content="https://rchain.coop" />
+    <meta
+      name="twitter:description"
+      content="RChain is a cooperative building a blockchain platform and
+    social coordination technologies."
+    />
+  </head>
 
-</head>
-
-<body>
+  <body class="pageCommunity">
     <header>
     </header>
     <div class="bodyWrapper">
         <div class="section" id="rchainSection">
-            <h1>The Power of the Cooperative</h1>
+            <h1>Join the Cooperative</h1>
             <p>The purpose of RChain is to provide its members discounted access to a decentralized, public computation platform. RChain supports the development of on-chain tools for governance and online communications that promote collaboration at scale. Our mission is to provide a platform that promotes the proliferation of social coordination technologies.</p>
         </div>
         
         <div class="section" id="posSection">
             <div class="textWrapper">
-                <p>Becoming a member requires a non-refundable one-time fee of $20 (Click the Stripe Invoice <strong>Checkout</strong> button below).</p>
+                <p>Becoming a member requires a non-refundable one-time fee of $20 via REV payment or Stripe Checkout.</p>
                 <p>To maintain your membership, you must spend at least $10 worth of REV each year on contract deployment fees. You are then eligible for a yearly rebate that will offset these transaction fees. (The Co-op has not yet enforced this policy and has waived this requirement in past years.)</p>
                 <p>After payment, you will receive instructions on completing the following <strong>required</strong> steps:</p>
                 <p></p>
@@ -55,6 +104,7 @@
                     <li>Secure upload of the full photo page of your valid passport.</a></li>
                     <li>ID-Verification (over webcam) with Co-op staff</li>
                 </ul>
+                <p>To pay with Credit Card, select Stripe
         
                 <!-- Load Stripe.js on your website. -->
                 <script src="https://js.stripe.com/v3"></script>
@@ -68,6 +118,7 @@
                 >
                 Checkout
                 </button>
+                </p>
 
                 <div id="error-message"></div>
 
@@ -101,29 +152,18 @@
                 });
                 })();
                 </script>
+                <p>To pay with REV:</p>
+                <ul>
+                    <li>Connect with a Co-op Staff member on RChain's Discord Guild by posting @greeter in the #guest channel on <a href="https://discord.gg/NWkQnfH" onclick="captureOutboundLink('https://discord.gg/NWkQnfH'); return false;">Discord</a>.</li>
+                    <li>Be patient. Staff will reply within a few hours.
+                    <li>Communicate your REV address to the staff member <u>prior</u> to sending $20 worth of REV.</li>
+                    <li>Staff will confirm the membership fee REV address ending in Qcn192Vm8.</li>
+                    <li>The fee in REV is based off of <a target="_blank" rel="noopener noreferrer" href="https://coinmarketcap.com/currencies/rchain/">Coinmarketcap</a> pricing.</li>
+                </ul>
+
         
             <p></p>
         
-            <!-- <p>"The cooperative is an institutional innovation. It’s a structure designed to make apparent to people the truth, which is that ultimately we will benefit from working together and supporting one another's success." &mdash; Nathan Schneider, author of <span style="border:1px solid black"><i>Everything for Everyone: The Radical Tradition that is Shaping the Next Economy</i> and RChain Cooperative member</span></p>
-            </div>
-            <div class="flexWrapper">
-                <div class="imgWrapper">
-                    <img src="/assets/community/RChain_Logo_Color.jpg">
-                </div>
-                <div class="textWrapper">
-                    <p>RChain follows the International Co-operative Alliance principles. To learn more about what this means, read their <a href="https://www.ica.coop/sites/default/files/publication-files/ica-guidance-notes-en-310629900.pdf" target="_blank">Guidance Notes</a>.</p>
-                    <ul>
-                        <li><span></span>Voluntary and Open Membership</li>
-                        <li><span></span>Democratic Member Control</li>
-                        <li><span></span>Member Economic Participation</li>
-                        <li><span></span>Autonomy and Independence</li>
-                        <li><span></span>Education, Training, and Information</li>
-                        <li><span></span>Co-operation Among Co-operatives</li>
-                        <li><span></span>Concern for Community</li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
         
         <div class="section" id="communitySection">
             <div>

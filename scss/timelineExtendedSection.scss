@@ -1,0 +1,80 @@
+#timelineExtendedSection {
+  background-image: url("/assets/extendedtimeline.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  .section {
+    background: transparent;
+    h2 {
+      margin: 0 auto 0;
+      margin-bottom: 0;
+      font-size: 3rem;
+    }
+    & > ul {
+      position: relative;
+      list-style: none;
+      &:before {
+        width: 1px;
+        background-color: #fff;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: "";
+      }
+      & > li {
+        &.future {
+          color: #b20f3d;
+          font-size: 1.8rem;
+        }
+        &.passed {
+          font-size: 1.8rem;
+        }
+        position: relative;
+        ul {
+          list-style: none;
+        }
+        h4 {
+          .date {
+            padding-right: 24px;
+            position: relative;
+            &:after {
+              position: absolute;
+              content: "-";
+              right: 8px;
+              top: 0px;
+            }
+          }
+        }
+        &:not(.future):not(.passed):before {
+          width: 8px;
+          height: 8px;
+          border-radius: 6px;
+          background-color: #fff;
+          position: absolute;
+          top: 6px;
+          left: -43px;
+          content: "";
+        }
+        .description {
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 18px 8px;
+          border: 1px solid #555;
+          font-size: 1.1rem;
+          max-width: 850px;
+          ul {
+            margin-top: 5px;
+            padding-left: 10px;
+          }
+          ul li {
+            font-size: 1.1rem;
+            padding-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}

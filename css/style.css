@@ -1516,6 +1516,10 @@ pre {
 .nav .wrapper .item.with-dropdown:hover .dropdown-container, .nav .wrapper .item.with-dropdown.openned .dropdown-container {
   display: block;
 }
+.nav .wrapper .item.with-dropdown a:hover {
+  border-bottom: 3px solid transparent;
+  border-color: #a50034;
+}
 .nav .wrapper .item:hover .arrow, .nav .wrapper .item.openned .arrow {
   transform: translateY(-18px) rotate(90deg);
 }
@@ -1854,6 +1858,84 @@ pre {
     width: auto;
   }
 }
+#timelineExtendedSection {
+  background-image: url("/assets/extendedtimeline.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#timelineExtendedSection .section {
+  background: transparent;
+}
+#timelineExtendedSection .section h2 {
+  margin: 0 auto 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+#timelineExtendedSection .section > ul {
+  position: relative;
+  list-style: none;
+}
+#timelineExtendedSection .section > ul:before {
+  width: 1px;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+}
+#timelineExtendedSection .section > ul > li {
+  position: relative;
+}
+#timelineExtendedSection .section > ul > li.future {
+  color: #b20f3d;
+  font-size: 1.8rem;
+}
+#timelineExtendedSection .section > ul > li.passed {
+  font-size: 1.8rem;
+}
+#timelineExtendedSection .section > ul > li ul {
+  list-style: none;
+}
+#timelineExtendedSection .section > ul > li h4 .date {
+  padding-right: 24px;
+  position: relative;
+}
+#timelineExtendedSection .section > ul > li h4 .date:after {
+  position: absolute;
+  content: "-";
+  right: 8px;
+  top: 0px;
+}
+#timelineExtendedSection .section > ul > li:not(.future):not(.passed):before {
+  width: 8px;
+  height: 8px;
+  border-radius: 6px;
+  background-color: #fff;
+  position: absolute;
+  top: 6px;
+  left: -43px;
+  content: "";
+}
+#timelineExtendedSection .section > ul > li .description {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 18px 8px;
+  border: 1px solid #555;
+  font-size: 1.1rem;
+  max-width: 850px;
+}
+#timelineExtendedSection .section > ul > li .description ul {
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#timelineExtendedSection .section > ul > li .description ul li {
+  font-size: 1.1rem;
+  padding-bottom: 4px;
+}
+
 @media (max-width: 960px) {
   p,
 li {

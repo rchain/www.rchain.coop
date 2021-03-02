@@ -64,7 +64,7 @@ export class Nav extends React.Component {
               >
                 <div className={`dropdown`}>
                   <a href="/community.html">Community Overview</a>
-                  <a href="/research.html">Reasearch</a>
+                  <a href="/research.html">Research</a>
                   <a href="/team.html">Team</a>
                   <a href="https://blog.rchain.coop/" target="_blank">
                     Blog

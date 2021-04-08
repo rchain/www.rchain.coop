@@ -125,7 +125,11 @@
         font-size: 3.6rem;
         font-weight: 700;
       }
-      p {
+      p.second-p {
+        margin-top: 10px;
+        padding: 8px;
+      }
+      p.main-p {
         margin-top: 10px;
         font-weight: 300;
         font-size: 1.9rem;

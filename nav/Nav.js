@@ -73,8 +73,8 @@ export class Nav extends React.Component {
                   <a href="https://developer.rchain.coop/" target="_blank">
                     Developers
                   </a>
-                  <a href="/newsletter.html" target="_blank">
-                    Newsletter
+                  <a href="/climate.html" target="_blank">
+                    Climate
                   </a>
                 </div>
               </div>
@@ -112,8 +112,8 @@ export class Nav extends React.Component {
             <a href="https://developer.rchain.coop/" target="_blank">
               Developers
             </a>
-            <a href="/newsletter.html" target="_blank">
-              Newsletter
+            <a href="/climate.html" target="_blank">
+              Climate
             </a>
             <a href="https://blog.rchain.coop/" target="_blank">
               Blog

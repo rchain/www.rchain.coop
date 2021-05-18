@@ -246,6 +246,13 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.pageIndex .top .left .timeline-cont .timeline .roadmap-link {
+  position: absolute;
+  bottom: -35px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
 .pageIndex .top .left .timeline-cont .timeline > div {
   position: relative;
   padding-left: 10px;
@@ -467,6 +474,13 @@
     width: 100%;
     padding-top: 20px;
     margin-top: 60px;
+  }
+  .pageIndex .top .left .timeline-cont .timeline .roadmap-link {
+    position: absolute;
+    bottom: -60px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
   }
   .pageIndex .top .left .timeline-cont .timeline:before {
     height: 2px;
@@ -1859,7 +1873,7 @@ pre {
     width: auto;
   }
 }
-#timelineExtendedSection {
+.timelineExtendedSection {
   background-image: url("/assets/extendedtimeline.jpg");
   background-position: center;
   background-size: cover;
@@ -1867,19 +1881,19 @@ pre {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-#timelineExtendedSection .section {
+.timelineExtendedSection .section {
   background: transparent;
 }
-#timelineExtendedSection .section h2 {
+.timelineExtendedSection .section h2 {
   margin: 0 auto 0;
   margin-bottom: 0;
   font-size: 3rem;
 }
-#timelineExtendedSection .section > ul {
+.timelineExtendedSection .section > ul {
   position: relative;
   list-style: none;
 }
-#timelineExtendedSection .section > ul:before {
+.timelineExtendedSection .section > ul:before {
   width: 1px;
   background-color: #fff;
   height: 100%;
@@ -1888,37 +1902,37 @@ pre {
   left: 0px;
   content: "";
 }
-#timelineExtendedSection .section > ul > li {
+.timelineExtendedSection .section > ul > li {
   position: relative;
 }
-#timelineExtendedSection .section > ul > li.future {
+.timelineExtendedSection .section > ul > li.future {
   color: #b20f3d;
   font-size: 1.8rem;
 }
-#timelineExtendedSection .section > ul > li.passed {
+.timelineExtendedSection .section > ul > li.passed {
   font-size: 1.8rem;
 }
-#timelineExtendedSection .section > ul > li ul {
+.timelineExtendedSection .section > ul > li ul {
   list-style: none;
 }
-#timelineExtendedSection .section > ul > li a {
+.timelineExtendedSection .section > ul > li a {
   color: #33e;
   display: block;
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 1.2rem;
 }
-#timelineExtendedSection .section > ul > li h4 .date {
+.timelineExtendedSection .section > ul > li h4 .date {
   padding-right: 24px;
   position: relative;
 }
-#timelineExtendedSection .section > ul > li h4 .date:after {
+.timelineExtendedSection .section > ul > li h4 .date:after {
   position: absolute;
   content: "-";
   right: 8px;
   top: 0px;
 }
-#timelineExtendedSection .section > ul > li:not(.future):not(.passed):before {
+.timelineExtendedSection .section > ul > li:not(.future):not(.passed):before {
   width: 8px;
   height: 8px;
   border-radius: 6px;
@@ -1928,18 +1942,18 @@ pre {
   left: -43px;
   content: "";
 }
-#timelineExtendedSection .section > ul > li .description {
+.timelineExtendedSection .section > ul > li .description {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 18px 8px;
   border: 1px solid #555;
   font-size: 1.1rem;
   max-width: 850px;
 }
-#timelineExtendedSection .section > ul > li .description ul {
+.timelineExtendedSection .section > ul > li .description ul {
   margin-top: 5px;
   padding-left: 10px;
 }
-#timelineExtendedSection .section > ul > li .description ul li {
+.timelineExtendedSection .section > ul > li .description ul li {
   font-size: 1.1rem;
   padding-bottom: 4px;
 }

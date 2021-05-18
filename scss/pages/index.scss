@@ -66,6 +66,13 @@
         align-items: flex-start;
         flex-direction: column;
         .timeline {
+          .roadmap-link {
+            position: absolute;
+            bottom: -35px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.1rem;
+          }
           position: relative;
           height: 262px;
           display: flex;
@@ -312,6 +319,13 @@
           height: auto;
           width: 100%;
           .timeline {
+            .roadmap-link {
+              position: absolute;
+              bottom: -60px;
+              color: #fff;
+              font-weight: 500;
+              font-size: 1.4rem;
+            }
             height: auto;
             flex-direction: row;
             width: 100%;

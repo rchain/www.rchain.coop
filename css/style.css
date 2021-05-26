@@ -1154,11 +1154,11 @@
   }
 }
 
-.pageGetStarted .section#developerSection #tab {
+.pageDeveloper .section#developerSection #tab {
   display: flex;
   align-items: flex-start;
 }
-.pageGetStarted .section#developerSection #tab .item {
+.pageDeveloper .section#developerSection #tab .item {
   width: auto;
   margin-right: 10px;
   font-size: 1.1rem;
@@ -1168,98 +1168,102 @@
   justify-content: flex-start;
   align-items: center;
 }
-.pageGetStarted .section#developerSection #tab > .item img {
+.pageDeveloper .section#developerSection #tab > .item img {
   display: block;
   width: 3rem;
 }
-.pageGetStarted .section#developerSection #tab .item a {
+.pageDeveloper .section#developerSection #tab .item a {
   border-bottom: 2px solid white;
   text-decoration: none;
   padding: 10px;
   color: #484848;
 }
-.pageGetStarted .section#developerSection #tab .item.active > a {
+.pageDeveloper .section#developerSection #tab .item.active > a {
   border-bottom: 3px solid #ff4143;
   color: #ff4143;
 }
-.pageGetStarted .section#developerSection .tabContent.active {
+.pageDeveloper .section#developerSection .tabContent.active {
   display: block;
 }
-.pageGetStarted .section#developerSection .tabContent {
+.pageDeveloper .section#developerSection .tabContent {
   display: none;
   padding-top: 20px;
   width: 70%;
 }
-.pageGetStarted .section#developerSection .tabContent > .textWrapper h2 {
+.pageDeveloper .section#developerSection .tabContent > .textWrapper h2 {
   margin-bottom: 0.2rem;
 }
-.pageGetStarted .section#developerSection .tabContent > .textWrapper p {
+.pageDeveloper .section#developerSection .tabContent > .textWrapper p {
   margin: auto;
   width: 50rem;
 }
-.pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper {
+.pageDeveloper .section#developerSection .tabContent > .flexWrapper .textWrapper {
   text-align: left;
   max-width: 900px;
 }
-.pageGetStarted .list li {
+.pageDeveloper .list li {
   margin-bottom: 16px;
 }
-.pageGetStarted .instructions pre {
-  white-space: break-spaces;
-  word-break: normal;
-  background-color: #25255f;
-  color: #fff;
-  padding-top: 16px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 2px;
-  line-height: 1.6rem;
+.pageDeveloper .instructions {
+  padding-bottom: 50px;
 }
-.pageGetStarted .instructions .pk {
+.pageDeveloper .instructions .red {
+  color: #911;
+  font-weight: 400;
+}
+.pageDeveloper .instructions p {
+  font-size: 1rem;
+}
+.pageDeveloper .instructions pre {
+  margin-bottom: 30px;
+}
+.pageDeveloper .instructions h3 {
+  padding-top: 30px;
+}
+.pageDeveloper .instructions .pk {
   white-space: unset;
   word-break: break-all;
   font-size: 1rem;
 }
-.pageGetStarted .instructions .path {
+.pageDeveloper .instructions .path {
   font-size: 1rem;
 }
-.pageGetStarted .instructions ul {
-  padding-left: 13px;
+.pageDeveloper .instructions ul {
+  padding-left: 20px;
 }
-.pageGetStarted .instructions ul li {
-  font-size: 0.9rem;
+.pageDeveloper .instructions ul li {
+  font-size: 1rem;
 }
 @media (max-width: 1200px) {
-  .pageGetStarted .section#developerSection #tab {
+  .pageDeveloper .section#developerSection #tab {
     width: 80%;
   }
-  .pageGetStarted .section#developerSection .tabContent {
+  .pageDeveloper .section#developerSection .tabContent {
     width: 80%;
   }
 }
 @media (max-width: 960px) {
-  .pageGetStarted .section#headerSection .textWrapper > h1 {
+  .pageDeveloper .section#headerSection .textWrapper > h1 {
     margin: 0 0 2rem;
   }
-  .pageGetStarted .section#developerSection .tabContent > .textWrapper p {
+  .pageDeveloper .section#developerSection .tabContent > .textWrapper p {
     width: auto;
   }
 }
 @media (max-width: 767px) {
-  .pageGetStarted .section#developerSection .tabContent {
+  .pageDeveloper .section#developerSection .tabContent {
     width: 95%;
   }
-  .pageGetStarted .section#developerSection .flexWrapper {
+  .pageDeveloper .section#developerSection .flexWrapper {
     display: block;
   }
-  .pageGetStarted .section#developerSection #tab .item {
+  .pageDeveloper .section#developerSection #tab .item {
     margin: 1rem 0 0;
   }
-  .pageGetStarted .section#developerSection .tabContent > .textWrapper {
+  .pageDeveloper .section#developerSection .tabContent > .textWrapper {
     margin-bottom: 2.5rem;
   }
-  .pageGetStarted .section#developerSection .tabContent > .flexWrapper .textWrapper {
+  .pageDeveloper .section#developerSection .tabContent > .flexWrapper .textWrapper {
     margin-bottom: 1.5rem;
     width: auto;
   }

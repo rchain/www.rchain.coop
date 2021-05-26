@@ -7,6 +7,9 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"
     ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-bash.min.js" integrity="sha512-JvRd44DHaJAv/o3wxi/dxhz2TO/jwwX8V5/LTr3gj6QMQ6qNNGXk/psoingLDuc5yZmccOq7XhpVaelIZE4tsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-css.min.js" integrity="sha512-1qYok2x2Rsm2y+mrdyrp00iH7xYSgVyIQ1egDAoT7CBZ3kSzlaJK+NhWAh746NeL3gnH6dnP8FGS+3xOdwO7ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -31,7 +34,7 @@
     }
     </script>
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <title>RChain | get started</title>
+    <title>RChain | developer</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -66,7 +69,7 @@
     <meta property="og:image:width" content="1080" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RChain| get started" />
+    <meta name="twitter:title" content="RChain| developer" />
     <meta
       name="twitter:image"
       content="https://rchain.coop/assets/og_index.jpg"
@@ -81,7 +84,7 @@
     />
   </head>
 
-  <body class="pageGetStarted">
+  <body class="pageDeveloper">
     <header></header>
 
     <div class="bodyWrapper">
@@ -116,7 +119,7 @@
                   Let's setup rnode for development, we will install rnode on
                   the operating system, you can get the installer from
                   <a
-                    href="https://github.com/rchain/rchain/releases/tag/v0.10.0"
+                    href="https://github.com/rchain/rchain/releases"
                     target="_blank"
                     >github/rchain</a
                   >, also check 
@@ -125,9 +128,9 @@
                     target="_blank"
                   >full documentation</a> if something is missing.
                 </p>
-                <p>on ubuntu/debian</p>
-                <pre>$ apt install ./rnode_0.x.x_all.deb</pre>
-                <p>on macOS</p>
+                <p><u>on ubuntu/debian</u></p>
+                <pre class="language-bash"><code class="language-bash">$ apt install ./rnode_0.x.x_all.deb</code></pre>
+                <p><u>on macOS</u></p>
                 <ul>
                   <li>Prerequisites:</li>
                   <li>
@@ -139,11 +142,9 @@
                     a standard prefix (/user or /user/local)
                   </li>
                 </ul>
-                <pre>
-$ tar -xvf rnode-0.x.x.tgz
-$ cd rnode-0.x.x
-$ ./macos_install.sh</pre
-                >
+                <pre class="language-bash"><code class="language-bash">tar -xvf rnode-0.x.x.tgz
+cd rnode-0.x.x
+./macos_install.sh</code></pre>
                 <p>
                   If you have another operating system or want to use docker
                   please consult
@@ -153,51 +154,45 @@ $ ./macos_install.sh</pre
                     >full documentation</a
                   >
                 </p>
+                <h3>Configuration files</h3>
                 <p>
                   Two configuration files are necessary,
                   <b class="path">~/.rnode/genesis/bonds.txt</b> file and
                   <b class="path">~/.rnode/genesis/wallets.txt</b> file. We will use the
-                  following key pair, do not use it in any real world blockchain
-                  application.
+                  following key pair.
                 </p>
-                <p class="pk">
-                  Private key:
-                  28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36
-                  <br />
-                  Public key:
-                  04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58
-                </p>
-                <pre>
-$ mkdir ~/.rnode && mkdir ~/.rnode/genesis
-$ echo "04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58 100000000000" > ~/.rnode/genesis/bonds.txt
-$ echo "0x7f847d40c3ec604fe3d4263bfdd04111eb9b4e32,1000000000000000,0" > ~/.rnode/genesis/wallets.txt
-</pre
-                >
+                <p class="red">Do not use this private key for any other purpose than development</p>
+                <pre class="language-bash"><code class="language-bash">private key 28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36
+public key  04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58</code></pre>
+                <pre class="language-bash"><code class="language-bash">mkdir ~/.rnode && mkdir ~/.rnode/genesis
+echo "04be064356846e36e485408df50b877dd99ba406d87208add4c92b3c7d4e4c663c2fbc6a1e6534c7e5c0aec00b26486fad1daf20079423b7c8ebffbbdff3682b58 100000000000" > ~/.rnode/genesis/bonds.txt
+echo "0x7f847d40c3ec604fe3d4263bfdd04111eb9b4e32,1000000000000000,0" > ~/.rnode/genesis/wallets.txt</code></pre>
+                <h3>Running the blockchain</h3>
                 <p>
                   Now the configuration files are set up, there is one validator
                   allowed to deploy, and only one address that has REV. We can
                   run the node.
                 </p>
-                <pre>
-$ rnode run -s --validator-private-key  28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36  --dev-mode
-</pre
-                >
+                <pre class="language-bash"><code class="language-bash">rnode run -s --validator-private-key  28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36  --dev-mode</code></pre>
                 <p>
                   This node is
-                  standalone, it is a one node blockchain network. it is
+                  standalone, it is a one node blockchain network,
+                  therefore it does not download any block and starts at
+                  block height 0. It is
                   executed with the <b class="path">--dev-mode</b>
                   option, so the API is an extended API with explore deploy
-                  available. Now in another shell let's deploy our first rholang file and
+                  available.
+                </p>
+                <h3>Do a first deploy and propose block</h3>
+                <p>
+                  Now in another shell let's deploy our first rholang file and
                   propose the block.
                 </p>
-                <pre>
-$ echo "new stdout(\`rho:io:stdout\`) in { stdout!(\"hello world\") }" > hello.rho
-$ rnode deploy --valid-after-block-number 0 --phlo-price 1 --phlo-limit 10000000 --private-key 28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36 hello.rho
-$ rnode --grpc-port 40402 propose
-</pre
-                >
+                <pre class="language-bash"><code class="language-bash">echo "new stdout(\`rho:io:stdout\`) in { stdout!(\"hello world\") }" > hello.rho
+rnode deploy --valid-after-block-number 0 --phlo-price 1 --phlo-limit 10000000 --private-key 28a5c9ac133b4449ca38e9bdf7cacdce31079ef6b3ac2f0a080af83ecff98b36 hello.rho
+rnode --grpc-port 40402 propose</code></pre>
                 <p>
-                  You should see "hello world" pop up in the logs.
+                  You should see "hello world" pop up in the logs, it means that your deploy has been included into a block, and the transaction has been executed.
                 </p>
               </div>
               <p>
@@ -225,17 +220,17 @@ $ rnode --grpc-port 40402 propose
               <h2>Rholang</h2>
               <ul class="list">
                 <li>
-                  <a href="https://developer.rchain.coop/">developer.rchain.coop</a>
+                  <a target="_blank" href="hhttps://github.com/JoshOrndorff/LearnRholangByExample/tree/master/cheatSheet#rholang-cheat-sheet">rholang cheat sheet</a>
                 </li>
                 <li>
-                  <a href="https://developer.rchain.coop/rholang-playground">Rholang playground</a>
+                  <a target="_blank" href="https://developer.rchain.coop/rholang-playground">Rholang playground</a>
                 </li>
                 <li>
-                  <a href="https://rholang.github.io/">rholang.github.io</a>
+                  <a target="_blank" href="https://rholang.github.io/">rholang.github.io</a>
                 </li>
                 <li>
                   <a
-                    href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md"
+                    target="_blank" href="https://github.com/rchain/rchain/blob/master/docs/rholang/rholangtut.md"
                     >Tutorial by RChain Platform Devs</a
                   >
                 </li>
@@ -295,6 +290,6 @@ $ rnode --grpc-port 40402 propose
     </div>
     <script src="/js/rchain.coop_Browser.js"></script>
     <script src="/js/get-started_Browser.js"></script>
-    <script src="/js/nav.js?version=5"></script>
+    <script src="/js/nav.js?version=4"></script>
   </body>
 </html>

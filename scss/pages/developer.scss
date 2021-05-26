@@ -1,4 +1,4 @@
-.pageGetStarted {
+.pageDeveloper {
   .section#developerSection #tab {
     display: flex;
     align-items: flex-start;
@@ -61,17 +61,19 @@
   }
 
   .instructions {
+    padding-bottom: 50px;
+    .red {
+      color: #911;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1rem;
+    }
     pre {
-      white-space: break-spaces;
-      word-break: normal;
-      background-color: rgb(37, 37, 95);
-      color: #fff;
-      padding-top: 16px;
-      padding-bottom: 12px;
-      padding-left: 12px;
-      padding-right: 12px;
-      border-radius: 2px;
-      line-height: 1.6rem;
+      margin-bottom: 30px;
+    }
+    h3 {
+      padding-top: 30px;
     }
     .pk {
       white-space: unset;
@@ -82,9 +84,9 @@
       font-size: 1rem;
     }
     ul {
-      padding-left: 13px;
+      padding-left: 20px;
       li {
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
     }
   }

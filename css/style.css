@@ -707,6 +707,18 @@
 .pagePlatform #rchainSection .wrapper .textWrapper p {
   margin: 0;
 }
+.pagePlatform #currentStateSection p,
+.pagePlatform #currentStateSection ul {
+  max-width: 1200px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  color: #555;
+}
+.pagePlatform #currentStateSection li {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
 .pagePlatform #posSection {
   padding: 4rem 4rem;
 }
@@ -1378,7 +1390,8 @@ pre {
   margin-top: 0px;
 }
 .rchainSectionTop h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   margin-top: 3px;
   margin-bottom: 0px;
   padding-bottom: 10px;
@@ -1388,9 +1401,10 @@ pre {
 }
 .rchainSectionTop p {
   font-size: 1.2rem;
+  font-weight: 300;
   margin: 0px;
   padding-bottom: 40px;
-  font-weight: 400;
+  padding-top: 10px;
 }
 
 .rchainSectionTopCurve {
@@ -1668,6 +1682,10 @@ pre {
   background: transparent;
   padding: 4rem 4rem 3rem;
 }
+#communitySection .section p.big-and-light {
+  font-size: 1.5rem;
+  color: #555;
+}
 #communitySection .section > div:nth-child(1) {
   margin: 0 auto 3rem;
   text-align: center;
@@ -1696,7 +1714,7 @@ pre {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 120px;
+  width: 160px;
 }
 #communitySection .section .flexWrapper > div img {
   width: 100px;

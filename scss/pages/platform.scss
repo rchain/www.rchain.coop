@@ -46,6 +46,20 @@
     }
   }
 
+  #currentStateSection {
+    p,
+    ul {
+      max-width: 1200px;
+      margin-bottom: 40px;
+      font-size: 1.5rem;
+      color: #555;
+    }
+    li {
+      font-size: 1.5rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+  }
   #posSection {
     padding: 4rem 4rem;
     .flexWrapper {

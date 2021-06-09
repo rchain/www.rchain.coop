@@ -16,21 +16,23 @@
       gtag("config", "G-6B7FD7W88H");
     </script>
     <script>
-    /**
-    * Function that captures a click on an outbound link in Analytics.
-    * This function takes a valid URL string as an argument, and uses that URL string
-    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-    * using 'navigator.sendBeacon' in browser that support it.
-    */
-    var captureOutboundLink = function(url) {
-      ga('send', 'event', 'outbound', 'click', url, {
-        'transport': 'beacon',
-        'hitCallback': function(){document.location = url;}
-      });
-    }
+      /**
+       * Function that captures a click on an outbound link in Analytics.
+       * This function takes a valid URL string as an argument, and uses that URL string
+       * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+       * using 'navigator.sendBeacon' in browser that support it.
+       */
+      var captureOutboundLink = function (url) {
+        ga("send", "event", "outbound", "click", url, {
+          transport: "beacon",
+          hitCallback: function () {
+            document.location = url;
+          },
+        });
+      };
     </script>
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <title>get-started</title>
+    <title>Registration paid</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -42,7 +44,7 @@
     />
 
     <link rel="stylesheet" href="/css/style.css?version=1" />
-    <link rel="stylesheet" href="/css/layout.css?version=1" />
+    <link rel="stylesheet" href="/css/layout.css?version=3" />
 
     <link rel="shortcut icon" href="assets/favicon-red.png" />
 
@@ -151,7 +153,8 @@
             To complete your membership, please join the Co-op's Discord Guild
             using this
             <a
-              href="https://discord.gg/NWkQnfH" onclick="captureOutboundLink('https://discord.gg/NWkQnfH'); return false;"
+              href="https://discord.gg/NWkQnfH"
+              onclick="captureOutboundLink('https://discord.gg/NWkQnfH'); return false;"
               target="_blank"
               style="background-color: rgb(255, 255, 255)"
               ><strong>invitation link</strong></a
@@ -244,30 +247,9 @@
       </div>
     </div>
 
-    <div id="footer">
-      <div class="wrapper">
-        <div class="wrapper">
-          <div>
-            <div id="submitSuccess"></div>
-            <div id="submitFail"></div>
-          </div>
-        </div>
-      </div>
+    <div id="footer"></div>
 
-      <div class="wrapper">
-        <div class="center"><img src="/assets/logo_red.png" /></div>
-        <p>copyright &copy; 2021 RChain Cooperative All rights reserved</p>
-        <p>RChain and REV are registered trademarks of RChain Cooperative</p>
-        <div>
-          <p>
-            <a
-              href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf"
-              >Privacy terms and conditions</a
-            >
-          </p>
-        </div>
-      </div>
-    </div>
     <script src="/js/rchain.coop_Browser.js"></script>
+    <script src="/js/navAndFooter.js?version=5"></script>
   </body>
 </html>

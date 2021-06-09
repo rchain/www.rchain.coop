@@ -31,16 +31,29 @@
 body {
   font-family: fira;
   font-weight: 300;
+  color: #444;
 }
 label {
   font-weight: 400 !important;
 }
-strong, b {
+strong,
+b {
   font-weight: 700;
 }
-p, ul, li {
+p,
+ul,
+li {
   font-weight: 300;
+  font-size: 1.3rem;
 }
+@media (max-width: 960px) {
+  p,
+  ul,
+  li {
+    font-size: 1rem;
+  }
+}
+
 .smaller-text {
   font-size: 0.9em;
 }

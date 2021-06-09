@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app",
     "style": "sass ./scss/index.scss > ./css/style.css",
-    "build:nav": "webpack --mode production"
+    "build:navandfooter": "webpack --mode production"
   },
   "repository": {
     "type": "git",

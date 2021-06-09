@@ -2,7 +2,7 @@
   background-image: url("/assets/extendedtimeline.jpg");
   background-position: center;
   background-size: cover;
-  color: #fff;
+  color: #eee;
   padding-top: 20px;
   padding-bottom: 40px;
 
@@ -18,7 +18,7 @@
       list-style: none;
       &:before {
         width: 1px;
-        background-color: #fff;
+        background-color: #eee;
         height: 100%;
         position: absolute;
         top: 0px;
@@ -60,7 +60,7 @@
           width: 8px;
           height: 8px;
           border-radius: 6px;
-          background-color: #fff;
+          background-color: #eee;
           position: absolute;
           top: 6px;
           left: -43px;

@@ -1,0 +1,59 @@
+.btn-dark-and-transparent {
+  border: 1px solid #fff;
+  background: linear-gradient(
+    20deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.9)
+  );
+  color: #111;
+  font-size: 1.8rem;
+  padding: 1.1rem 2.1rem;
+  &:hover {
+    background: linear-gradient(
+      20deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 1)
+    );
+  }
+}
+
+.btn-rchain {
+  border-radius: 0.18rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0.9rem 2rem;
+  text-decoration: none;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.btn-blue {
+  color: #fff;
+  background-image: linear-gradient(15deg, #50badd, #50badd);
+  &:hover {
+    color: #50badd;
+    color: #fff;
+  }
+}
+.btn-red {
+  background: linear-gradient(15deg, #630c2c, #ad0c37);
+  border: none;
+  color: #eee;
+  &:hover {
+    background: linear-gradient(15deg, #730f2f, #b20f3d);
+  }
+}
+
+@media (max-width: 960px) {
+  .btn-rchain {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .btn-rchain {
+    display: block;
+    margin: auto;
+    width: 95%;
+  }
+}

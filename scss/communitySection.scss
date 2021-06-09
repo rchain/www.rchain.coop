@@ -3,6 +3,10 @@
   .section {
     background: transparent;
     padding: 4rem 4rem 3rem;
+    p.big-and-light {
+      font-size: 1.5rem;
+      color: #555;
+    }
     & > div:nth-child(1) {
       margin: 0 auto 3rem;
       text-align: center;
@@ -22,11 +26,12 @@
     }
 
     .flexWrapper {
-      max-width: 1000px;
+      max-width: 600px;
       margin: 0px auto;
       &.social {
         & > div img {
-          width: 50px;
+          width: 40px;
+          height: 40px;
         }
       }
       & > div {
@@ -34,7 +39,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        width: 160px;
         img {
           width: 100px;
         }

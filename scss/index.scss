@@ -1,5 +1,4 @@
 @import "./pages/community.scss";
-@import "./pages/hackaton.scss";
 @import "./pages/index.scss";
 @import "./pages/platform.scss";
 @import "./pages/team.scss";
@@ -12,6 +11,8 @@
 @import "./communitySection.scss";
 @import "./rhoSection.scss";
 @import "./timelineExtendedSection.scss";
+@import "./footer.scss";
+@import "./buttons.scss";
 
 @media (max-width: 960px) {
   p,

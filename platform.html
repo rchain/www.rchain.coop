@@ -43,7 +43,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css?version=4" />
-    <link rel="stylesheet" href="css/layout.css?version=2" />
+    <link rel="stylesheet" href="css/layout.css?version=3" />
 
     <link rel="shortcut icon" href="assets/favicon-red.png" />
 
@@ -84,7 +84,7 @@
   <body class="pagePlatform">
     <header></header>
 
-    <div class="bodyWrapper">
+    <div>
       <div class="rchainSectionTop">
         <div class="section">
           <div class="inner">
@@ -99,14 +99,17 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div id="currentStateSection" class="section">
         <div class="textWrapper">
           <h2>Current state</h2>
           <p>
             Today's blockchains have fallen short. Current systems are
             constrained by the single chain problem. Sequential computing
             inevitably limits scalability and speed, while increasing
-            transaction costs. Massive energy and computational requirements are
+            transaction costs.
+            <br />
+            <br />
+            Massive energy and computational requirements are
             major obstacles to mass adoption of decentralized systems.
           </p>
         </div>
@@ -117,6 +120,8 @@
             RChain is a blockchain platform for distributed applications.
             Intelligent, concurrent execution throughout the network unlocks
             blockchain's potential for transactions of every type and scale.
+            <br />
+            <br />
             Designed for maximum efficiency at minimal computational and
             environmental cost, RChain provides the foundation and utility for
             global coordination. Innovations in consensus and concurrent
@@ -145,10 +150,13 @@
       <div class="section">
         <div>
           <h2>Rholang</h2>
-          <p>
+          <p class="big-and-light">
             At the center of the RChain platform is Rholang, a breakthrough
             smart contract programming language based on Rho-Calculus
-            innovation. Lightweight and expressive by design, Rholang is
+            innovation.
+            <br />
+            <br />
+            Lightweight and expressive by design, Rholang is
             executed by RNodes with fine-grained concurrency. Rholang gives
             developers a straightforward, safe, and fast tool for blockchain
             transactions.
@@ -171,7 +179,7 @@
         </div>
         <br />
         <div class="fc">
-          <a href="get-started.html" class="btn-blue">Get Started</a>
+          <a href="developer.html" class="btn-rchain btn-blue">Get Started</a>
         </div>
       </div>
     </div>
@@ -230,23 +238,9 @@
       </div>
     </div>
 
-    <div id="footer">
-      <div class="wrapper">
-        <div class="center"><img src="/assets/logo_red.png" /></div>
-        <p>copyright &copy; 2021 RChain Cooperative All rights reserved</p>
-        <p>RChain and REV are registered trademarks of RChain Cooperative</p>
-        <div>
-          <p>
-            <a
-              href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf"
-              >Privacy terms and conditions</a
-            >
-          </p>
-        </div>
-      </div>
-    </div>
+    <div id="footer"></div>
 
     <script src="/js/rchain.coop_Browser.js"></script>
-    <script src="/js/nav.js?version=5"></script>
+    <script src="/js/navAndFooter.js?version=5"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ Compile scss to ./css/style.css (you need to have sass installed). Don't forget 
 npm run style
 ```
 
-Build the `nav/Nav.js` react app to `js/nav.js`. Don't forget to change the `nav.js?version=x` of in the html (cache invalidation).
+Build the `navAndFooter/index.js` react app to `js/navAndFooter.js`. Don't forget to change the `navAndFooter.js?version=x` of in the html (cache invalidation).
 
 ```
 npm run build:nav

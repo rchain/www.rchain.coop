@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 export class Nav extends React.Component {
-  state = { scroll: false, communityExtended: false, mobileExtended: false };
+  state = { scroll: false, moreExtended: false, mobileExtended: false };
 
   componentDidMount() {
     window.onscroll = this.navScroll;
@@ -47,18 +47,17 @@ export class Nav extends React.Component {
             </div>
             <div
               className={`item links with-dropdown ${
-                this.state.communityExtended ? "openned" : ""
+                this.state.moreExtended ? "openned" : ""
               }`}
             >
               <a>
-                Community<span className="arrow">&rsaquo;</span>
+                More<span className="arrow">&rsaquo;</span>
               </a>
               <div
                 className="dropdown-container"
                 onClick={() => {
-                  console.log("ok");
                   this.setState({
-                    communityExtended: !this.state.communityExtended,
+                    moreExtended: !this.state.moreExtended,
                   });
                 }}
               >

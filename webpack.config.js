@@ -1,9 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./nav/index.js",
+  entry: "./navAndFooter/index.js",
   output: {
-    filename: "nav.js",
+    filename: "navAndFooter.js",
     path: path.resolve(__dirname, "js"),
   },
   module: {

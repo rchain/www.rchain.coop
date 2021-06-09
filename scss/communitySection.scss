@@ -22,11 +22,12 @@
     }
 
     .flexWrapper {
-      max-width: 1000px;
+      max-width: 600px;
       margin: 0px auto;
       &.social {
         & > div img {
-          width: 50px;
+          width: 40px;
+          height: 40px;
         }
       }
       & > div {
@@ -34,7 +35,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        width: 120px;
         img {
           width: 100px;
         }

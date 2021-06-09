@@ -38,14 +38,6 @@
         margin-right: 5px;
       }
     }
-    .btn-blue {
-      background: linear-gradient(15deg, #630c2c, #ad0c37);
-      &:hover {
-        background: linear-gradient(15deg, #730f2f, #b20f3d);
-      }
-      border: none;
-      color: #eee;
-    }
     .left {
       grid-row: 1;
       grid-column: 2;

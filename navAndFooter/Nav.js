@@ -79,7 +79,7 @@ export class Nav extends React.Component {
               </div>
             </div>
             <div className="item links long">
-              <a href="/community.html" className="btn-blue">
+              <a href="/community.html" className="btn-rchain btn-blue">
                 Join Cooperative
               </a>
             </div>

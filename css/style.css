@@ -165,11 +165,6 @@
   }
 }
 
-.pageHackaton p,
-.pageHackaton li {
-  font-size: 1.25rem;
-}
-
 .pageIndex .topSection {
   background: linear-gradient(20deg, #111, #111116);
   margin: 0px;
@@ -191,7 +186,7 @@
   padding-left: 50px;
   padding-right: 50px;
   height: 800px;
-  color: #fff;
+  color: #eee;
 }
 .pageIndex .top .mainnet-live {
   margin-top: 15px;
@@ -241,7 +236,7 @@
 .pageIndex .top .left .timeline-cont .timeline .roadmap-link {
   position: absolute;
   bottom: -35px;
-  color: #fff;
+  color: #eee;
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -261,14 +256,14 @@
   font-size: 1rem;
 }
 .pageIndex .top .left .timeline-cont .timeline > div .date a {
-  color: #fff;
+  color: #eee;
 }
 .pageIndex .top .left .timeline-cont .timeline > div:before {
   width: 8px;
   height: 8px;
   border-radius: 8px;
   display: block;
-  background-color: #fff;
+  background-color: #eee;
   position: absolute;
   top: -2px;
   left: -3px;
@@ -278,7 +273,7 @@
   width: 2px;
   height: 100%;
   display: block;
-  background-color: #fff;
+  background-color: #eee;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -292,21 +287,22 @@
   font-size: 3.6rem;
   font-weight: 700;
 }
-.pageIndex .top .left p.second-p {
+.pageIndex .top .left .second-p {
+  font-size: 1.7rem;
   margin-top: 10px;
   padding: 8px;
 }
-.pageIndex .top .left p.main-p {
+.pageIndex .top .left .main-p {
+  font-size: 1.9rem;
   margin-top: 10px;
   font-weight: 300;
-  font-size: 1.9rem;
   border: 1px solid #630c2c;
   background: linear-gradient(15deg, rgba(99, 12, 44, 0.5), rgba(173, 12, 55, 0.2));
-  color: #fff;
+  color: #eee;
   padding: 8px;
   border-radius: 2px;
 }
-.pageIndex .top .left p.main-p b {
+.pageIndex .top .left .main-p b {
   font-weight: bold;
 }
 .pageIndex .top .right {
@@ -373,7 +369,7 @@
   background-image: url("/assets/rho.jpg");
   background-position: center;
   background-size: cover;
-  color: #fff;
+  color: #eee;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -387,6 +383,12 @@
 }
 .pageIndex #rhoRevolutionSection .section h3 {
   font-size: 1.8rem;
+}
+.pageIndex #rhoRevolutionSection p,
+.pageIndex #rhoRevolutionSection ul {
+  max-width: 1200px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
 }
 .pageIndex #getStartedSection {
   padding: 2rem 0 3rem;
@@ -413,7 +415,10 @@
   .pageIndex .top .left h1 {
     font-size: 3rem;
   }
-  .pageIndex .top .left p {
+  .pageIndex .top .left .main-p {
+    font-size: 1.7rem;
+  }
+  .pageIndex .top .left .second-p {
     font-size: 1.7rem;
   }
   .pageIndex #headerSection {
@@ -449,11 +454,14 @@
     font-size: 2.4rem;
   }
   .pageIndex .top .left p {
-    font-size: 1.7rem;
     background: transparent;
     border: none;
     padding-left: 0px;
     text-align: justify;
+  }
+  .pageIndex .top .left .main-p,
+.pageIndex .top .left .second-p {
+    font-size: 1.5rem;
   }
   .pageIndex .top .left .timeline-cont {
     position: relative;
@@ -470,7 +478,7 @@
   .pageIndex .top .left .timeline-cont .timeline .roadmap-link {
     position: absolute;
     bottom: -60px;
-    color: #fff;
+    color: #eee;
     font-weight: 500;
     font-size: 1.4rem;
   }
@@ -707,17 +715,11 @@
 .pagePlatform #rchainSection .wrapper .textWrapper p {
   margin: 0;
 }
-.pagePlatform #currentStateSection p,
-.pagePlatform #currentStateSection ul {
+.pagePlatform #currentStateSection p {
   max-width: 1200px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 1.5rem;
   color: #555;
-}
-.pagePlatform #currentStateSection li {
-  font-size: 1.5rem;
-  color: #555;
-  margin-bottom: 10px;
 }
 .pagePlatform #posSection {
   padding: 4rem 4rem;
@@ -1342,7 +1344,7 @@ pre {
 .rchainSectionTop {
   background-image: url("/assets/rocks.jpg");
   background-size: cover;
-  color: #fff;
+  color: #eee;
   margin: 0px;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -1904,7 +1906,7 @@ pre {
   background-image: url("/assets/extendedtimeline.jpg");
   background-position: center;
   background-size: cover;
-  color: #fff;
+  color: #eee;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -1922,7 +1924,7 @@ pre {
 }
 .timelineExtendedSection .section > ul:before {
   width: 1px;
-  background-color: #fff;
+  background-color: #eee;
   height: 100%;
   position: absolute;
   top: 0px;
@@ -1963,7 +1965,7 @@ pre {
   width: 8px;
   height: 8px;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #eee;
   position: absolute;
   top: 6px;
   left: -43px;

@@ -47,17 +47,11 @@
   }
 
   #currentStateSection {
-    p,
-    ul {
+    p {
       max-width: 1200px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       font-size: 1.5rem;
       color: #555;
-    }
-    li {
-      font-size: 1.5rem;
-      color: #555;
-      margin-bottom: 10px;
     }
   }
   #posSection {

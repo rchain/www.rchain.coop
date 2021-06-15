@@ -44,9 +44,9 @@ https://rchain.coop/team.html
 https://github.com/rchain/brandinghttps://github.com/rchain/marketing/tree/master/branding 
 
 #### Contact Information:
-12345 Lake City Way NE #2032
-Seattle, WA 98125
-(202)810-2039
+12345 Lake City Way NE #2032 \
+Seattle, WA 98125 \
+(202)810-2039 \
 [info@rchain.coop](link)
 
 <br />

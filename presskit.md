@@ -43,14 +43,14 @@ Full Whitepaper link: [https://rchain.coop](https://rchain.coop/whitepaper.html)
 
 #### Brand Assets
 [https://github.com/rchain/branding](https://github.com/rchain/marketing/tree/master/branding)
-- [Logo Usage Guidelines](https://github.com/rchain/branding/blob/main/RChain_BrandGuidelines_INTERACTIVE.pdf) 
-- https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png!
+- [Logo Usage Guidelines](https://github.com/rchain/branding/blob/main/RChain_BrandGuidelines_INTERACTIVE.pdf)
+- Logo <img src="https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png" width="200" height="200">
 
 #### Contact Information:
 12345 Lake City Way NE #2032 \
 Seattle, WA 98125 \
 (202)810-2039 \
-[info@rchain.coop](link)
+__[info@rchain.coop__
 
 <br />
 <br />

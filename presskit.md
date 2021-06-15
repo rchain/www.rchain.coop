@@ -13,7 +13,8 @@ title: Press Kit
 
 <!-- Heading 2-->
 # Press Kit
-	
+
+#### Abstract
 Based on the revolutionary Rho calculus, RChain solves a series of problems preventing blockchain platforms from realizing mainstream adoption. 
 Its fast and scalable conflict detection algorithm accompanied with Casper CBC Proof of Stake consensus allows:
 
@@ -23,15 +24,15 @@ Its fast and scalable conflict detection algorithm accompanied with Casper CBC P
 Built on Rholang, RChain’s native programming language, RChain is the first chain to allow any complicated cross-shard transactions to be verified and finalized atomically and concurrently by all involved shards. This means the cross shard transactions can be done seamlessly and safely just as within a single shard. It will also be equipped with a Rho calculus based behavioural type system.
 This allows smart contracts to be formally verified quickly in a concurrent and sharded setting, which makes possible the orchestration of large quantities of smart contracts. Its unique reactive smart contract system is more suitable than other chains’ active systems for time sensitive applications such as Defi. RChain’s unique technology makes it the best candidate to build a functional world computer.
 
-Full Whitepaper link: https://rchain.coop/whitepaper.html
+Full Whitepaper link: [https://rchain.coop](https://rchain.coop/whitepaper.html)
 
 #### Staff
-https://rchain.coop/team.html
+[Team](https://rchain.coop/team.html)
 
 #### Social Media Links:
-- [Twitter]([https://](https://twitter.com/rchain_coop))
+- [Twitter](https://twitter.com/rchain_coop)
 - [YouTube](https://youtube.com/rchain)
-- [Discord]([https://](https://discord.gg/NWkQnfH))
+- [Discord](https://discord.gg/NWkQnfH)
 
 #### Press Clippings
 - [Yahoo! Finance](https://finance.yahoo.com/news/rchain-reshapes-blockchain-mass-adoption-023000343.html))
@@ -41,7 +42,7 @@ https://rchain.coop/team.html
 - [Street Insider](https://www.streetinsider.com/dr/news.php?id=18497792)
 
 #### Brand Assets
-https://github.com/rchain/brandinghttps://github.com/rchain/marketing/tree/master/branding 
+[https://github.com/rchain/brandinghttps://github.com/rchain/marketing/tree/master/branding](https://github.com/rchain/brandinghttps://github.com/rchain/marketing/tree/master/branding)
 
 #### Contact Information:
 12345 Lake City Way NE #2032 \

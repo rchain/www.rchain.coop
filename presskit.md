@@ -27,7 +27,7 @@ This allows smart contracts to be formally verified quickly in a concurrent and 
 Full Whitepaper link: [https://rchain.coop](https://rchain.coop/whitepaper.html)
 
 #### Staff
-[Team](https://rchain.coop/team.html)
+[Board of Directors](https://rchain.coop/team.html)
 
 #### Social Media Links:
 - [Twitter](https://twitter.com/rchain_coop)
@@ -42,7 +42,9 @@ Full Whitepaper link: [https://rchain.coop](https://rchain.coop/whitepaper.html)
 - [Street Insider](https://www.streetinsider.com/dr/news.php?id=18497792)
 
 #### Brand Assets
-[https://github.com/rchain/brandinghttps://github.com/rchain/marketing/tree/master/branding](https://github.com/rchain/brandinghttps://github.com/rchain/marketing/tree/master/branding)
+[https://github.com/rchain/branding](https://github.com/rchain/marketing/tree/master/branding)
+- [Logo Usage Guidelines](https://github.com/rchain/branding/blob/main/RChain_BrandGuidelines_INTERACTIVE.pdf) 
+- https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png!
 
 #### Contact Information:
 12345 Lake City Way NE #2032 \

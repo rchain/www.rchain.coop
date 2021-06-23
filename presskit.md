@@ -30,9 +30,9 @@ Full Whitepaper link: [https://rchain.coop](https://rchain.coop/whitepaper.html)
 [Board of Directors](https://rchain.coop/team.html)
 
 #### Social Media Links:
-- [Twitter](https://twitter.com/rchain_coop)
-- [YouTube](https://youtube.com/rchain)
-- [Discord](https://discord.gg/NWkQnfH)
+- Twitter [@rchain_coop](https://twitter.com/rchain_coop)
+- YouTube [youtube.com/rchain](https://youtube.com/rchain)
+- Discord [pub-RChain](https://discord.gg/NWkQnfH)
 
 #### Press Clippings
 - [Yahoo! Finance](https://finance.yahoo.com/news/rchain-reshapes-blockchain-mass-adoption-023000343.html)
@@ -44,11 +44,9 @@ Full Whitepaper link: [https://rchain.coop](https://rchain.coop/whitepaper.html)
 #### Brand Assets
 [https://github.com/rchain/branding](https://github.com/rchain/branding)
 - [Brand Usage Guidelines](https://github.com/rchain/branding/blob/main/RChain_BrandGuidelines_INTERACTIVE.pdf)
-- [Logo](https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png)<img src="https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png" width="200" height="200">
-- [RChain Co-op Horizontal Banner-red](https://github.com/rchain/branding/blob/main/RChain_Coop-Horiz-red-864x288px.png)<img src="https://github.com/rchain/branding/blob/main/RChain_Coop-Horiz-red-864x288px.png" height="200">
-- [Twitter Banner ](https://github.com/rchain/branding/blob/main/Twitter/RChain_Twitter_Header-v1-1500x500px.jpg)<img src="https://github.com/rchain/branding/blob/main/Twitter/RChain_Twitter_Header-v1-1500x500px.jpg" height="200">
-
-- stub
+- [Logo](https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png)<img src="https://rchain.coop/assets/platform/RChainHero1991.png" width="200" height="200">
+- [RChain Co-op Horizontal Banner-red](https://github.com/rchain/branding/blob/main/RChain_Coop-Horiz-red-864x288px.png)<img src="https://rchain.coop/assets/logo_red.png" height="200">
+- [Twitter Banner ](https://github.com/rchain/branding/blob/main/Twitter/RChain_Twitter_Header-v1-1500x500px.jpg)<img src="https://rchain.coop/assets/RChain_Twitter_Header-v1-1500x500px.png" height="200">
 
 #### Contact Information:
 12345 Lake City Way NE #2032 \

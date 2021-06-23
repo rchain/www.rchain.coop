@@ -24,7 +24,7 @@ Its fast and scalable conflict detection algorithm accompanied with Casper CBC P
 Built on Rholang, RChain’s native programming language, RChain is the first chain to allow any complicated cross-shard transactions to be verified and finalized atomically and concurrently by all involved shards. This means the cross shard transactions can be done seamlessly and safely just as within a single shard. It will also be equipped with a Rho calculus based behavioural type system.
 This allows smart contracts to be formally verified quickly in a concurrent and sharded setting, which makes possible the orchestration of large quantities of smart contracts. Its unique reactive smart contract system is more suitable than other chains’ active systems for time sensitive applications such as Defi. RChain’s unique technology makes it the best candidate to build a functional world computer.
 
-Full Whitepaper link: [https://rchain.coop](https://rchain.coop/whitepaper.html)
+Whitepaper link: [https://rchain.coop/whitepaper](https://rchain.coop/whitepaper.html)
 
 #### Staff
 [Board of Directors](https://rchain.coop/team.html)

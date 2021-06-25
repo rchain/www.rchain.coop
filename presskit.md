@@ -44,9 +44,9 @@ Whitepaper link: [https://rchain.coop/whitepaper](https://rchain.coop/whitepaper
 #### Brand Assets
 [https://github.com/rchain/branding](https://github.com/rchain/branding)
 - [Brand Usage Guidelines](https://github.com/rchain/branding/blob/main/RChain_BrandGuidelines_INTERACTIVE.pdf)
-- [Logo](https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png)<img src="https://rchain.coop/assets/platform/RChainHero1991.png" width="200" height="200">
-- [RChain Co-op Horizontal Banner-red](https://github.com/rchain/branding/blob/main/RChain_Coop-Horiz-red-864x288px.png)<img src="https://rchain.coop/assets/logo_red.png" height="200">
-- [Twitter Banner ](https://github.com/rchain/branding/blob/main/Twitter/RChain_Twitter_Header-v1-1500x500px.jpg)<img src="https://rchain.coop/assets/RChain_Twitter_Header-v1-1500x500px.png" height="200">
+- [Logo](https://github.com/rchain/branding/blob/main/RChain_Icon_Red_512px.png)<img src="https://rchain.coop/assets/platform/RChainHero1991.png" height="150">
+- [RChain Co-op Horizontal Banner-red](https://github.com/rchain/branding/blob/main/RChain_Coop-Horiz-red-864x288px.png)<img src="https://rchain.coop/assets/logo_red.png" height="150">
+- [Twitter Banner ](https://github.com/rchain/branding/blob/main/Twitter/RChain_Twitter_Header-v1-1500x500px.jpg)<img src="https://rchain.coop/assets/RChain_Twitter_Header-v1-1500x500px.png" height="150">
 
 #### Contact Information:
 12345 Lake City Way NE #2032 \

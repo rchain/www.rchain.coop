@@ -48,6 +48,11 @@ export class Footer extends React.Component {
                   Climate
                 </a>
               </div>
+              <div>
+                <a href="/presskit" target="_blank">
+                  Press Kit
+                </a>
+              </div>
             </div>
           </div>
           <div className="social-media">

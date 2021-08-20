@@ -39,11 +39,6 @@ export class Footer extends React.Component {
                 </a>
               </div>
               <div>
-                <a href="https://developer.rchain.coop/" target="_blank">
-                  Developers
-                </a>
-              </div>
-              <div>
                 <a href="/climate.html" target="_blank">
                   Climate
                 </a>

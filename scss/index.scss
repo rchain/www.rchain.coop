@@ -36,3 +36,19 @@ h2 {
   margin-bottom: 0px;
   font-size: 1.8rem;
 }
+
+.divider {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.fafafa {
+    background: #fafafa;
+  }
+  & > div {
+    background: #a50034;
+    height: 3px;
+    width: 6rem;
+  }
+}

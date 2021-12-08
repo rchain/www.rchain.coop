@@ -18,5 +18,5 @@ npm run style
 Build the `navAndFooter/index.js` react app to `js/navAndFooter.js`. Don't forget to change the `navAndFooter.js?version=x` of in the html (cache invalidation).
 
 ```
-build:navandfooter
+npm run build:navandfooter
 ```

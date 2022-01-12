@@ -1,142 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <link rel="canonical" href="https://rchain.coop/invoice-success.html"></link>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-6B7FD7W88H');
+      gtag("config", "G-6B7FD7W88H");
+    </script>
+    <script>
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var captureOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = url;}
+      });
+    }
     </script>
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <title>RChain | invoice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <meta name="google-site-verification" content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg" />
-    <link rel='stylesheet' href='css/layout.css?version=4' />
-    <link rel='stylesheet' href='css/fonts.css' />
-    <link rel="shortcut icon" href="assets/favicon-red.png" />
-    <meta property="og:title" content="RChain Community" />
-    <meta property="og:type" content="website" />
-    <meta name="description" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="https://rchain.coop/community" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RChain Community" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="https://rchain.coop/community" />
-    <meta name="twitter:description" content="" />
+    <title>RChain |invoice-success</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <meta
+      name="google-site-verification"
+      content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
+    />
 
-</head>
+    <link rel="stylesheet" href="css/layout.css?version=4" />
+    <link rel="stylesheet" href="css/style.css?version=6" />
+    <link rel="shortcut icon" href="assets/favicon-red.png" />
+  </head>
 
 <body>
     <header>
     </header>
     <div class="bodyWrapper">
-        <div class="section" id="rchainSection">
-    <h1>The Power of the Cooperative</h1>
-    <p>The purpose of RChain<sup>&reg;</sup> is to provide its members discounted access to a decentralized, public computation platform. RChain supports the development of on-chain tools for governance and online communications that promote collaboration at scale. Our mission is to provide a platform that promotes the proliferation of social coordination technologies.</p>
-</div>
-<div class="section" id="posSection">
-    <div class="textWrapper">
-        <h2>Thank you for your payment.</h2>
-        <p>To complete your membership, please join the Co-op's Discord Guild using this <a href="https://discord.gg/NWkQnfH" onclick="captureOutboundLink('https://discord.gg/NWkQnfH'); return false;" rel="noopener"> <strong>invitation link</strong></a>.
-            <br />When you first enter our Discord guild, you will be in the #guests channel and have only partial access to the Co-op's other chat channels.
-        </p>
-        <p>Type <strong>@greeter</strong> in the chat box at the bottom of the Discord screen to alert a Co-op staff member that you are ready to proceed with your registration. Please be patient, it may be a few hours before you receive a reply. Be prepared for your meeting by having ready:</p>
-        <ul>
-            <li>a link to an image of your Passport photo page</li>
-            <li>a working webcam for live video-chat over <a href="https://whereby.com" target="_blank" rel="noopener">whereby.com</a>, Zoom, or Discord.
-            </li>
-        </ul>
-        <h3>Passport photo and secure link:</h3>
-        <p>To perform a live ID-Verification on webcam, the Co-op staff member will need a <strong>link</strong> to a copy of your Passport photo ID page. During the live webcam interview, the staff member will use this link to access your ID-photo and compare it to your live face on webcam. We do not recommend emailing your ID or uploading it to Discord. The Co-op will not retain a copy of your ID after the ID-Verification is completed.</p>
-        <p>The file requirements for the image:</p>
-        <ul>
-            <li>a copy of your valid identification in PNG, JPEG or PDF format, no larger than 3mb in size</li>
-            <li>The image must be high quality, unobstructed and uncropped</li>
-            <li>The image must show the full document page</li>
-        </ul>
-        <p>Current valid passport:</p>
-        <ul>
-            <li>Passport must be valid and display the full photo ID page with a clear facial picture of the applicant and the passport holder's signature</li>
-            <li>All passport details must match the details as submitted in the application, including:
+        <div class="rchainSectionTop red">
+          <div class="section">
+            <h1>Thank you for your payment.</h1>
+            <p>
+              Your membership is not complete until you have passed our ID-Verification. </br>
+              Please follow the steps below.
+            </p>
+          </div>
+        </div>
+        <div class="section" id="posSection">
+            <div class="textWrapper">
+                <h2>ID-Verification</h2>
+                <p>To complete your membership, please join the Co-op's Discord Guild using this 
+                    <a href="https://discord.gg/NWkQnfH" onclick="captureOutboundLink('https://discord.gg/NWkQnfH'); return false;" 
+                    rel="noopener"> <strong>invitation link</strong></a>.
+                    <br />When you first enter our Discord guild, you will be in the #guests channel and have only partial 
+                    access to the Co-op's other chat channels.
+                </p>
+                <p>Type <strong>@greeter</strong> in the chat box at the bottom of the Discord screen to alert a Co-op staff 
+                    member that you are ready to proceed with your registration. Please be patient, it may be a few hours before 
+                    you receive a reply. Be prepared for your meeting by having ready:</p>
                 <ul>
-                    <li>First and last name of applicant</li>
-                    <li>Date of Birth</li>
-                    <li>Passport date of issue and expiry date</li>
-                    <li>Passport number</li>
-                    <li>The Machine Readable Zone (bottom barcode) must be legible and complete</li>
-                    <li>The passport must not be expired</li>
+                    <li>a link to an image of your Passport photo page</li>
+                    <li>a working webcam for live video-chat over Zoom or <a href="https://whereby.com" target="_blank" 
+                        rel="noopener">whereby.com</a>.
+                    </li>
                 </ul>
-            </li>
-        </ul>
-        <p>See you soon on Discord.</p>
-        <p>- Ian Bloom
-            <br />@ian#4055 on Discord</p>
-    </div>
-    </div>
-</div>
-
-<div class="section" id="communitySection">
-    <div>
-        <h2>Join Our Community</h2>
-        <p>Community is the heart of RChain. It's the reason we are building technology and social tools to empower change. We are a cooperative network that is optimistic about our future and how we will help each other flourish.</p>
-    </div>
-
-    <div class="flexWrapper">
-        <div>
-            <a href="https://github.com/rchain" target="_blank">
-                <img src="/assets/github@3x.png">
-            </a>
-        </div>
-        <div>
-            <a href="https://twitter.com/rchain_coop" target="_blank">
-            <img src="/assets/twitter@3x.png">
-            </a>
-        </div>
-        <div>
-            <a href="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w" target="_blank">
-            <img src="/assets/youtube@3x.png">
-            </a>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/company/rchain-cooperative/" target="_blank">
-            <img src="/assets/linkedin@3x.png">
-            </a>
-        </div>
-        <div>
-            <a href="https://t.me/rchaincoop" target="_blank">
-            <img src="/assets/telegram@3x.png">
-            </a>
-        </div>
-        <div>
-            <a href="https://discord.gg/NWkQnfH" onclick="captureOutboundLink('https://discord.gg/NWkQnfH'); return false;">
-            <img src="/assets/discord@3x.png">
-            </a>
-        </div>
-        <div>
-            <a href="https://www.reddit.com/r/RChain/" target="_blank">
-            <img src="/assets/reddit@3x.png">
-            </a>
+                <h3>Passport photo and secure link:</h3>
+                <p>To perform a live ID-Verification on webcam, the Co-op staff member will need a high quality image of your 
+                    Passport photo ID page. During the live webcam interview, the staff member will ask you to appear on camera 
+                    as well as show your physical passport to the camera. The Co-op will not retain a copy of your ID after the 
+                    ID-Verification is completed.</p>
+                <p>The file requirements for the image:</p>
+                <ul>
+                    <li>a copy of your valid identification in PNG, JPEG or PDF format, no larger than 3mb in size</li>
+                    <li>The image must be high quality, unobstructed and uncropped</li>
+                    <li>The image must show the full document page</li>
+                </ul>
+                <p>Current valid passport:</p>
+                <ul>
+                    <li>Passport must be valid and display the full photo ID page with a clear facial picture of the applicant and the passport holder's signature</li>
+                    <li>All passport details must match the details as submitted in the application, including:
+                        <ul>
+                            <li>First and last name of applicant</li>
+                            <li>Date of Birth</li>
+                            <li>Passport date of issue and expiry date</li>
+                            <li>Passport number</li>
+                            <li>The Machine Readable Zone (bottom barcode) must be legible and complete</li>
+                            <li>The passport must not be expired</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>See you soon on Discord.</p>
+                <p>- Ian Bloom
+                    <br />@ian#4055 on Discord</p>
+            </div>
         </div>
     </div>
-</div>
-
-</div>
-
-    </div>
-
 
     <div id="footer"></div>
-
     <script src="/js/rchain.coop_Browser.js"></script>
     <script src="/js/homepage_Browser.js"></script>
     <script src="/js/navAndFooter.js?version=8"></script>
 </body>
-
 </html>

@@ -141,7 +141,7 @@ export class Footer extends React.Component {
               src="/assets/logo_red.png"
             />
           </div>
-          <p>copyright &copy; 2021 RChain Cooperative All rights reserved</p>
+          <p>copyright &copy; 2022 RChain Cooperative All rights reserved</p>
           <p>RChain and REV are registered trademarks of RChain Cooperative</p>
           <a href="https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf">
             Privacy terms and conditions

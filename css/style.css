@@ -1408,6 +1408,9 @@ pre {
 .projects .bg.capowallet {
   background-image: url("/assets/ecosystem/capowallet.jpg");
 }
+.projects .bg.community-wallet {
+  background-image: url("/assets/ecosystem/community-wallet.jpg");
+}
 .projects .bg.rchaincommunity {
   background-image: url("/assets/ecosystem/rchaincommunity.jpg");
 }

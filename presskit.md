@@ -57,4 +57,4 @@ __info@rchain.coop__
 <br />
 <br />
 
-###### Copyright 2021 RChain Cooperative 
+###### Copyright 2022 RChain Cooperative 

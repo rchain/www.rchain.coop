@@ -1429,6 +1429,9 @@ pre {
 .projects .bg.rholang {
   background-image: url("/assets/ecosystem/rholang.jpg");
 }
+.projects .bg.knowledgebase {
+  background-image: url("/assets/ecosystem/知识库封面.jpg");
+}
 .projects h2 {
   font-size: 1.1rem;
   margin-bottom: 4px;

@@ -43,6 +43,21 @@
     background: linear-gradient(15deg, #730f2f, #b20f3d);
   }
 }
+.btn-underlined {
+  &:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.8);
+  }
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  font-size: 1.5rem;
+  /* text-decoration: underline; */
+  padding: 1rem 2rem;
+  color: #111;
+  background: #fff;
+  text-decoration: none;
+}
+
 
 @media (max-width: 960px) {
   .btn-rchain {

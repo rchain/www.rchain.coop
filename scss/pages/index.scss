@@ -1,24 +1,37 @@
 .pageIndex {
   .topSection {
-    background: linear-gradient(20deg, #111, #111116);
+    background: linear-gradient(20deg, #111, hsl(240, 13%, 8%));
     margin: 0px;
     padding-bottom: 40px;
     background: url("/assets/mountaindark1920.jpg");
+    //background: rgb(245, 243, 243);
     background-size: cover;
     background-position-y: bottom;
-    background-position-x: center;
+    background-position-x: right;
     .section {
       background: transparent;
     }
   }
+  .green {
+    font-size: 1.4rem;
+    line-height: 1.0rem;
+    font-weight: 600;
+    color: #d3ffa3;
+  
+    img {
+      transform: translate(2px, 5px);
+      width: 25px;
+      height: auto;
+    }
+  }
   .alert {
-    background-color: #ad0c37;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 25px;
-    margin-top: 35px;
-    border-radius: 1em;
-    text-align: justify;
+    background-color: #0fb9c9;
+    border: 1px solid rgb(99, 229, 252);
+    background: rgba(160, 253, 247, 0.7);
+    color: #111;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
   }
   .top {
     padding-top: 50px;
@@ -29,7 +42,7 @@
     padding-left: 50px;
     padding-right: 50px;
     height: 800px;
-    color: #eee;
+    color: rgb(255, 255, 255);
     .mainnet-live {
       margin-top: 15px;
       font-size: 1rem;
@@ -54,14 +67,21 @@
       align-items: flex-start;
       flex-direction: column;
       position: relative;
-      padding-left: 262px;
+      padding-left: 100px;
+      .buttons-top {
+        display: flex;
+        .btn-tech-overview {
+          margin-right: 1rem;
+        }
+      }
       .timeline-cont {
+        display: none;
         top: 0px;
         left: 0px;
         position: absolute;
         height: 100%;
         width: 262px;
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
@@ -69,7 +89,7 @@
           .roadmap-link {
             position: absolute;
             bottom: -35px;
-            color: #eee;
+            color: rgb(255, 255, 255);
             font-weight: 500;
             font-size: 1.1rem;
           }
@@ -90,7 +110,7 @@
             }
             .date {
               a {
-                color: #eee;
+                color: #111;
               }
               transform: translateY(-4px);
               display: block;
@@ -140,20 +160,10 @@
       .main-p {
         font-size: 1.9rem;
         margin-top: 10px;
+        text-align: justify;
+        max-width: 900px;
         font-weight: 300;
-        border: 1px solid #630c2c;
-        background: linear-gradient(
-          15deg,
-          rgb(164 0 62 / 40%),
-          rgb(163 0 62 / 20%)
-        );
-        /* background: linear-gradient(
-          15deg,
-          rgb(99, 12, 44, 0.5),
-          rgb(173, 12, 55, 0.2)
-        ); */
-        //background-color: rgba(255, 255, 255, 0.5);
-        color: #eee;
+        color: rgb(255, 255, 255);
         padding: 8px;
         border-radius: 2px;
         b {
@@ -169,6 +179,84 @@
       align-items: flex-start;
       flex-direction: column;
       background-size: cover;
+    }
+  }
+  .boxes {
+    @media (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    }
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px;
+    .div1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    .div2 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    .div3 {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    & > div {
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.02);
+        background: linear-gradient(-20deg, rgba(0,0,0,0.4),  rgba(0,0,0,0.8))
+      }
+      margin: 10px;
+      & > div {
+        h1 {
+          font-size: 3.4rem;
+          margin: 0px;
+          span {
+            font-size: 2.8rem;
+            margin-right: 4px;
+            transform: translateY(-10px);
+          }
+        }
+        p {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+        padding: 10px;
+        border: 4px solid #000;
+        color: #fff;
+        border-radius: 1rem;
+        background: linear-gradient(-60deg, rgba(0,0,0,0.3),  rgba(0,0,0,0.7))
+      }
+    }
+  }
+  .horizontal {
+    @media (min-width: 992px) {
+      & > a {
+        margin-left: 100px;
+        font-size: 1.6rem;
+      }
+    }
+    @media (max-width: 991px) {
+      & > a {
+        font-size: 1.2rem;
+        margin-left: 20px;
+      }
+    }
+    width: 100vw;
+    height: 100px;
+    color: #111;
+    font-weight: 400;
+    background: linear-gradient(20deg, #d3ffa3, #e4fcc9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > a {
+      color: #111;
+      span {
+        text-decoration: underline;
+      }
     }
   }
 

@@ -63,3 +63,33 @@ li {
 pre {
   font-family: ubuntu-mono;
 }
+
+// downloaded from https://emojipedia.org/
+
+.iconimg {
+  display: inline-block;
+  background-size: cover;
+}
+._mountain {
+  background-image: url("/assets/_mountain.png");
+}
+
+._fluffy {
+  background-image: url("/assets/_fluffy.png");
+}
+
+._hearts {
+  background-image: url("/assets/_hearts.png");
+}
+
+._controller {
+  background-image: url("/assets/_controller.png");
+}
+
+._earth {
+  background-image: url("/assets/_earth.png");
+}
+
+._bulb {
+  background-image: url("/assets/_bulb.png");
+}

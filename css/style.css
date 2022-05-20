@@ -189,6 +189,7 @@
   height: auto;
 }
 .pageIndex .alert {
+  margin-top: 1rem;
   background-color: #0fb9c9;
   border: 1px solid #63e5fc;
   background: rgba(160, 253, 247, 0.7);
@@ -201,7 +202,6 @@
   width: 2rem;
   height: 2rem;
   margin-right: 10px;
-  transform: translateY(0.5rem);
 }
 .pageIndex .top {
   padding-top: 50px;

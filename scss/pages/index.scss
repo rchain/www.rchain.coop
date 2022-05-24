@@ -60,6 +60,12 @@
       padding-left: 100px;
       .buttons-top {
         display: flex;
+        @media (max-width: 991px) {
+          flex-direction: column;
+          a {
+            margin-bottom: 1rem;
+          }
+        }
         .btn-tech-overview {
           margin-right: 1rem;
         }
@@ -97,6 +103,13 @@
     @media (max-width: 1199px) {
       display: flex;
       flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      & > div > div {
+        h1 {
+          font-size: 2.4rem !important;
+        }
+      }
     }
     padding-bottom: 100px;
     display: grid;

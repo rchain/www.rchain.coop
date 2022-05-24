@@ -69,39 +69,40 @@ pre {
 .iconimg {
   display: inline-block;
   background-size: cover;
+  min-height:100%;
 }
 ._mountain {
-  background-image: url("/assets/_mountain.png");
+  background-image: url("/assets/iconmountain.png");
 }
 
 ._laptop {
-  background-image: url("/assets/_laptop.png");
+  background-image: url("/assets/iconlaptop.png");
 }
 
 ._target {
-  background-image: url("/assets/_target.png");
+  background-image: url("/assets/icontarget.png");
 }
 
 ._pin {
-  background-image: url("/assets/_pin.png");
+  background-image: url("/assets/iconpin.png");
 }
 
 ._fluffy {
-  background-image: url("/assets/_fluffy.png");
+  background-image: url("/assets/iconfluffy.png");
 }
 
 ._hearts {
-  background-image: url("/assets/_hearts.png");
+  background-image: url("/assets/iconhearts.png");
 }
 
 ._controller {
-  background-image: url("/assets/_controller.png");
+  background-image: url("/assets/iconcontroller.png");
 }
 
 ._earth {
-  background-image: url("/assets/_earth.png");
+  background-image: url("/assets/iconearth.png");
 }
 
 ._bulb {
-  background-image: url("/assets/_bulb.png");
+  background-image: url("/assets/iconbulb.png");
 }

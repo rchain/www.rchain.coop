@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="canonical" href="https://rchain.coop/rev.html"></link>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6B7FD7W88H");
+    </script>
+    <script>
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var captureOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = url;}
+      });
+    }
+    </script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <title>RChain | REV</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <meta
+      name="google-site-verification"
+      content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
+    />
+
+    <link rel="stylesheet" href="css/style.css?version=6" />
+    <link rel="stylesheet" href="css/layout.css?version=4" />
+
+    <link rel="shortcut icon" href="assets/favicon-red.png" />
+
+    <meta
+      name="description"
+      content="RChain platform is scalable, efficient, dependable, and truly
+      decentralized."
+    />
+    <meta property="og:title" content="RChain" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="RChain platform is scalable, efficient, dependable, and soon to be truly decentralized."
+    />
+    <meta property="og:url" content="https://rchain.coop/platform.html" />
+    <meta
+      property="og:image"
+      content="https://rchain.coop/assets/og_platform.jpg"
+    />
+    <meta property="og:image:height" content="565" />
+    <meta property="og:image:width" content="1080" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RChain | platform" />
+    <meta
+      name="twitter:image"
+      content="https://rchain.coop/assets/og_platform.jpg"
+    />
+    <meta name="twitter:creator" content="@rchain_coop" />
+    <meta name="twitter:url" content="https://rchain.coop/platform.html" />
+    <meta name="twitter:site" content="https://rchain.coop" />
+    <meta
+      name="twitter:description"
+      content="RChain platform is scalable, efficient, dependable, and soon to be truly decentralized."
+    />
+  </head>
+
+  <body class="pageRev">
+    <header></header>
+
+    <div>
+      <div class="rchainSectionTop">
+        <div class="section">
+          <div class="inner">
+            <div class="left">
+              <h1>REV™ Token and Validators</h1>
+              <h3>
+                The native digital token of RChain, it secures the execution and storing of data on the RChain platform.
+              </h3>
+            </div>
+            <div class="right"><div class="img platform"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="currentStateSection">
+        <div class="section">
+          <div class="textWrapper">
+            <h2>REV™</h2>
+            <p>
+              <b>REV™</b> is the native digital token for use by members of the RChain Cooperative on-line community via a global computer network. It tokenizes the security of the network's root shard, preventing DOS attacks and enabling staking.
+            </p>
+          </div>
+
+          <div class="textWrapper">
+            <h2>Supply and history</h2>
+            <p>
+              RHOC was the initial ERC20 token that was issued after RChain's ICO in August of 2017. RHOC is now known as REV, when mainnet launched on February 4, 2020 RHOC was swapped on a 1:1 with REV™.
+              <br />
+              <p class="supply">Circulating supply : <b>666,689,753 REV</b></p>
+              <p class="supply">Total supply : <b>870,663,574 REV</b></p>
+            </p>
+          </div>
+
+          <div class="textWrapper">
+            <h2>Block merge and external validators</h2>
+            <p>
+              RChain cooperative is based in the US. The core team has delivered mainnet and LFS, today it is actively working on two features : block merge and external validators onboarding. Both should be out first half of 2022. <a href="/">See timeline</a>
+              <br /> 
+              <br /> 
+              These two features will allow the coop to <!--safely pursue listing of REV on major exchanges and -->progress on the path to decentralization.
+            </p>
+          </div>
+          <div class="textWrapper">
+            <h2>Vaildator requirements</h2>
+            <p>
+              Announced shortly
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="/js/rchain.coop_Browser.js"></script>
+    <script src="/js/navAndFooter.js?version=10"></script>
+  </body>
+</html>

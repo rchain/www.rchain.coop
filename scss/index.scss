@@ -3,6 +3,8 @@
 @import "./pages/platform.scss";
 @import "./pages/team.scss";
 @import "./pages/developer.scss";
+@import "./pages/rev.scss";
+@import "./pages/climate.scss";
 
 @import "./fonts.scss";
 @import "./rchainSectionTop.scss";
@@ -51,4 +53,10 @@ h2 {
     height: 3px;
     width: 6rem;
   }
+}
+
+.horizontal-nav-cover {
+  height: 60px;
+  width: 100vw;
+  background: linear-gradient(20deg, #111 10%, #222 80%, #555 90%);
 }

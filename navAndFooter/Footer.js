@@ -25,6 +25,9 @@ export class Footer extends React.Component {
               <div>
                 <a href="/research.html">Research</a>
               </div>
+              <div>
+                <a href="/token-and-validators.html">REV Token and Validators</a>
+              </div>
             </div>
             <div>
               <div>

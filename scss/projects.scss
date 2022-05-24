@@ -3,56 +3,55 @@
   flex-wrap: wrap;
   & > div {
     margin-right: 5px;
-    width: 400px;
-  }
-  .bg {
-    width: 95%;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 320px auto;
-    transition: background-size ease-in-out 0.2s;
-    &:hover {
-      background-size: 340px auto;
+    width: 600px;
+    height: 550px;
+    position: relative;
+    margin-bottom: 20px;
+    
+    .bg, .content {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
     }
-    border: 1px solid #ddd;
-    &.dappy {
-      background-image: url("/assets/ecosystem/dappy.jpg");
+    .bg.rchainmultisig {
+      background-image: url(/assets/ecosystem_rchainmultisig.jpg);
     }
-    &.revdefine {
-      background-image: url("/assets/ecosystem/revdefine.jpg");
+    .bg.chinesebase {
+      background-image: url(/assets/ecosystem_chinesebase.jpg);
     }
-    &.rchaintoken {
-      background-image: url("/assets/ecosystem/rchaintoken.jpg");
+    .bg.rchaintoken {
+      background-image: url(/assets/ecosystem_rchaintoken.jpg);
     }
-    &.makemint {
-      background-image: url("/assets/ecosystem/makemint.jpg");
+    .bg.dappy {
+      background-image: url(/assets/ecosystem_dappy.jpg);
     }
-    &.ruiwallet {
-      background-image: url("/assets/ecosystem/ruiwallet.jpg");
+    .bg {
+      background-image: url(/assets/ecosystem.jpg);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
     }
-    &.capowallet {
-      background-image: url("/assets/ecosystem/capowallet.jpg");
+    .content {
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      z-index: 2;
+      h2 {
+        font-size: 3.4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      .website {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
     }
-    &.community-wallet {
-      background-image: url("/assets/ecosystem/community-wallet.jpg");
-    }
-    &.rchaincommunity {
-      background-image: url("/assets/ecosystem/rchaincommunity.jpg");
-    }
-    &.tomislavwallet {
-      background-image: url("/assets/ecosystem/tomislavwallet.jpg");
-    }
-    &.rholang {
-      background-image: url("/assets/ecosystem/rholang.jpg");
-    }
-  }
-  h2 {
-    font-size: 1.1rem;
-    margin-bottom: 4px;
-  }
-  p {
-    margin-top: 0px;
-    font-size: 1.1rem;
   }
 }

@@ -12,6 +12,7 @@ body {
   min-height: 100%;
   margin: 0;
   position: relative;
+  width: 100vw;
 }
 
 img {

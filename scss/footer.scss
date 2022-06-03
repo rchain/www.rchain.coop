@@ -1,13 +1,14 @@
 #footer {
-  margin-top: 80px;
-  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background: linear-gradient(25deg, #111, #222);
   .social-media {
     grid-row: 1;
     grid-column: 3;
     h4 {
       text-align: right;
       font-size: 1.3rem;
-      color: #444;
+      color: #fff;
     }
     .social-media-icons {
       display: flex;
@@ -38,9 +39,11 @@
       & > div {
         margin-bottom: 10px;
         a {
-          color: #444;
+          color: #fff;
+          font-weight: 400;
+          font-size: 1.1rem;
           &:hover {
-            color: #111;
+            color: #fff;
           }
         }
       }
@@ -56,6 +59,10 @@
       font-size: 1rem;
       margin-top: 5px;
       margin-bottom: 0px;
+      color: #fff;
+    }
+    a {
+      color: #fff;
     }
     img {
       width: 120px;

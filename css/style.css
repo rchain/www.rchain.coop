@@ -1764,7 +1764,7 @@ pre {
 }
 #communitySection .section {
   background: transparent;
-  padding: 4rem 4rem 3rem;
+  padding: 8rem 3rem;
 }
 #communitySection .section p.big-and-light {
   font-size: 1.5rem;
@@ -2074,8 +2074,9 @@ pre {
 }
 
 #footer {
-  margin-top: 80px;
-  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background: linear-gradient(25deg, #111, #222);
 }
 #footer .social-media {
   grid-row: 1;
@@ -2084,7 +2085,7 @@ pre {
 #footer .social-media h4 {
   text-align: right;
   font-size: 1.3rem;
-  color: #444;
+  color: #fff;
 }
 #footer .social-media .social-media-icons {
   display: flex;
@@ -2117,10 +2118,12 @@ pre {
   margin-bottom: 10px;
 }
 #footer .sitemap > div > div a {
-  color: #444;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 #footer .sitemap > div > div a:hover {
-  color: #111;
+  color: #fff;
 }
 #footer .footer-bot {
   display: flex;
@@ -2133,6 +2136,10 @@ pre {
   font-size: 1rem;
   margin-top: 5px;
   margin-bottom: 0px;
+  color: #fff;
+}
+#footer .footer-bot a {
+  color: #fff;
 }
 #footer .footer-bot img {
   width: 120px;

@@ -59,7 +59,6 @@ export class Footer extends React.Component {
             </div>
           </div>
           <div className="social-media">
-            <h4 className="engage">Engage with the community</h4>
             <div className="social-media-icons">
               <div>
                 <a href="https://github.com/rchain" target="_blank">

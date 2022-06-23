@@ -138,9 +138,9 @@ export class Footer extends React.Component {
         <div className="footer-bot">
           <div className="center">
             <img
-              alt="RChain logo red"
-              title="RChain logo red"
-              src="/assets/logo_red.png"
+              alt="RChain logo white"
+              title="RChain logo white"
+              src="/assets/logo_white.png"
             />
           </div>
           <p>copyright &copy; 2022 RChain Cooperative All rights reserved</p>

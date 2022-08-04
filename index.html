@@ -168,112 +168,46 @@
         </div>
       </div>
       <div class="horizontal">
-        <a href="https://github.com/rchain/rchain" target="_blank"><span class="iconimg _target"></span> <span>Github</span></a>
-        <a href="/developer.html" target="_blank"><span class="iconimg _laptop"></span> <span>Get Started (developers)</span></a>
-      </div>
-      <div class="timelineExtendedSection" id="roadmap">
-        <div class="section">
-          <h2><span class="iconimg _pin"></span> Technical Roadmap</h2>
-          <ul>
-            <li class="passed"><h4 class="passed">Past</h4></li>
-              <li>
-              <h4><span class="date">September 2018</span><span class="event">Launch of the RChain Testnet</span></h4>
-              <div class="description">RChain Testnet goes live for validator node bonding and unbonding and smart contract deployment testing.</div>
-            </li>
-            <li>
-              <h4><span class="date">January 2020</span><span class="event">RHOC to REV swap</span></h4>
-              <div class="description">The RHOC token was a ERC 20 token based on the Ethereum platform. RChain’s native token is the REV token. With the advent of Mainnet, RHOC token holders received an equal number of REV tokens added to their REV wallet.</div>
-            </li>
-            <li>
-              <h4><span class="date">February 2020</span><span class="event">Launch of the RChain Mainnet</span></h4>
-              <div class="description">RChain platform goes live with 10 Co-op validator nodes. Transactions are processing.</div>
-            </li>
-            <li>
-              <h4><span class="date">March 2020</span><span class="event">Beginning of Staking (POS)</span></h4>
-              <div class="description">50M REV are staked on 10 Co-op validator nodes.  Nodes transition from US-based nodes to international-base nodes.</div>
-            </li>
-            <li>
-              <h4><span class="date">December 2020</span><span class="event">Last Finalized State (LFS)</span></h4>
-              <div class="description">LFS removes the blocks which lightens the blockchain.  Having far fewer blocks to process for update creates greater efficiency which allows new node validators to quickly arrive at the current state.</div>
-            </li>
-            <li>
-              <h4><span class="date">December 2020</span><span class="event">Rholang v1.1</span></h4>
-              <div class="description">Created Rholang v1.1 which offers code compression by a factor of 4x for common code structures and optimization on backend with communication and executing events with respect to RSpace.</div>
-            </li>
-            <li>
-              <h4><span class="date">March 2021</span><span class="event">Block merge v1 on Testnet</span></h4>
-              <a href="https://github.com/rchain/rchain/releases/tag/v0.11.0-alpha.1">rnode 0.11-alpha</a>
-              <div class="description">With the implementation of block merge the RChain network now scales horizontally in that as you add validator nodes, the network scales nearly linearly.  Scalability is the ability to process a higher volume of transactions as you add either more nodes or more powerful hardware within a node.</div>
-            </li>
-            <li>
-              <h4><span class="date">July 2021</span><span class="event">Hard fork 1</span></h4>
-            </li>
-            <li>
-              <h4><span class="date">July 2021</span><span class="event">Block Merge v2 on Testnet</span></h4>
-              <h4><span class="date">Q4 2021</span><span class="event">Leaderless Block merge (LLBM) Hard Fork 2 (version 1) on Testnet</span></h4>
-            </li>
-            <li class="future">
-              <h4>Future</h4>
-              <div class="description">(H1 = 1st half, H2 = 2nd half)</div>
-            </li>
-            <li>
-              <h4><span class="date">H1 2022</span><span class="event">Leaderless Block merge including finalization - Hard Fork 2 on Mainnet</span></h4>
-            </li>
-            <li>
-              <h4><span class="date">H1 2022</span><span class="event">PoS Contract Update to Enable External Validators</span></h4>
-              <div class="description">Updating the proof-of-stake consensus smart contract allows external 3rd party validators to join and secure the network.</div>
-            </li>
-            <li>
-              <h4><span class="date">H1 2022</span><span class="event">Hard fork 3 for POS and enable future soft forks </span></h4>
-            </li>
-            <li>
-              <h4><span class="date">H1 2022</span><span class="event">On-Board 3rd Party External Validators</span></h4>
-              <div class="description">Create a decentralized network by expanding the number of external 3rd party validators that secure the network.</div>
-            </li>
-            <li>
-              <h4><span class="date">H2 2022</span><span class="event">Rholang v1.1 Operationalization</span></h4>
-              <div class="description">Implement Rholang v1.1</div>
-            </li>
-            <li>
-              <h4><span class="date">H2 2022</span><span class="event">Namespaces and Sharding</span></h4>
-              <div class="description">A namespace is any collection of names: one name, two names, three names or more. 
-                A set is a collection of names.  Channels facilitate transactions by acting as pathways.  Channels live in namespaces.  There are many many more transactions than there are names in a namespace.  Implement child shards for interoperability (i.e. Ethereum and Bitcoin).
-                </div>
-            </li>
-            <li>
-              <h4><span class="date">2022</span><span class="event">Improve Developer Experience</span></h4>
-              <div class="description">Will be delivered incrementally throughout the year.
-              </div>
-              <h4><span class="date">2022</span><span class="event">Network Hardening and Bug Fixes</span></h4>
-              <div class="description">Will be delivered incrementally throughout the year.
-              </div>
-              <h4><span class="date">2022</span><span class="event">Thread mapping</span></h4>
-              <div class="description">Logical threads to physical threads have linear scaling.  Add more validators and achieve greater platform capacity.
-              </div>
-              <h4><span class="date">2023</span><span class="event">KPI Dashboard</span></h4>
-              <div class="description">The rchain.coop key performance indicator dashboard display metrics such as:<ul>
-                  <li>- Transaction (txn) volume per second, per minute, per hour, per day</li>
-                  <li>- Resource usage by second, minute, hour, day: aggregated and by bandwidth, cpu and storage</li>
-                  <li>- Number of validators connected, number of txn/validator/day, by owner</li>
-                  <li>- Network decentralization: RChain node cloud diversity and 3rd party validators</li>
-                  <li>- Uptime across network as %, uptime by node as %, by owner, issues outstanding, issues yesterday</li>
-                  <li>- Number of contracts that fail to complete, number of contracts that fail to complete due to lack of resource</li>
-                  <li>- Block creation time</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <h4><span class="date">2023</span><span class="event">Basic Behavioral Types</span></h4>
-              <div class="description">Type safety with data query functionality.</div>
-            </li>
-            <li>
-              <h4><span class="date">2024</span><span class="event">Rholang Chip (Bare Metal)</span></h4>
-              <div class="description">Substantial performance increase</div>
-            </li>
-          </ul>
+        <div>
+          <a href="https://www.youtube.com/c/RChain/videos" target="_blank"><span class="iconimg _youtube"></span> <span>Youtube channel</span></a>
+          <p>Check out <span id="number-of-weekly-debriefs">300</span> weekly debriefs, 5 years of video content !</p>
+        </div>
+        <div>
+          <a href="https://github.com/rchain/rchain" target="_blank"><span class="iconimg _target"></span> <span>Github</span></a>
+          <p>RChain software is 100% open source</p>
+        </div>
+        <div>
+          <a href="/developer.html" target="_blank"><span class="iconimg _laptop"></span> <span>Get Started (developers)</span></a>
+          <p>5 minutes to deploy your first rholang contract !</p>
         </div>
       </div>
-
+      <div class="timelineExtendedSection" >
+        <div class="section" id="newroadmap">
+          <h2><span class="iconimg _pin"></span> Technical Roadmap</h2>
+          <h3 class="past">Past</h3>
+          <div>
+            <p class="date">📅 September 2018</p>
+            <p class="event">Launch of the RChain Testnet</p>
+            <p class="content-text">RChain goes live, with node bonding unbonding and rholang smart contracts.</p>
+          </div>
+          <div>
+            <p class="date">📅 Q1 2020</p>
+            <p class="event">Launch of the Mainnet, RHOC to REV swap</p>
+            <p class="content-text">RChain (permissioned) mainnet launches. RHOC (ERC20) is swapped to REV on the mainnet.</p>
+          </div>
+          <div>
+            <p class="date">📅 Q4 2020 / Q1 2021</p>
+            <p class="event">Last Finalized State (LFS), Proof of Stake, Block Merge on Testnet</p>
+            <p class="content-text">Last Finalized State is released, Proof of Stake (managed) available for REV holders, Block Merge released on testnet</p>
+          </div>
+          <h3 class="future">Future</h3>
+          <div>
+            <p class="date">📅 Q3 2022 / Q4 2022</p>
+            <p class="event">Leaderless Block Merge on Mainnet (LLBM), External Validators, Exchange Listing</p>
+            <p class="content-text">Release of key feature LLBM on mainnet, allowing external validators and listing on major exchanges.</p>
+          </div>
+        </div>
+      </div>
       <div id="communitySection">
         <div class="section">
           <div>
@@ -332,7 +266,22 @@
 
     <div id="footer"></div>
 
-    <script src="/js/rchain.coop_Browser.js"></script>
-    <script src="/js/navAndFooter.js?version=10"></script>
+    <script type="text/javascript" src="/js/rchain.coop_Browser.js"></script>
+    <script type="text/javascript" src="/js/navAndFooter.js?version=10"></script>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", (event) => {
+        const d = document.getElementById('number-of-weekly-debriefs');
+        const oneJan = new Date(new Date().getFullYear(),0,1);
+        const numberOfDays = Math.floor((new Date() - oneJan) / (24 * 60 * 60 * 1000));
+        const weekOfYear = Math.ceil(( new Date().getDay() + 1 + numberOfDays) / 7);
+        d.innerHTML = {
+          "2022": 262 + weekOfYear,
+          "2023": 262 + 52 + weekOfYear,
+          "2024": 262 + 52 + 52 + weekOfYear,
+          "2025": 262 + 52 + 52 + 52 + weekOfYear,
+          "2026": 262 + 52 + 52 + 52 + 52 + weekOfYear,
+        }[new Date().getFullYear() + ""] || "300+"
+      });
+    </script>
   </body>
 </html>

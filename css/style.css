@@ -246,6 +246,10 @@
   font-size: 3.8rem;
   font-weight: 600;
 }
+.pageIndex .top .left h1.rchain-scales b {
+  font-size: 5rem;
+  margin-right: 12px;
+}
 .pageIndex .top .left .main-p {
   font-size: 1.9rem;
   margin-top: 10px;
@@ -323,36 +327,45 @@
   font-weight: 400;
 }
 .pageIndex .horizontal {
+  padding: 2rem 0rem;
   width: 100vw;
-  height: 100px;
-  color: #111;
+  color: #3f4e1b;
   font-weight: 400;
   background: linear-gradient(20deg, #d3ffa3, #e4fcc9);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
+.pageIndex .horizontal div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+.pageIndex .horizontal div p {
+  margin-top: 15px;
+  max-width: 300px;
+}
 @media (min-width: 992px) {
-  .pageIndex .horizontal > a {
-    margin-left: 100px;
-    font-size: 1.6rem;
+  .pageIndex .horizontal div > a {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 991px) {
-  .pageIndex .horizontal > a {
+  .pageIndex .horizontal div > a {
     font-size: 1.2rem;
-    margin-left: 20px;
   }
 }
-.pageIndex .horizontal > a {
-  color: #111;
+.pageIndex .horizontal div > a {
+  color: #3f4e1b;
 }
-.pageIndex .horizontal > a span.iconimg {
+.pageIndex .horizontal div > a span.iconimg {
   width: 25px;
   height: 25px;
   margin-right: 0.5rem;
 }
-.pageIndex .horizontal > a span:not(.iconimg) {
+.pageIndex .horizontal div > a span:not(.iconimg) {
   text-decoration: underline;
 }
 @media (max-width: 1200px) {
@@ -1381,6 +1394,10 @@ pre {
   background-image: url("/assets/icontarget.png");
 }
 
+._youtube {
+  background-image: url("/assets/iconyoutube.png");
+}
+
 ._pin {
   background-image: url("/assets/iconpin.png");
 }
@@ -1984,6 +2001,65 @@ pre {
     width: auto;
   }
 }
+#newroadmap {
+  background: transparent;
+}
+#newroadmap h2 {
+  margin: 0 auto 0;
+  margin-bottom: 80px;
+  font-size: 3rem;
+}
+#newroadmap .past {
+  margin-bottom: 50px;
+}
+#newroadmap .future {
+  color: #b20f3d;
+  margin-bottom: 50px;
+}
+@media (min-width: 961px) {
+  #newroadmap .future {
+    margin-left: 240px;
+  }
+  #newroadmap > div:nth-of-type(1) {
+    margin-left: 0px;
+  }
+  #newroadmap > div:nth-of-type(2) {
+    margin-left: 60px;
+  }
+  #newroadmap > div:nth-of-type(3) {
+    margin-left: 180px;
+  }
+  #newroadmap > div:nth-of-type(4) {
+    margin-left: 240px;
+  }
+}
+#newroadmap > div {
+  margin-bottom: 60px;
+  position: relative;
+  display: block;
+  padding: 5px;
+  border: 4px solid #000;
+  background: linear-gradient(-60deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  width: fit-content;
+  max-width: 600px;
+}
+#newroadmap > div .date {
+  margin: 0px;
+  position: absolute;
+  top: -35px;
+  left: 0px;
+  font-weight: 500;
+}
+#newroadmap > div .event {
+  font-size: 1.8rem;
+  margin: 0px;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+#newroadmap > div .content-text {
+  color: #c9c9c9;
+}
+
 .timelineExtendedSection {
   background-image: url("/assets/extendedtimeline.jpg");
   background-position: center;
@@ -1991,86 +2067,83 @@ pre {
   color: #eee;
   padding-top: 20px;
   padding-bottom: 40px;
+  /* .section {
+
+    & > ul {
+      position: relative;
+      list-style: none;
+      &:before {
+        width: 1px;
+        background-color: #eee;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: "";
+      }
+      & > li {
+        &.future {
+          color: #b20f3d;
+          font-size: 1.8rem;
+        }
+        &.passed {
+          font-size: 1.8rem;
+        }
+        position: relative;
+        ul {
+          list-style: none;
+        }
+        a {
+          color: #33e;
+          display: block;
+          margin-bottom: 5px;
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+        h4 {
+          .date {
+            padding-right: 24px;
+            position: relative;
+            &:after {
+              position: absolute;
+              content: "-";
+              right: 8px;
+              top: 0px;
+            }
+          }
+        }
+        &:not(.future):not(.passed):before {
+          width: 8px;
+          height: 8px;
+          border-radius: 6px;
+          background-color: #eee;
+          position: absolute;
+          top: 6px;
+          left: -43px;
+          content: "";
+        }
+        .description {
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 18px 8px;
+          border: 1px solid #555;
+          font-size: 1.1rem;
+          max-width: 850px;
+          ul {
+            margin-top: 5px;
+            padding-left: 10px;
+          }
+          ul li {
+            font-size: 1.1rem;
+            padding-bottom: 4px;
+          }
+        }
+      }
+    }
+  } */
 }
 .timelineExtendedSection .iconimg {
   width: 40px;
   height: 40px;
-}
-.timelineExtendedSection .section {
-  background: transparent;
-}
-.timelineExtendedSection .section h2 {
-  margin: 0 auto 0;
-  margin-bottom: 0;
-  font-size: 3rem;
-}
-.timelineExtendedSection .section > ul {
-  position: relative;
-  list-style: none;
-}
-.timelineExtendedSection .section > ul:before {
-  width: 1px;
-  background-color: #eee;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  content: "";
-}
-.timelineExtendedSection .section > ul > li {
-  position: relative;
-}
-.timelineExtendedSection .section > ul > li.future {
-  color: #b20f3d;
-  font-size: 1.8rem;
-}
-.timelineExtendedSection .section > ul > li.passed {
-  font-size: 1.8rem;
-}
-.timelineExtendedSection .section > ul > li ul {
-  list-style: none;
-}
-.timelineExtendedSection .section > ul > li a {
-  color: #33e;
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-.timelineExtendedSection .section > ul > li h4 .date {
-  padding-right: 24px;
-  position: relative;
-}
-.timelineExtendedSection .section > ul > li h4 .date:after {
-  position: absolute;
-  content: "-";
-  right: 8px;
-  top: 0px;
-}
-.timelineExtendedSection .section > ul > li:not(.future):not(.passed):before {
-  width: 8px;
-  height: 8px;
-  border-radius: 6px;
-  background-color: #eee;
-  position: absolute;
-  top: 6px;
-  left: -43px;
-  content: "";
-}
-.timelineExtendedSection .section > ul > li .description {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 18px 8px;
-  border: 1px solid #555;
-  font-size: 1.1rem;
-  max-width: 850px;
-}
-.timelineExtendedSection .section > ul > li .description ul {
-  margin-top: 5px;
-  padding-left: 10px;
-}
-.timelineExtendedSection .section > ul > li .description ul li {
-  font-size: 1.1rem;
-  padding-bottom: 4px;
 }
 
 #footer {

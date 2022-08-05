@@ -168,7 +168,7 @@
 .pageIndex .topSection {
   background: linear-gradient(20deg, #111, #121217);
   margin: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   background: url("/assets/mountaindark1920.jpg");
   background-size: cover;
   background-position-y: bottom;
@@ -328,6 +328,7 @@
 }
 .pageIndex .horizontal {
   padding: 2rem 0rem;
+  padding-top: 2.5rem;
   width: 100vw;
   color: #3f4e1b;
   font-weight: 400;

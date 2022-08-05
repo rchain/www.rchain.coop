@@ -2,7 +2,7 @@
   .topSection {
     background: linear-gradient(20deg, #111, hsl(240, 13%, 8%));
     margin: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     background: url("/assets/mountaindark1920.jpg");
     //background: rgb(245, 243, 243);
     background-size: cover;
@@ -164,6 +164,7 @@
   }
   .horizontal {
     padding: 2rem 0rem;
+    padding-top: 2.5rem;
     width: 100vw;
     color: #3f4e1b;
     font-weight: 400;

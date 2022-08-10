@@ -29,12 +29,17 @@ Whitepaper link: [https://rchain.coop/whitepaper](https://rchain.coop/whitepaper
 #### Staff
 [Board of Directors](https://rchain.coop/team.html)
 
-#### Social Media Links:
+#### Social Media Links
 - Twitter [@rchain_coop](https://twitter.com/rchain_coop)
 - YouTube [youtube.com/rchain](https://youtube.com/rchain)
 - Discord [pub-RChain](https://discord.gg/NWkQnfH)
 
 #### Press Clippings
+
+- [The Economic Standard](https://theeconomicstandard.com/sharding-and-small-world-networks/)
+- [HackerNoon](https://hackernoon.com/meetings-with-remarkable-tech-can-rchain-solve-scaling-limitations-in-blockchain)
+- [Blockchain Magazine](https://blockchainmagazine.net/nft-apocalypse-never-with-rchain)
+- [The Coin Republic](https://www.thecoinrepublic.com/2022/04/11/rchain-sole-solution-for-storage-issues-in-web3)
 - [Yahoo! Finance](https://finance.yahoo.com/news/rchain-reshapes-blockchain-mass-adoption-023000343.html)
 - [GeekWire](https://www.geekwire.com/2017/seattle-based-rchain-takes-bitcoin-ethereum-new-blockchain-tech/)
 - [CryptoCoinShow](https://www.youtube.com/watch?v=7PN8RBm7_hI)
@@ -48,7 +53,7 @@ Whitepaper link: [https://rchain.coop/whitepaper](https://rchain.coop/whitepaper
 - [RChain Co-op Horizontal Banner-red](https://github.com/rchain/branding/blob/main/RChain_Coop-Horiz-red-864x288px.png)<img src="https://rchain.coop/assets/logo_red.png" height="150">
 - [Twitter Banner ](https://github.com/rchain/branding/blob/main/Twitter/RChain_Twitter_Header-v1-1500x500px.jpg)<img src="https://rchain.coop/assets/RChain_Twitter_Header-v1-1500x500px.png" height="150">
 
-#### Contact Information:
+#### Contact Information
 12345 Lake City Way NE #2032 \
 Seattle, WA 98125 \
 (202)810-2039 \
@@ -57,4 +62,6 @@ __info@rchain.coop__
 <br />
 <br />
 
-###### Copyright 2022 RChain Cooperative 
+<sub>copyright &copy; 2022 RChain Cooperative All rights reserved</sub> \
+<sub>RChain and REV are registered trademarks of RChain Cooperative</sub> \
+<sub>[Privacy terms and conditions](https://github.com/rchain/legaldocs/blob/master/Form%20of%20Privacy%20Policy.pdf)</sub>

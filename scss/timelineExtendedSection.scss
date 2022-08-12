@@ -1,3 +1,64 @@
+#newroadmap {
+  background: transparent;
+  h2 {
+    margin: 0 auto 0;
+    margin-bottom: 80px;
+    font-size: 3rem;
+  }
+  .past {
+    margin-bottom: 50px;
+  }
+  .future {
+    color: #b20f3d;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 961px) {
+    .future {
+      margin-left: 240px;
+    }
+    & > div {
+      &:nth-of-type(1) {
+        margin-left: 0px;
+      }
+      &:nth-of-type(2) {
+        margin-left: 60px;
+      }
+      &:nth-of-type(3) {
+        margin-left: 180px;
+      }
+      &:nth-of-type(4) {
+        margin-left: 240px;
+      }
+    }
+  }
+  & > div {
+    margin-bottom: 60px;
+    position: relative;
+    display: block;
+    padding: 5px;
+    border: 4px solid #000;
+    background: linear-gradient(-60deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    width: fit-content;
+    max-width: 600px;
+    .date {
+      margin: 0px;
+      position: absolute;
+      top: -35px;
+      left: 0px;
+      font-weight: 500;
+    }
+    .event {
+      font-size: 1.8rem;
+      margin: 0px;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .content-text {
+      color: #c9c9c9;
+    }
+  }
+
+}
 .timelineExtendedSection {
   background-image: url("/assets/extendedtimeline.jpg");
   background-position: center;
@@ -9,13 +70,8 @@
     width: 40px;
     height: 40px;
   }
-  .section {
-    background: transparent;
-    h2 {
-      margin: 0 auto 0;
-      margin-bottom: 0;
-      font-size: 3rem;
-    }
+  /* .section {
+
     & > ul {
       position: relative;
       list-style: none;
@@ -86,5 +142,5 @@
         }
       }
     }
-  }
+  } */
 }

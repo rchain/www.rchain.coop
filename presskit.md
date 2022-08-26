@@ -26,9 +26,6 @@ This allows smart contracts to be formally verified quickly in a concurrent and 
 
 Whitepaper link: [https://rchain.coop/whitepaper](https://rchain.coop/whitepaper.html)
 
-#### Staff
-[Board of Directors](https://rchain.coop/team.html)
-
 #### Social Media Links
 - Twitter [@rchain_coop](https://twitter.com/rchain_coop)
 - YouTube [youtube.com/rchain](https://youtube.com/rchain)

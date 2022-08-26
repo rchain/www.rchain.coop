@@ -8,7 +8,7 @@ export class Footer extends React.Component {
           <div className="sitemap">
             <div>
               <div>
-                <a href="/index.html">Home</a>
+                <a href="/home.html">Home</a>
               </div>
               <div>
                 <a href="/platform.html">Platform</a>
@@ -32,9 +32,6 @@ export class Footer extends React.Component {
             <div>
               <div>
                 <a href="/developer.html">Developer</a>
-              </div>
-              <div>
-                <a href="/team.html">Team</a>
               </div>
               <div>
                 <a href="https://blog.rchain.coop/" target="_blank">

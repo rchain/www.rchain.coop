@@ -35,6 +35,14 @@
     color: #fff;
   }
 }
+.btn-grey {
+  color: #fff;
+  background-image: linear-gradient(15deg, #6c6c6c, #6c6c6c);
+  &:hover {
+    color: #6c6c6c;
+    color: #fff;
+  }
+}
 .btn-red {
   background: linear-gradient(15deg, #630c2c, #ad0c37);
   border: none;

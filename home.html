@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="canonical" href="https://rchain.coop"></link>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6B7FD7W88H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6B7FD7W88H");
+    </script>
+    <script>
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var captureOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = url;}
+      });
+    }
+    </script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <title>RChain</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <meta
+      name="google-site-verification"
+      content="NvXu2Qnyi90bS-ubPtaorKKja1_p8SHfQ0zPoqG0sIg"
+    />
+
+    <link rel="stylesheet" href="css/style.css?version=9" />
+    <link rel="stylesheet" href="css/layout.css?version=4" />
+
+    <link rel="shortcut icon" href="assets/favicon-red.png" />
+
+    <meta
+      name="description"
+      content="RChain is a layer 1 blockchain platform designed from the ground up to support decentralization, on chain data and the scaling needs of Web3."
+    />
+    <meta property="og:title" content="RChain" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="RChain is a layer 1 blockchain platform designed from the ground up to support decentralization, on chain data and the scaling needs of Web3."
+    />
+    <meta property="og:url" content="https://rchain.coop" />
+    <meta
+      property="og:image"
+      content="https://rchain.coop/assets/og_index.jpg"
+    />
+    <meta property="og:image:height" content="565" />
+    <meta property="og:image:width" content="1080" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RChain" />
+    <meta
+      name="twitter:image"
+      content="https://rchain.coop/assets/og_index.jpg"
+    />
+    <meta name="twitter:creator" content="@rchain_coop" />
+    <meta name="twitter:url" content="https://rchain.coop" />
+    <meta name="twitter:site" content="https://rchain.coop" />
+    <meta
+      name="twitter:description"
+      content="RChain is a layer 1 blockchain platform designed from the ground up to support decentralization, on chain data and the scaling needs of Web3."
+    />
+  </head>
+
+  <body class="pageIndex">
+    <header></header>
+
+    <div class="bodyWrapper">
+      <div class="topSection">
+        <div class="section">
+          <div class="alert fc">
+            <span class="iconimg _bulb"></span> The RChain Cooperative is dissolved.
+          </div>
+          <div class="top">
+            <div class="left">
+              <h1 class="rchain-scales">
+                <b>RChain®</b> scales!
+              </h1>
+              <p class="main-p">
+                RChain is a layer 1 blockchain platform designed from the ground up to support decentralization, on chain data, security, economics, and the scaling needs of Web3.
+                <br/>
+                <br/>
+                While other platforms run slower as more hardware is added, RChain's <b>highly concurrent</b> 
+                execution <b>runs faster</b> as more hardware is added.
+                <br />
+                <br />
+                <span class="green">
+                  <img src="/assets/leaf.png" alt="RChain is energy efficient" />
+                  RChain is energy efficient. It takes a thousand times less energy for a thousand times superior throughput.
+                </span>
+              </p>
+              <br />
+              <br />
+              <div class="buttons-top">
+                <a href="/platform.html" class="btn-underlined btn-tech-overview">Tech Overview</a>
+                <a href="/token-and-validators.html" class="btn-underlined btn-token">REV Token</a>
+              </div>
+              <!-- <div class="timeline-cont">
+                <div class="timeline">
+                  <div>
+                    <span class="event">Mainnet Launch</span>
+                    <span class="date">February 2020</span>
+                  </div>
+                  <div>
+                    <span class="event">Last Finalized State</span>
+                    <span class="date">
+                      December 2020
+                      <a
+                        target="_blank"
+                        href="https://blog.rchain.coop/2020/12/26/lfs/"
+                        >read</a
+                      >
+                    </span>
+                  </div>
+                  <div>
+                    <span class="event">Block merge v1 on Testnet</span>
+                    <span class="date">Q1 2021
+                    </span>
+                  </div>
+                  <div>
+                    <span class="event">Hard Fork 1</span>
+                    <span class="date">July 2021</span>
+                  </div>
+                  <a class="roadmap-link" href="#roadmap">Technical roadmap</a>
+                </div>
+              </div> -->
+            </div>
+            <div class="right"></div>
+          </div>
+          <div class="boxes">
+            <div class="div1">
+              <div>
+                <h1><span class="iconimg _mountain"></span>Rho Revolution</h1>
+                <p>RChain is introducing Rho Calculus, a breakthrough concurrent computational system that unshackles the blockchain. </p>
+              </div>
+            </div>
+            <div class="div2">
+              <div>
+                <h1><span class="iconimg _earth"></span>Earth and Global Cooperation</h1>
+                <p>Cooperative governance and a sustainable economic model make RChain a public utility that can be applied to climate change, global cooperation, digital identities and many other challenges we are collectively facing.</p>
+              </div>
+            </div>
+            <div class="div3">
+              <div>
+                <h1><span class="iconimg _controller"></span>Web3 that makes sense</h1>
+                <p>RChain subsidiaries and projects within the ecosystem aim at addressing key issues with online content creation, fair advertisement and digital asset (FTs and NFTs) management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal">
+        <a href="https://github.com/rchain/rchain" target="_blank"><span class="iconimg _target"></span> <span>Github</span></a>
+        <a href="/developer.html" target="_blank"><span class="iconimg _laptop"></span> <span>Get Started (developers)</span></a>
+      </div>
+      <div class="timelineExtendedSection" id="roadmap">
+        <div class="section">
+          <h2><span class="iconimg _pin"></span> Technical Roadmap</h2>
+          <ul>
+            <li class="passed"><h4 class="passed">Past</h4></li>
+              <li>
+              <h4><span class="date">September 2018</span><span class="event">Launch of the RChain Testnet</span></h4>
+              <div class="description">RChain Testnet goes live for validator node bonding and unbonding and smart contract deployment testing.</div>
+            </li>
+            <li>
+              <h4><span class="date">January 2020</span><span class="event">RHOC to REV swap</span></h4>
+              <div class="description">The RHOC token was a ERC 20 token based on the Ethereum platform. RChain’s native token is the REV token. With the advent of Mainnet, RHOC token holders received an equal number of REV tokens added to their REV wallet.</div>
+            </li>
+            <li>
+              <h4><span class="date">February 2020</span><span class="event">Launch of the RChain Mainnet</span></h4>
+              <div class="description">RChain platform goes live with 10 Co-op validator nodes. Transactions are processing.</div>
+            </li>
+            <li>
+              <h4><span class="date">March 2020</span><span class="event">Beginning of Staking (POS)</span></h4>
+              <div class="description">50M REV are staked on 10 Co-op validator nodes.  Nodes transition from US-based nodes to international-base nodes.</div>
+            </li>
+            <li>
+              <h4><span class="date">December 2020</span><span class="event">Last Finalized State (LFS)</span></h4>
+              <div class="description">LFS removes the blocks which lightens the blockchain.  Having far fewer blocks to process for update creates greater efficiency which allows new node validators to quickly arrive at the current state.</div>
+            </li>
+            <li>
+              <h4><span class="date">December 2020</span><span class="event">Rholang v1.1</span></h4>
+              <div class="description">Created Rholang v1.1 which offers code compression by a factor of 4x for common code structures and optimization on backend with communication and executing events with respect to RSpace.</div>
+            </li>
+            <li>
+              <h4><span class="date">March 2021</span><span class="event">Block merge v1 on Testnet</span></h4>
+              <a href="https://github.com/rchain/rchain/releases/tag/v0.11.0-alpha.1">rnode 0.11-alpha</a>
+              <div class="description">With the implementation of block merge the RChain network now scales horizontally in that as you add validator nodes, the network scales nearly linearly.  Scalability is the ability to process a higher volume of transactions as you add either more nodes or more powerful hardware within a node.</div>
+            </li>
+            <li>
+              <h4><span class="date">July 2021</span><span class="event">Hard fork 1</span></h4>
+            </li>
+            <li>
+              <h4><span class="date">July 2021</span><span class="event">Block Merge v2 on Testnet</span></h4>
+              <h4><span class="date">Q4 2021</span><span class="event">Leaderless Block merge (LLBM) Hard Fork 2 (version 1) on Testnet</span></h4>
+            </li>
+            <li class="future">
+              <h4>Future</h4>
+              <div class="description">(H1 = 1st half, H2 = 2nd half)</div>
+            </li>
+            <li>
+              <h4><span class="date">H1 2022</span><span class="event">Leaderless Block merge including finalization - Hard Fork 2 on Mainnet</span></h4>
+            </li>
+            <li>
+              <h4><span class="date">H1 2022</span><span class="event">PoS Contract Update to Enable External Validators</span></h4>
+              <div class="description">Updating the proof-of-stake consensus smart contract allows external 3rd party validators to join and secure the network.</div>
+            </li>
+            <li>
+              <h4><span class="date">H1 2022</span><span class="event">Hard fork 3 for POS and enable future soft forks </span></h4>
+            </li>
+            <li>
+              <h4><span class="date">H1 2022</span><span class="event">On-Board 3rd Party External Validators</span></h4>
+              <div class="description">Create a decentralized network by expanding the number of external 3rd party validators that secure the network.</div>
+            </li>
+            <li>
+              <h4><span class="date">H2 2022</span><span class="event">Rholang v1.1 Operationalization</span></h4>
+              <div class="description">Implement Rholang v1.1</div>
+            </li>
+            <li>
+              <h4><span class="date">H2 2022</span><span class="event">Namespaces and Sharding</span></h4>
+              <div class="description">A namespace is any collection of names: one name, two names, three names or more. 
+                A set is a collection of names.  Channels facilitate transactions by acting as pathways.  Channels live in namespaces.  There are many many more transactions than there are names in a namespace.  Implement child shards for interoperability (i.e. Ethereum and Bitcoin).
+                </div>
+            </li>
+            <li>
+              <h4><span class="date">2022</span><span class="event">Improve Developer Experience</span></h4>
+              <div class="description">Will be delivered incrementally throughout the year.
+              </div>
+              <h4><span class="date">2022</span><span class="event">Network Hardening and Bug Fixes</span></h4>
+              <div class="description">Will be delivered incrementally throughout the year.
+              </div>
+              <h4><span class="date">2022</span><span class="event">Thread mapping</span></h4>
+              <div class="description">Logical threads to physical threads have linear scaling.  Add more validators and achieve greater platform capacity.
+              </div>
+              <h4><span class="date">2023</span><span class="event">KPI Dashboard</span></h4>
+              <div class="description">The rchain.coop key performance indicator dashboard display metrics such as:<ul>
+                  <li>- Transaction (txn) volume per second, per minute, per hour, per day</li>
+                  <li>- Resource usage by second, minute, hour, day: aggregated and by bandwidth, cpu and storage</li>
+                  <li>- Number of validators connected, number of txn/validator/day, by owner</li>
+                  <li>- Network decentralization: RChain node cloud diversity and 3rd party validators</li>
+                  <li>- Uptime across network as %, uptime by node as %, by owner, issues outstanding, issues yesterday</li>
+                  <li>- Number of contracts that fail to complete, number of contracts that fail to complete due to lack of resource</li>
+                  <li>- Block creation time</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h4><span class="date">2023</span><span class="event">Basic Behavioral Types</span></h4>
+              <div class="description">Type safety with data query functionality.</div>
+            </li>
+            <li>
+              <h4><span class="date">2024</span><span class="event">Rholang Chip (Bare Metal)</span></h4>
+              <div class="description">Substantial performance increase</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="communitySection">
+        <div class="section">
+          <div>
+            <h2>Engage with the Community</h2>
+            <p>
+              Community is the heart of RChain <span class="iconimg _fluffy"></span>. The cooperative model unites us in building technology and social tools. Aimed at lifting our  world up and affecting real, positive change, we will help each  other flourish <span class="iconimg _hearts"></span>.
+            </p>
+          </div>
+
+          <div class="flexWrapper social">
+            <div>
+              <a href="https://github.com/rchain" target="_blank">
+                <img alt="Github logo" title="Github logo" src="/assets/github@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/rchain_coop" target="_blank">
+                <img alt="Twitter logo" title="Twitter logo" src="/assets/twitter@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w"
+                target="_blank"
+              >
+                <img alt="Youtube logo" title="Youtube logo" src="/assets/youtube@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/company/rchain-cooperative/"
+                target="_blank"
+              >
+                <img alt="LinkedIn logo" title="LinkedIn logo" src="/assets/linkedin@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://t.me/rchaincoop" target="_blank">
+                <img alt="Telegram logo" title="Telegram logo" src="/assets/telegram@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://discord.gg/NWkQnfH" onclick="captureOutboundLink('https://discord.gg/NWkQnfH'); return false;">
+                <img alt="Discord logo" title="Discord logo" src="/assets/discord@3x.png" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.reddit.com/r/RChain/" target="_blank">
+                <img alt="Reddit logo" title="Reddit logo" src="/assets/reddit@3x.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="/js/rchain.coop_Browser.js"></script>
+    <script src="/js/navAndFooter.js?version=10"></script>
+  </body>
+</html>

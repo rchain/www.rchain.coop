@@ -34,7 +34,7 @@ export class Nav extends React.Component {
               )}
             </div>
             <div className="item links" onclick="">
-              <a href="/index.html">Home</a>
+              <a href="/home.html">Home</a>
             </div>
             <div className="item links" onclick="">
               <a href="/platform.html">Platform</a>
@@ -67,7 +67,6 @@ export class Nav extends React.Component {
                   <a href="/resources.html">Resources</a>
                   <a href="/developer.html">Get started</a>
                   <a href="/token-and-validators.html">Token and validators</a>
-                  <a href="/team.html">Team</a>
                   <a href="https://blog.rchain.coop/" target="_blank">
                     Blog
                   </a>
@@ -84,7 +83,7 @@ export class Nav extends React.Component {
               </div>
             </div>
             <div className="item links long">
-              <a href="/community.html" className="btn-rchain btn-blue">
+              <a href="#" className="btn-rchain btn-grey">
                 Join Cooperative
               </a>
             </div>
@@ -104,7 +103,7 @@ export class Nav extends React.Component {
           <div
             className={`dropdown ${this.state.mobileExtended ? "" : "hidden"}`}
           >
-            <a href="/index.html">Home</a>
+            <a href="/home.html">Home</a>
             <a href="/platform.html">Platform</a>
             <a href="/ecosystem.html">Ecosystem</a>
             <a href="/resources.html">Resources</a>
@@ -113,7 +112,6 @@ export class Nav extends React.Component {
             <a href="/whitepaper.html">Whitepaper</a>
             <a href="/developer.html">Get started</a>
             <a href="/token-and-validators.html">Token and validators</a>
-            <a href="/team.html">Team</a>
             <a
               href=" https://blog.rchain.coop/category/community/weeklydebriefs/"
               target="_blank"
